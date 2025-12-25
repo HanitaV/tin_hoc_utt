@@ -1,0 +1,271 @@
+
+        <html>
+        <head><title>Xử lý dữ liệu trong bảng tính
+Trang</title><meta charset='utf-8'><link rel="stylesheet" href="../page_theme.css">
+</head>
+        <body>
+            <h1>Xử lý dữ liệu trong bảng tính
+Trang</h1>
+            <h3>Section: Chương 5: Sử dụng bảng tính</h3>
+            <hr>
+            <div class="box py-3 generalbox center clearfix"><div class="no-overflow"><p dir="ltr" style="text-align: left;"><strong>2.1&nbsp; Các kiểu dữ liệu</strong></p><p dir="ltr" style="text-align: left;"><strong>&nbsp; &nbsp; &nbsp;Kiểu dữ liệu số</strong></p><p dir="ltr" style="text-align: left;"><strong></strong></p><p><span>&nbsp; &nbsp; &nbsp;Khi nhập vào số bao gồm 0, …, 9; +, -, *, /, (, ), E, %, $, ngày và giờ, thì số theo đúng quy ước trong
+môi trường Windows sẽ <i>mặc định được căn lề phải trong ô</i>.</span></p><span>
+
+<p style="">&nbsp; &nbsp; &nbsp;Để đặt quy định về cách nhập và hiển thị số trong
+Windows (Hình 2.2): chọn lệnh Start -&gt; Control Panel -&gt; Region and Language -&gt; Format -&gt; Additional Settings -&gt; Number.</p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Kiểu dữ liệu dạng số (Number)</p>
+
+<p style=""><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Decimal symbol: Quy ước dấu phân
+cách phần thập phân.</p>
+
+<p style=""><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>No. of digits after decimal: Số chữ
+số thập phân.</p>
+
+<p style=""><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Digits grouping symbol:
+Dấu phân cách hàng nghìn.</p>
+
+<p style=""><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Digits grouping: Số số hạng
+trong group.</p>
+
+<p style=""><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Negative number format: Định dạng số âm</p>
+
+<p style=""><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->List separator: Quy ước dấu phân cách nghìn.</p><p style="text-align: center; "><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image.png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;">Hình <span lang="VI">6</span>.3. Thiết lập cách nhập và hiển thị số trong Windows</p><p style="text-align: left;">&nbsp; &nbsp; <strong>&nbsp;Dữ liệu tiền tệ</strong></p><div>
+
+<p>&nbsp; &nbsp; &nbsp;Excel cho phép người dùng định dạng cách hiển thị các
+loại tiền tệ khác nhau. Dấu chấm phân cách giữa các phần theo quy định của hệ thống như kiểu Number. Kiểu dữ liệu tiền tệ đúng sẽ được
+tự động căn phải.</p><p><strong>&nbsp; &nbsp; &nbsp;Dữ liệu dạng ngày (Date)</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Excel sẽ hiểu dữ liệu kiểu Date khi ta nhập vào đúng
+theo quy định của Windows, dữ liệu sẽ căn phải trong
+ô. Ngược lại, Excel sẽ hiểu là kiểu chuỗi.</p>
+
+<p>&nbsp; &nbsp; &nbsp;Để kiểm tra và thay đổi quy định khi nhập dữ liệu
+kiểu Date cho Windown: chọn Start -&gt; Control Panel -&gt; Regional and Language -&gt; Format -&gt; Additional Settings -&gt; Date.&nbsp; &nbsp;</p><p><strong>&nbsp; &nbsp; &nbsp;Dữ liệu dạng giờ (Time)</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Excel sẽ hiểu dữ liệu kiểu Time khi ta nhập đúng theo quy định của Windows,
+mặc định là giờ: phút: giây (hh: mm: ss AM/PM). Dữ liệu
+sẽ canh phải trong ô.</p><p><strong>&nbsp; &nbsp; &nbsp;Dữ liệu dạng chuỗi (Text)&nbsp;</strong></p></div>
+
+<p>&nbsp; &nbsp; &nbsp;Dữ liệu chuỗi bao gồm ký
+tự chữ và số. Khi nhập thì mặc định được căn thẳng trái trong ô.</p><p><strong>&nbsp; &nbsp; &nbsp;Công thức (Formula)</strong></p>&nbsp; &nbsp; &nbsp;Công thức bắt đầu bởi dấu bằng (=), giá trị hiển thị trong ô là kết quả của công thức,
+có thể là một trị số, một ngày tháng,
+một giờ, một chuỗi hay một thông báo lỗi.<br></span><p></p><p></p><p><span><br></span></p><p><span><strong>2.2&nbsp; Các toán tử trong Excel</strong></span></p><p><span></span></p><p>&nbsp; &nbsp; &nbsp;Công thức trong Excel là sự kết hợp giữa
+các toán tử và toán hạng</p>
+
+<p>-&nbsp;&nbsp;&nbsp; Các toán tử như: +, -, *, /, &amp;, ^, &gt;, &lt;, &gt;=,
+&lt;=, =, &lt;&gt;,
+:, …</p>
+
+<p>-&nbsp;&nbsp;&nbsp; Các toán hạng như: hằng, hàm, địa chỉ ô, địa chỉ vùng, …</p><br><p></p><p><strong>2.3 Định dạng dữ liệu</strong></p><p><strong>2.3.1&nbsp;&nbsp;</strong><strong style="font-size: calc(0.90375rem + 0.045vw);">Định dạng dữ liệu số.</strong></p><span>
+
+<p style=""><span lang="vi" style="">-&nbsp; &nbsp;</span><!--[endif]-->Chọn vùng dữ liệu cần định dạng</p>
+
+<p style=""></p>-&nbsp; &nbsp;Chọn Home à (Group Cells) à Format à Format Cells,
+chọn thẻ Number</span><p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(1).png" alt="" role="presentation" class="img-fluid"><br></span></p><span><p style=""></p></span><p></p><p style="text-align: center;">Hình <span lang="VI">6</span>.4. Hộp thoại Format Cells<br></p><p style="text-align: center;"></p><p>&nbsp; &nbsp; &nbsp;Dữ liệu số khi nhập vào một ô trên bảng tính phụ
+thuộc vào 2 thành phần: Loại (Category)
+và mã định dạng (Format code). Một số có thể hiển thị theo nhiều loại như Number,
+Date, Percentage, … mỗi
+loại có nhiều cách chọn mã định dạng</p>
+
+<p>&nbsp; &nbsp; &nbsp;Chọn loại thể
+hiện trong khung Category</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(3).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;">Bảng <span lang="VI">6</span>-1 Các mẫu thể hiện dữ liệu</p><p style="text-align: left;"><span style="font-size: 14.8016px;">&nbsp; &nbsp; &nbsp;Ngoài ra có thể định dạng nhanh cách hiển thị số bằng cách dùng công cụ trên thanh Formatting.<br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(4).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"></span></p><p style="text-align: center;">Hình 2.5. Định dạng hiển thị số bằng công cụ Formatting</p><p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Currency: Định dạng kiểu tiền tệ</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Percent Style: Định dạng kiểu phần trăm (%)</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Comma Style: Định dạng có dấu (,) phân
+cách</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Decrease Decimal: Giảm bớt
+một sô sler phần thập phân</p>
+
+<p><strong><a name="2.2.3.2_Định_dạng_đơn_vị_tiền_tệ"></a>2.3.2&nbsp; Định dạng đơn vị tiền tệ</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Để kiểm tra, thay đổi định dạng cách hiển thị tiền tệ
+trong môi trường Windows, Chon Start à Control Panel à Regional and Language à Additional Settings à Currency.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Currency symbol: Nhập dạng ký hiệu tiền tệ</p>-&nbsp; &nbsp; Positive currency
+format: Chọn vị trí đặt ký hiệu tiền tệ.<br><p></p><p></p><p></p><p></p><p><br></p><p><strong>2.4&nbsp; Thao tác với khối</strong></p><p><span style="font-size: calc(0.90375rem + 0.045vw);">*&nbsp; &nbsp; Đặt tên cho vùng</span></p><span>
+
+<p style="">&nbsp; &nbsp; &nbsp;Để thuận tiện cho việc thao tác trên dữ liệu, ta có thể đặt tên cho một vùng dữ liệu được chọn như sau:</p>
+
+<p style=""><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn vùng dữ liệu cần đặt tên.</p>
+
+<p style=""><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Nhập tên vùng dữ liệu vào vùng Name box. Nhấn Enter.</p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Khi một vùng dữ liệu được đặt tên, người dùng có thể sử dụng tên vùng dữ liệu thay cho địa
+chỉ vùng dữ liệu.</p><p style="text-align: center;"><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(5).png" alt="" role="presentation" class="img-fluid" style="font-size: calc(0.90375rem + 0.045vw);"><span style="font-size: calc(0.90375rem + 0.045vw);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(6).png" alt="" role="presentation" class="img-fluid" style="font-size: calc(0.90375rem + 0.045vw);"></p><p style="text-align: left;"></p><p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Sao chép dữ liệu từ ô này sang ô khác và điền dữ liệu (<b>Sử dụng chức năng Copy và Paste)</b></p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn vùng dữ liệu nguồn cần sao chép</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Chọn Home à (Group Clipboard) à Copy hoặc ấn Ctrl+C</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Di chuyển con trỏ ô đến ô đầu tiên của vùng đích</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn Home à (Group Clipboard) à Paste hoặc nhấn Ctrl+C</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span>Tự động điền dữ
+liệu (Auto Fill)</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Sử dụng tính năng AutoFill:</b></p><p><b>&nbsp; &nbsp; &nbsp; &nbsp; <img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(7).png" alt="" role="presentation" class="img-fluid"><br></b></p><p><b></b>&nbsp; &nbsp; &nbsp;Khi Drag tại Fill handle xuống phía dưới hoặc sang phải. Auto Fill sẽ tạo ra dãy các giá trị tăng
+dần dựa theo mẫu trong dãy ô đã được chọn</p><p></p><p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Sử dụng
+tính năng Fill từ Ribbon: </b>Ngoài tính năng
+AutoFill, còn có thể sử dụng lệnh Fill từ Group
+Editing để thực hiện những sao chép đơn giản.</p><p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(8).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p>+&nbsp; &nbsp; Đặt con trỏ tại ô muốn sao chép và Drag đến &nbsp;những
+ô muốn điền giá trị</p>
+
+<!--[if !vml]-->+&nbsp; &nbsp; Chọn Home à (Group Editing) à Fill, sau đó chọn lệnh Down, Right, Up, Left thích hợp với hướng muốn sao chép</span><p></p><p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Sử dụng chức năng Copy và Paste Special</b><b><span lang="VI">:</span></b><b></b></p>
+
+<p>&nbsp; &nbsp; &nbsp;Chức năng Paste Special giúp người dùng có thể sao
+chép một thành phần nào đó của dữ liệu.</p><p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(9).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p>+&nbsp; &nbsp;Chọn dữ liệu cần
+sao chép</p>
+
+<p>+&nbsp; &nbsp;Chọn Home -&gt; (Group
+Clipboard) -&gt; Copy</p>
+
+<p>+&nbsp; &nbsp;Chọn vị trí cần sao chép đến</p>
+
+<p>+&nbsp; &nbsp;Chọn tab Home -&gt; (Group Clipboard) -&gt; Paste -&gt;&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">Paste Special</span></p>
+
+<p>+&nbsp; &nbsp;Xuất hiện hộp thoại Paste Special. Chọn dạng sao chép phù hợp</p><p style="text-align: center;"><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(10).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;">Hình <span lang="VI">6</span>.6. Hộp thoại Paste Special</p><p style="text-align: center;"></p><p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Formulas: Chỉ sao chép công thức</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Values: Chỉ sao chép định dạng</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Comments: Chỉ sao chép chú thích</p>
+
+<p><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Validation: Sao chép kiểm tra tính hợp
+lệ dữ liệu</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->All except Borders: Sao chép tất cả ngoại trừ đường viền</p><p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Columm widths: Sao chép độ
+rộng cột</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Formulas and number
+formats: Sao chép công thức và
+định dạng dữ liệu số</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Values and number
+formats: Sao chép giá trị và định dạng dữ liệu số</p>-&nbsp; &nbsp; Operation: Add, Subtract, Multiply,
+Divide. Sao chép đồng thời thực
+hiện phép toán cộng, trừ, nhân, chia.<p><br></p><p>2.5&nbsp; Thao tác trên hàng và cột, ô</p><p></p><p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Thêm hàng</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn các hàng mà
+tại đó muốn chèn thêm hàng mới vòa</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Vào Home -&gt; (Group Cells) -&gt; Insert Sheet Rows hoặc R-Click, chọn Insert.</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Thêm cột</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn các cột mà
+tại đó muốn chèn thêm cột mới vào</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Vào Home -&gt; (Group Cells) -&gt; Insert Sheet Columns
+hoặc R_Click, chọn Insert</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Thêm ô mới</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn các ô hoặc đưa con trỏ đến ô mà tại đó muốn chèn
+các ô trống vào.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Chọn Home -&gt; (Group Cells) -&gt; Insert
+Cells hoặc R_Click, chọn Insert.&nbsp;</p><p>&nbsp; &nbsp; &nbsp;Xuất hiện hộp thoại
+sau:</p><p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(11).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Shift cells right: Dữ liệu trong ô hiện tại bị đẩy sang
+phải</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp; S</span>hift cells down: Dữ liệu trong ô hiện tại bị đẩy xuống dưới.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Entire row: Chèn cả dòng
+mới</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Entire column: Chèn cả cột mới</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Xóa hàng, cột, ô</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Xóa hàng/ cột: Chọn các hàng/cột cần xóa.</p>
+
+<p>&nbsp; &nbsp; &nbsp;Chọn Home -&gt; Group Cells -&gt; Delete -&gt; Delete Rows Delete Sheet Columns
+hoặc R_click chọn Delete.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Xóa ô: Chọn các ô cần xóa. Chọn Home -&gt; Group Cells -&gt; Delete -&gt; Delete Rows hoặc R_click chọn Delete.</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Thay đổi độ rộng của cột và chiều cao của hàng</p>
+
+<p>&nbsp; &nbsp; &nbsp;Có thể thay đổi độ rộng của cột hoặc chiều cao của hàng bằng cách đưa chuột đến biến giữa
+tên cột/ hàng sau đó drag chuột để thay đổi kích thước.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Home -&gt; (Group Cells) -&gt; Format</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Chọn Row Height
+để thay đổi chiều cao của hàng (hoặc chọn Column Width
+để thay đổi độ rộng của cột)</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Chọn AutoFit
+Row Height AutoFit
+Colum Width để tự động điều chỉnh kích thước vừa với dữ
+liệu.</p><p><span lang="vi" style="font-size: calc(0.90375rem + 0.045vw);">*&nbsp;&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">Canh lề dữ liệu trong ô</span></p>
+
+<p>&nbsp; &nbsp; &nbsp;Chọn Home -&gt; (Group
+Cells) -&gt; Format -&gt; Format Cells -&gt; Aligment</p><p style="text-align: center;"><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(12).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;">Hình <span lang="VI">6</span>.7. Hộp thoại Format Cell / Alignment</p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><p><b>&nbsp; &nbsp; &nbsp;Text Alignment</b>: Canh lề cho dữ
+liệu trong ô.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Horizontal: Canh lề theo chiều ngang (Left/ Right/ Center/
+Justified/ Center Across
+Selection/ Distributed/ Fill</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Vertical: Canh lề theo chiều đứng (Top/ Center/
+Bottom/ Justify/ Distributed) <b>Orientation</b>: Chọn hướng cho dữ liệu
+(Nhập số đo góc quay trong ô Degrees) <b>Text Control</b>: Điều chỉnh dữ liệu</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Wrap text: Dữ liệu tự động xuống dòng khi gặp lề phải của ô.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Shrink to fit: Dữ liệu tự động thu nhỏ kích thước cho vừa với ô</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Merge cells: Kết hợp các ô thành 1
+ô.</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Định dạng ký tự trong ô</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span>Chọn Home -&gt; Croup Cells -&gt; Format -&gt; Format Cell -&gt; Font: Chọn kiểu định dạng. (Hoặc bâm chuột phải vào ô dữ liệu cần định dạng chọn lệnh Format
+Cells)</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Kẻ khung cho bảng tính</p>-&nbsp; &nbsp; Chọn Home -&gt; Group Cells -&gt; Format -&gt; Format Cells -&gt; Border.<br><p></p><p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Xu_ly_du_lieu_trong_bang_tinh_Trang/image_(13).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"></span></p><p style="text-align: center;">Hình <span lang="VI">6</span>.8 Hộp thoại Format Cell / Border</p><p style="text-align: center;"></p><p>&nbsp; &nbsp; &nbsp;Presets: Chọn kiểu đường kẻ khung.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>None: Bỏ kẻ khung</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Inside: Kẻ các đường trong</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;</span><!--[endif]-->Outside: Kẻ đường viền xung quanh</p>
+
+<p>&nbsp; &nbsp; &nbsp;Border: Cho
+phép chọn đường kẻ trực quan theo yêu cầu.&nbsp;</p><p>&nbsp; &nbsp; &nbsp;Line: Chọn kiểu và màu đường
+kẻ khung</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Style: Chọn kiểu của đường kẻ</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Color: Màu của đường
+kẻ</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Tô nền cho bảng tính</p>
+
+<p>&nbsp; &nbsp; &nbsp;Chọn Home à (Group Cells)
+à Format à Format
+Cells à Fill</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Pattern Color: Chọn màu
+nền</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Pattern Style: Chọn các mẫu nền</p>
+
+<p>&nbsp; &nbsp; &nbsp;Có thể tô nhanh bằng cách Click nút Fill
+Color ở Group Font</p>
+
+<b><i><u>Lưu ý</u></i></b>: Có thể mở hộp thoại Format Cells bằng cách chọn vùng dữ liệu, R_click chọn Format Cells trong Shortcut
+menu.<p></p><p></p><p></p><p></p><p></p><p></p><p></p></div></div><div class="modified">Sửa lần cuối: Thứ Tư, 10 tháng 12 2025, 4:34 PM</div>
+        </body>
+        </html>
+        

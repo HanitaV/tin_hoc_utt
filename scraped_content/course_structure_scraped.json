@@ -1,0 +1,614 @@
+[
+  {
+    "name": "Chung",
+    "id": "section-0",
+    "activities": [
+      {
+        "name": "Các thông báo \nDiễn đàn",
+        "url": "https://elearning.utt.edu.vn/mod/forum/view.php?id=248",
+        "type": "forum",
+        "id": "module-248"
+      }
+    ]
+  },
+  {
+    "name": "Chương 1: Tin học căn bản",
+    "id": "section-1",
+    "activities": [
+      {
+        "name": "Chương 1 - Thông tin và biểu diễn thông tin\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=253",
+        "type": "page",
+        "id": "module-253"
+      },
+      {
+        "name": "Câu hỏi, Bài tập Chương 1\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=254",
+        "type": "page",
+        "id": "module-254"
+      },
+      {
+        "name": "Ôn tập trắc nghiệm chương 1",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=265",
+        "type": "quiz",
+        "id": "module-265"
+      },
+      {
+        "name": "Câu hỏi trắc nghiệm\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=587",
+        "type": "page",
+        "id": "module-587"
+      }
+    ]
+  },
+  {
+    "name": "Bài giảng: Sử dụng máy tính và Internet",
+    "id": "section-2",
+    "activities": [
+      {
+        "name": "Làm việc với máy tính\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=574",
+        "type": "page",
+        "id": "module-574"
+      },
+      {
+        "name": "Sử dụng Internet\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=576",
+        "type": "page",
+        "id": "module-576"
+      },
+      {
+        "name": "Bài 1\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=575",
+        "type": "page",
+        "id": "module-575"
+      },
+      {
+        "name": "Bài 2\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=582",
+        "type": "page",
+        "id": "module-582"
+      },
+      {
+        "name": "Bài 3\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=583",
+        "type": "page",
+        "id": "module-583"
+      },
+      {
+        "name": "Bài 4\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=584",
+        "type": "page",
+        "id": "module-584"
+      },
+      {
+        "name": "Bài 5\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=585",
+        "type": "page",
+        "id": "module-585"
+      },
+      {
+        "name": "Bài 6\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=586",
+        "type": "page",
+        "id": "module-586"
+      },
+      {
+        "name": "Câu hỏi trắc nghiệm_ Sử dụng máy tính cơ bản\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=580",
+        "type": "page",
+        "id": "module-580"
+      },
+      {
+        "name": "Câu hỏi trắc nghiệm_ Sử dụng Internet cơ bản\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=581",
+        "type": "page",
+        "id": "module-581"
+      },
+      {
+        "name": "Ôn tập Trắc nghiệm Chương 1",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=588",
+        "type": "quiz",
+        "id": "module-588"
+      }
+    ]
+  },
+  {
+    "name": "Chương 2: CÔNG DÂN SỐ TRONG THỜI ĐẠI CÔNG NGHỆ 4.0",
+    "id": "section-3",
+    "activities": [
+      {
+        "name": "2.1. TỔNG QUAN VỀ CÔNG NGHỆ 4.0\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=262",
+        "type": "page",
+        "id": "module-262"
+      },
+      {
+        "name": "2.2. CHUYỂN ĐỔI SỐ\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=263",
+        "type": "page",
+        "id": "module-263"
+      },
+      {
+        "name": "2.3. HÀNH TRANG CÔNG DÂN SỐ",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=264",
+        "type": "page",
+        "id": "module-264"
+      },
+      {
+        "name": "Ôn tập Trắc nghiệm chương 2",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=266",
+        "type": "quiz",
+        "id": "module-266"
+      },
+      {
+        "name": "Ôn tập Trắc nghiệm Chương 2",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=589",
+        "type": "quiz",
+        "id": "module-589"
+      }
+    ]
+  },
+  {
+    "name": "Chương 3. Hệ điều hành Windows",
+    "id": "section-4",
+    "activities": [
+      {
+        "name": "Tài liệu hướng dẫn thực hành Windows \nFile",
+        "url": "https://elearning.utt.edu.vn/mod/resource/view.php?id=276",
+        "type": "resource",
+        "id": "module-276"
+      },
+      {
+        "name": "Tổng hợp câu hỏi trắc nghiệm - Windows \nFile",
+        "url": "https://elearning.utt.edu.vn/mod/resource/view.php?id=277",
+        "type": "resource",
+        "id": "module-277"
+      },
+      {
+        "name": "Ôn tập trắc nghiệm Chương 3 - Sử dụng windows",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=278",
+        "type": "quiz",
+        "id": "module-278"
+      },
+      {
+        "name": "Ôn tập Trắc nghiệm Chương 3",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=590",
+        "type": "quiz",
+        "id": "module-590"
+      }
+    ]
+  },
+  {
+    "name": "Chương 4: Xử lý văn bản cơ bản",
+    "id": "section-5",
+    "activities": [
+      {
+        "name": "Tổng quan về MS Word\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=535",
+        "type": "page",
+        "id": "module-535"
+      },
+      {
+        "name": "Các thao tác soạn thảo cơ bản\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=536",
+        "type": "page",
+        "id": "module-536"
+      },
+      {
+        "name": "Định dạng văn bản\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=537",
+        "type": "page",
+        "id": "module-537"
+      },
+      {
+        "name": "Định dạng trang in",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=538",
+        "type": "page",
+        "id": "module-538"
+      },
+      {
+        "name": "Lập bảng biểu\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=539",
+        "type": "page",
+        "id": "module-539"
+      },
+      {
+        "name": "Chèn hình ảnh và công thức toán học\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=540",
+        "type": "page",
+        "id": "module-540"
+      },
+      {
+        "name": "Các công cụ phụ trợ\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=541",
+        "type": "page",
+        "id": "module-541"
+      },
+      {
+        "name": "Các chức năng nâng cao\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=542",
+        "type": "page",
+        "id": "module-542"
+      },
+      {
+        "name": "Bài tập Word 1\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=543",
+        "type": "page",
+        "id": "module-543"
+      },
+      {
+        "name": "Bài tập Word 2\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=555",
+        "type": "page",
+        "id": "module-555"
+      },
+      {
+        "name": "Bài tập Word 3\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=556",
+        "type": "page",
+        "id": "module-556"
+      },
+      {
+        "name": "Bài tập Word 4\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=557",
+        "type": "page",
+        "id": "module-557"
+      },
+      {
+        "name": "Bài tập Word 5\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=558",
+        "type": "page",
+        "id": "module-558"
+      },
+      {
+        "name": "Bài tập Word 6\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=559",
+        "type": "page",
+        "id": "module-559"
+      },
+      {
+        "name": "Bài tập Word 7\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=560",
+        "type": "page",
+        "id": "module-560"
+      },
+      {
+        "name": "Bài tập Word 8\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=561",
+        "type": "page",
+        "id": "module-561"
+      },
+      {
+        "name": "Câu hỏi trắc nghiệm_ Xử lý văn bản cơ bản\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=577",
+        "type": "page",
+        "id": "module-577"
+      },
+      {
+        "name": "Ôn tập Trắc nghiệm Chương 4",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=591",
+        "type": "quiz",
+        "id": "module-591"
+      }
+    ]
+  },
+  {
+    "name": "Hướng dẫn thực hành MS Word",
+    "id": "section-6",
+    "activities": [
+      {
+        "name": "Hướng dẫn định dạng văn bản 1\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=255",
+        "type": "page",
+        "id": "module-255"
+      },
+      {
+        "name": "Hướng dẫn thực hành Word 2\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=256",
+        "type": "page",
+        "id": "module-256"
+      },
+      {
+        "name": "Hướng dẫn thực hành Word theo mẫu\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=257",
+        "type": "page",
+        "id": "module-257"
+      },
+      {
+        "name": "Hướng dẫn thực hành MS Word\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=258",
+        "type": "page",
+        "id": "module-258"
+      },
+      {
+        "name": "Hướng dẫn thực hành theo mẫu\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=259",
+        "type": "page",
+        "id": "module-259"
+      },
+      {
+        "name": "Bài tập thực hành Word tổng hợp",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=291",
+        "type": "assign",
+        "id": "module-291"
+      }
+    ]
+  },
+  {
+    "name": "Nộp Bài tập",
+    "id": "section-7",
+    "activities": [
+      {
+        "name": "76DCFT21 - Bài tập excel",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=299",
+        "type": "assign",
+        "id": "module-299"
+      },
+      {
+        "name": "76DCTT21 - Nộp bài tập",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=598",
+        "type": "assign",
+        "id": "module-598"
+      },
+      {
+        "name": "76DCAT21 - Nộp bài tập",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=610",
+        "type": "assign",
+        "id": "module-610"
+      },
+      {
+        "name": "76DCCD21 - Nộp bài tập",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=609",
+        "type": "assign",
+        "id": "module-609"
+      },
+      {
+        "name": "76DCDT21 - Nộp bài tập",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=608",
+        "type": "assign",
+        "id": "module-608"
+      },
+      {
+        "name": "76DCDTJ2 - Nộp bài tập",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=607",
+        "type": "assign",
+        "id": "module-607"
+      },
+      {
+        "name": "76DCMN22 - Nộp bài tập",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=606",
+        "type": "assign",
+        "id": "module-606"
+      },
+      {
+        "name": "76DCXQ22 - Nộp bài tập",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=605",
+        "type": "assign",
+        "id": "module-605"
+      },
+      {
+        "name": "Lớp 76DCLD21 - Nộp bài tập Excel",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=292",
+        "type": "assign",
+        "id": "module-292"
+      },
+      {
+        "name": "Lớp 76DCLDA2 $ 76DCKQA2 - Bài 2\nBài tập",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=296",
+        "type": "assign",
+        "id": "module-296"
+      },
+      {
+        "name": "Lớp 76DCLD21 - Nộp bài tập excel ngày 5/11/2005",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=297",
+        "type": "assign",
+        "id": "module-297"
+      },
+      {
+        "name": "76DCCN21-Bài tập excel",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=298",
+        "type": "assign",
+        "id": "module-298"
+      },
+      {
+        "name": "Bài tập Excel - Lớp 76DCHT21",
+        "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=517",
+        "type": "assign",
+        "id": "module-517"
+      }
+    ]
+  },
+  {
+    "name": "Chương 5: Sử dụng bảng tính",
+    "id": "section-8",
+    "activities": [
+      {
+        "name": "Bài giảng Excel\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=526",
+        "type": "page",
+        "id": "module-526"
+      },
+      {
+        "name": "Tổng quan về Excel 2019\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=548",
+        "type": "page",
+        "id": "module-548"
+      },
+      {
+        "name": "Xử lý dữ liệu trong bảng tính\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=549",
+        "type": "page",
+        "id": "module-549"
+      },
+      {
+        "name": "Một số hàm thông dụng trong Excel\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=550",
+        "type": "page",
+        "id": "module-550"
+      },
+      {
+        "name": "Cơ sở dữ liệu\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=551",
+        "type": "page",
+        "id": "module-551"
+      },
+      {
+        "name": "Định dạng và in ấn bảng tính\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=552",
+        "type": "page",
+        "id": "module-552"
+      },
+      {
+        "name": "Trình diễn dữ liệu\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=553",
+        "type": "page",
+        "id": "module-553"
+      },
+      {
+        "name": "Bài tập Excel 1\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=554",
+        "type": "page",
+        "id": "module-554"
+      },
+      {
+        "name": "Bài tập Excel 2\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=563",
+        "type": "page",
+        "id": "module-563"
+      },
+      {
+        "name": "Bài tập Excel 3\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=564",
+        "type": "page",
+        "id": "module-564"
+      },
+      {
+        "name": "Bài tập Excel 4\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=565",
+        "type": "page",
+        "id": "module-565"
+      },
+      {
+        "name": "Bài tập Excel 5\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=566",
+        "type": "page",
+        "id": "module-566"
+      },
+      {
+        "name": "Bài tập Excel 6\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=567",
+        "type": "page",
+        "id": "module-567"
+      },
+      {
+        "name": "Bài tập Excel 7\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=568",
+        "type": "page",
+        "id": "module-568"
+      },
+      {
+        "name": "Bài tập Excel 8\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=569",
+        "type": "page",
+        "id": "module-569"
+      },
+      {
+        "name": "Bài tập Excel 9\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=570",
+        "type": "page",
+        "id": "module-570"
+      },
+      {
+        "name": "Bài tập Excel 10\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=571",
+        "type": "page",
+        "id": "module-571"
+      },
+      {
+        "name": "Bài tập Excel 11\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=572",
+        "type": "page",
+        "id": "module-572"
+      },
+      {
+        "name": "Bài tập Excel 12\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=573",
+        "type": "page",
+        "id": "module-573"
+      },
+      {
+        "name": "Câu hỏi trắc nghiệm_ Sử dụng bảng tính cơ bản\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=578",
+        "type": "page",
+        "id": "module-578"
+      },
+      {
+        "name": "Ôn tập Trắc nghiệm Chương 5",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=592",
+        "type": "quiz",
+        "id": "module-592"
+      }
+    ]
+  },
+  {
+    "name": "Chương 6: Sử dụng trình chiếu",
+    "id": "section-9",
+    "activities": [
+      {
+        "name": "Giới thiệu\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=544",
+        "type": "page",
+        "id": "module-544"
+      },
+      {
+        "name": "Tổng quan giao diện PowerPoint\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=545",
+        "type": "page",
+        "id": "module-545"
+      },
+      {
+        "name": "Thiết lập hiệu ứng cho trang trình chiếu (Presentation)",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=546",
+        "type": "page",
+        "id": "module-546"
+      },
+      {
+        "name": "Bài tập PP1\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=547",
+        "type": "page",
+        "id": "module-547"
+      },
+      {
+        "name": "Bài tập PP2\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=562",
+        "type": "page",
+        "id": "module-562"
+      },
+      {
+        "name": "Câu hỏi trắc nghiệm_ Sử dụng trình chiếu cơ bản\nTrang",
+        "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=579",
+        "type": "page",
+        "id": "module-579"
+      },
+      {
+        "name": "Ôn tập Trắc nghiệm Chương 6",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=593",
+        "type": "quiz",
+        "id": "module-593"
+      }
+    ]
+  },
+  {
+    "name": "Ôn tập trắc nghiệm",
+    "id": "section-10",
+    "activities": [
+      {
+        "name": "Ôn thi kết thúc học phần\nTrắc nghiệm",
+        "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=594",
+        "type": "quiz",
+        "id": "module-594"
+      }
+    ]
+  }
+]

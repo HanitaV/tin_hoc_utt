@@ -1,0 +1,730 @@
+[
+  {
+    "name": "Các thông báo \nDiễn đàn",
+    "url": "https://elearning.utt.edu.vn/mod/forum/view.php?id=248",
+    "type": "forum",
+    "id": "module-248",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Chương 1 - Thông tin và biểu diễn thông tin\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=253",
+    "type": "page",
+    "id": "module-253",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Chuong_1_-_Thong_tin_va_bieu_dien_thong_tin_Trang.html"
+  },
+  {
+    "name": "Câu hỏi, Bài tập Chương 1\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=254",
+    "type": "page",
+    "id": "module-254",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cau_hoi,_Bai_tap_Chuong_1_Trang.html"
+  },
+  {
+    "name": "Ôn tập trắc nghiệm chương 1",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=265",
+    "type": "quiz",
+    "id": "module-265",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Câu hỏi trắc nghiệm\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=587",
+    "type": "page",
+    "id": "module-587",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cau_hoi_trac_nghiem_Trang.html"
+  },
+  {
+    "name": "Làm việc với máy tính\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=574",
+    "type": "page",
+    "id": "module-574",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Lam_viec_voi_may_tinh_Trang.html"
+  },
+  {
+    "name": "Sử dụng Internet\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=576",
+    "type": "page",
+    "id": "module-576",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Su_dung_Internet_Trang.html"
+  },
+  {
+    "name": "Bài 1\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=575",
+    "type": "page",
+    "id": "module-575",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_1_Trang.html"
+  },
+  {
+    "name": "Bài 2\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=582",
+    "type": "page",
+    "id": "module-582",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_2_Trang.html"
+  },
+  {
+    "name": "Bài 3\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=583",
+    "type": "page",
+    "id": "module-583",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_3_Trang.html"
+  },
+  {
+    "name": "Bài 4\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=584",
+    "type": "page",
+    "id": "module-584",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_4_Trang.html"
+  },
+  {
+    "name": "Bài 5\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=585",
+    "type": "page",
+    "id": "module-585",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_5_Trang.html"
+  },
+  {
+    "name": "Bài 6\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=586",
+    "type": "page",
+    "id": "module-586",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_6_Trang.html"
+  },
+  {
+    "name": "Câu hỏi trắc nghiệm_ Sử dụng máy tính cơ bản\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=580",
+    "type": "page",
+    "id": "module-580",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cau_hoi_trac_nghiem__Su_dung_may_tinh_co_ban_Trang.html"
+  },
+  {
+    "name": "Câu hỏi trắc nghiệm_ Sử dụng Internet cơ bản\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=581",
+    "type": "page",
+    "id": "module-581",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cau_hoi_trac_nghiem__Su_dung_Internet_co_ban_Trang.html"
+  },
+  {
+    "name": "Ôn tập Trắc nghiệm Chương 1",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=588",
+    "type": "quiz",
+    "id": "module-588",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "2.1. TỔNG QUAN VỀ CÔNG NGHỆ 4.0\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=262",
+    "type": "page",
+    "id": "module-262",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\2.1._TONG_QUAN_VE_CONG_NGHE_4.0_Trang.html"
+  },
+  {
+    "name": "2.2. CHUYỂN ĐỔI SỐ\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=263",
+    "type": "page",
+    "id": "module-263",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\2.2._CHUYEN_OI_SO_Trang.html"
+  },
+  {
+    "name": "2.3. HÀNH TRANG CÔNG DÂN SỐ",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=264",
+    "type": "page",
+    "id": "module-264",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\2.3._HANH_TRANG_CONG_DAN_SO.html"
+  },
+  {
+    "name": "Ôn tập Trắc nghiệm chương 2",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=266",
+    "type": "quiz",
+    "id": "module-266",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Ôn tập Trắc nghiệm Chương 2",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=589",
+    "type": "quiz",
+    "id": "module-589",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Tài liệu hướng dẫn thực hành Windows \nFile",
+    "url": "https://elearning.utt.edu.vn/mod/resource/view.php?id=276",
+    "type": "resource",
+    "id": "module-276",
+    "status": "error",
+    "error": "Timeout 30000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================"
+  },
+  {
+    "name": "Tổng hợp câu hỏi trắc nghiệm - Windows \nFile",
+    "url": "https://elearning.utt.edu.vn/mod/resource/view.php?id=277",
+    "type": "resource",
+    "id": "module-277",
+    "status": "error",
+    "error": "Timeout 30000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================"
+  },
+  {
+    "name": "Ôn tập trắc nghiệm Chương 3 - Sử dụng windows",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=278",
+    "type": "quiz",
+    "id": "module-278",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Ôn tập Trắc nghiệm Chương 3",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=590",
+    "type": "quiz",
+    "id": "module-590",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Tổng quan về MS Word\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=535",
+    "type": "page",
+    "id": "module-535",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Tong_quan_ve_MS_Word_Trang.html"
+  },
+  {
+    "name": "Các thao tác soạn thảo cơ bản\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=536",
+    "type": "page",
+    "id": "module-536",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cac_thao_tac_soan_thao_co_ban_Trang.html"
+  },
+  {
+    "name": "Định dạng văn bản\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=537",
+    "type": "page",
+    "id": "module-537",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\inh_dang_van_ban_Trang.html"
+  },
+  {
+    "name": "Định dạng trang in",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=538",
+    "type": "page",
+    "id": "module-538",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\inh_dang_trang_in.html"
+  },
+  {
+    "name": "Lập bảng biểu\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=539",
+    "type": "page",
+    "id": "module-539",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Lap_bang_bieu_Trang.html"
+  },
+  {
+    "name": "Chèn hình ảnh và công thức toán học\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=540",
+    "type": "page",
+    "id": "module-540",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Chen_hinh_anh_va_cong_thuc_toan_hoc_Trang.html"
+  },
+  {
+    "name": "Các công cụ phụ trợ\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=541",
+    "type": "page",
+    "id": "module-541",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cac_cong_cu_phu_tro_Trang.html"
+  },
+  {
+    "name": "Các chức năng nâng cao\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=542",
+    "type": "page",
+    "id": "module-542",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cac_chuc_nang_nang_cao_Trang.html"
+  },
+  {
+    "name": "Bài tập Word 1\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=543",
+    "type": "page",
+    "id": "module-543",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Word_1_Trang.html"
+  },
+  {
+    "name": "Bài tập Word 2\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=555",
+    "type": "page",
+    "id": "module-555",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Word_2_Trang.html"
+  },
+  {
+    "name": "Bài tập Word 3\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=556",
+    "type": "page",
+    "id": "module-556",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Word_3_Trang.html"
+  },
+  {
+    "name": "Bài tập Word 4\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=557",
+    "type": "page",
+    "id": "module-557",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Word_4_Trang.html"
+  },
+  {
+    "name": "Bài tập Word 5\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=558",
+    "type": "page",
+    "id": "module-558",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Word_5_Trang.html"
+  },
+  {
+    "name": "Bài tập Word 6\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=559",
+    "type": "page",
+    "id": "module-559",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Word_6_Trang.html"
+  },
+  {
+    "name": "Bài tập Word 7\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=560",
+    "type": "page",
+    "id": "module-560",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Word_7_Trang.html"
+  },
+  {
+    "name": "Bài tập Word 8\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=561",
+    "type": "page",
+    "id": "module-561",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Word_8_Trang.html"
+  },
+  {
+    "name": "Câu hỏi trắc nghiệm_ Xử lý văn bản cơ bản\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=577",
+    "type": "page",
+    "id": "module-577",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cau_hoi_trac_nghiem__Xu_ly_van_ban_co_ban_Trang.html"
+  },
+  {
+    "name": "Ôn tập Trắc nghiệm Chương 4",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=591",
+    "type": "quiz",
+    "id": "module-591",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Hướng dẫn định dạng văn bản 1\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=255",
+    "type": "page",
+    "id": "module-255",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Huong_dan_inh_dang_van_ban_1_Trang.html"
+  },
+  {
+    "name": "Hướng dẫn thực hành Word 2\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=256",
+    "type": "page",
+    "id": "module-256",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Huong_dan_thuc_hanh_Word_2_Trang.html"
+  },
+  {
+    "name": "Hướng dẫn thực hành Word theo mẫu\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=257",
+    "type": "page",
+    "id": "module-257",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Huong_dan_thuc_hanh_Word_theo_mau_Trang.html"
+  },
+  {
+    "name": "Hướng dẫn thực hành MS Word\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=258",
+    "type": "page",
+    "id": "module-258",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Huong_dan_thuc_hanh_MS_Word_Trang.html"
+  },
+  {
+    "name": "Hướng dẫn thực hành theo mẫu\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=259",
+    "type": "page",
+    "id": "module-259",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Huong_dan_thuc_hanh_theo_mau_Trang.html"
+  },
+  {
+    "name": "Bài tập thực hành Word tổng hợp",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=291",
+    "type": "assign",
+    "id": "module-291",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCFT21 - Bài tập excel",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=299",
+    "type": "assign",
+    "id": "module-299",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCTT21 - Nộp bài tập",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=598",
+    "type": "assign",
+    "id": "module-598",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCAT21 - Nộp bài tập",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=610",
+    "type": "assign",
+    "id": "module-610",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCCD21 - Nộp bài tập",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=609",
+    "type": "assign",
+    "id": "module-609",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCDT21 - Nộp bài tập",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=608",
+    "type": "assign",
+    "id": "module-608",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCDTJ2 - Nộp bài tập",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=607",
+    "type": "assign",
+    "id": "module-607",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCMN22 - Nộp bài tập",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=606",
+    "type": "assign",
+    "id": "module-606",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCXQ22 - Nộp bài tập",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=605",
+    "type": "assign",
+    "id": "module-605",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Lớp 76DCLD21 - Nộp bài tập Excel",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=292",
+    "type": "assign",
+    "id": "module-292",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Lớp 76DCLDA2 $ 76DCKQA2 - Bài 2\nBài tập",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=296",
+    "type": "assign",
+    "id": "module-296",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Lớp 76DCLD21 - Nộp bài tập excel ngày 5/11/2005",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=297",
+    "type": "assign",
+    "id": "module-297",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "76DCCN21-Bài tập excel",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=298",
+    "type": "assign",
+    "id": "module-298",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Bài tập Excel - Lớp 76DCHT21",
+    "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=517",
+    "type": "assign",
+    "id": "module-517",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Bài giảng Excel\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=526",
+    "type": "page",
+    "id": "module-526",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_giang_Excel_Trang.html"
+  },
+  {
+    "name": "Tổng quan về Excel 2019\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=548",
+    "type": "page",
+    "id": "module-548",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Tong_quan_ve_Excel_2019_Trang.html"
+  },
+  {
+    "name": "Xử lý dữ liệu trong bảng tính\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=549",
+    "type": "page",
+    "id": "module-549",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Xu_ly_du_lieu_trong_bang_tinh_Trang.html"
+  },
+  {
+    "name": "Một số hàm thông dụng trong Excel\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=550",
+    "type": "page",
+    "id": "module-550",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Mot_so_ham_thong_dung_trong_Excel_Trang.html"
+  },
+  {
+    "name": "Cơ sở dữ liệu\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=551",
+    "type": "page",
+    "id": "module-551",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Co_so_du_lieu_Trang.html"
+  },
+  {
+    "name": "Định dạng và in ấn bảng tính\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=552",
+    "type": "page",
+    "id": "module-552",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\inh_dang_va_in_an_bang_tinh_Trang.html"
+  },
+  {
+    "name": "Trình diễn dữ liệu\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=553",
+    "type": "page",
+    "id": "module-553",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Trinh_dien_du_lieu_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 1\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=554",
+    "type": "page",
+    "id": "module-554",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_1_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 2\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=563",
+    "type": "page",
+    "id": "module-563",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_2_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 3\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=564",
+    "type": "page",
+    "id": "module-564",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_3_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 4\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=565",
+    "type": "page",
+    "id": "module-565",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_4_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 5\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=566",
+    "type": "page",
+    "id": "module-566",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_5_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 6\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=567",
+    "type": "page",
+    "id": "module-567",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_6_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 7\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=568",
+    "type": "page",
+    "id": "module-568",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_7_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 8\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=569",
+    "type": "page",
+    "id": "module-569",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_8_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 9\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=570",
+    "type": "page",
+    "id": "module-570",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_9_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 10\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=571",
+    "type": "page",
+    "id": "module-571",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_10_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 11\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=572",
+    "type": "page",
+    "id": "module-572",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_11_Trang.html"
+  },
+  {
+    "name": "Bài tập Excel 12\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=573",
+    "type": "page",
+    "id": "module-573",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_Excel_12_Trang.html"
+  },
+  {
+    "name": "Câu hỏi trắc nghiệm_ Sử dụng bảng tính cơ bản\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=578",
+    "type": "page",
+    "id": "module-578",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cau_hoi_trac_nghiem__Su_dung_bang_tinh_co_ban_Trang.html"
+  },
+  {
+    "name": "Ôn tập Trắc nghiệm Chương 5",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=592",
+    "type": "quiz",
+    "id": "module-592",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Giới thiệu\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=544",
+    "type": "page",
+    "id": "module-544",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Gioi_thieu_Trang.html"
+  },
+  {
+    "name": "Tổng quan giao diện PowerPoint\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=545",
+    "type": "page",
+    "id": "module-545",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Tong_quan_giao_dien_PowerPoint_Trang.html"
+  },
+  {
+    "name": "Thiết lập hiệu ứng cho trang trình chiếu (Presentation)",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=546",
+    "type": "page",
+    "id": "module-546",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Thiet_lap_hieu_ung_cho_trang_trinh_chieu_(Presentation).html"
+  },
+  {
+    "name": "Bài tập PP1\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=547",
+    "type": "page",
+    "id": "module-547",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_PP1_Trang.html"
+  },
+  {
+    "name": "Bài tập PP2\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=562",
+    "type": "page",
+    "id": "module-562",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Bai_tap_PP2_Trang.html"
+  },
+  {
+    "name": "Câu hỏi trắc nghiệm_ Sử dụng trình chiếu cơ bản\nTrang",
+    "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=579",
+    "type": "page",
+    "id": "module-579",
+    "status": "success",
+    "local_path": "scraped_content\\pages\\Cau_hoi_trac_nghiem__Su_dung_trinh_chieu_co_ban_Trang.html"
+  },
+  {
+    "name": "Ôn tập Trắc nghiệm Chương 6",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=593",
+    "type": "quiz",
+    "id": "module-593",
+    "status": "skipped",
+    "reason": "type_ignored"
+  },
+  {
+    "name": "Ôn thi kết thúc học phần\nTrắc nghiệm",
+    "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=594",
+    "type": "quiz",
+    "id": "module-594",
+    "status": "skipped",
+    "reason": "type_ignored"
+  }
+]

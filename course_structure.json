@@ -1,0 +1,125 @@
+{
+  "courseName": "Tin học K76 - Đợt 1",
+  "courseUrl": "https://elearning.utt.edu.vn/course/view.php?id=33",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Chung",
+      "activities": [
+        {"name": "Các thông báo", "url": "https://elearning.utt.edu.vn/mod/forum/view.php?id=248", "type": "forum", "skip": true}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chương 1: Tin học căn bản",
+      "activities": [
+        {"name": "Chương 1 - Thông tin và biểu diễn thông tin", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=253", "type": "page"},
+        {"name": "Câu hỏi, Bài tập Chương 1", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=254", "type": "page"},
+        {"name": "Câu hỏi trắc nghiệm", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=587", "type": "page"},
+        {"name": "Ôn tập trắc nghiệm chương 1", "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=265", "type": "quiz", "skip": true}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bài giảng: Sử dụng máy tính và Internet",
+      "activities": [
+        {"name": "Làm việc với máy tính", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=574", "type": "page"},
+        {"name": "Bài 1 – Khởi động máy tính và kết thúc phiên làm việc", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=575", "type": "page"},
+        {"name": "Sử dụng Internet", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=576", "type": "page"},
+        {"name": "Câu hỏi trắc nghiệm_ Sử dụng máy tính cơ bản", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=580", "type": "page"},
+        {"name": "Câu hỏi trắc nghiệm_ Sử dụng Internet cơ bản", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=581", "type": "page"},
+        {"name": "Ôn tập Trắc nghiệm Chương 1", "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=588", "type": "quiz", "skip": true}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Chương 2: Công dân số trong thời đại công nghệ 4.0",
+      "activities": [
+        {"name": "2.1. Tổng quan về công nghệ 4.0", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=262", "type": "page"},
+        {"name": "2.2. Chuyển đổi số", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=263", "type": "page"},
+        {"name": "2.3. Hành trang công dân số", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=264", "type": "page"},
+        {"name": "Ôn tập Trắc nghiệm chương 2", "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=266", "type": "quiz", "skip": true}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Chương 3: Hệ điều hành Windows",
+      "activities": [
+        {"name": "Tài liệu hướng dẫn thực hành Windows", "url": "https://elearning.utt.edu.vn/mod/resource/view.php?id=276", "type": "resource"},
+        {"name": "Tổng hợp câu hỏi trắc nghiệm - Windows", "url": "https://elearning.utt.edu.vn/mod/resource/view.php?id=277", "type": "resource"},
+        {"name": "Quiz Windows", "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=278", "type": "quiz", "skip": true},
+        {"name": "Quiz Windows 2", "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=590", "type": "quiz", "skip": true}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Chương 4: Xử lý văn bản cơ bản (MS Word)",
+      "activities": [
+        {"name": "Tổng quan MS Word", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=535", "type": "page"},
+        {"name": "Định dạng văn bản", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=536", "type": "page"},
+        {"name": "Định dạng đoạn văn", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=537", "type": "page"},
+        {"name": "Bullets và Numbering", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=538", "type": "page"},
+        {"name": "Bảng biểu", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=539", "type": "page"},
+        {"name": "Chia cột, Drop Cap, Tab", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=540", "type": "page"},
+        {"name": "Header Footer Page Number", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=541", "type": "page"},
+        {"name": "Chèn ảnh và đối tượng", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=542", "type": "page"},
+        {"name": "Bài tập Word 1", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=543", "type": "page"},
+        {"name": "Câu hỏi trắc nghiệm_ Xử lý văn bản cơ bản", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=577", "type": "page"}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Hướng dẫn thực hành MS Word",
+      "activities": [
+        {"name": "Hướng dẫn thực hành 1", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=255", "type": "page"},
+        {"name": "Hướng dẫn thực hành 2", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=256", "type": "page"},
+        {"name": "Hướng dẫn thực hành 3", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=257", "type": "page"},
+        {"name": "Hướng dẫn thực hành 4", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=258", "type": "page"},
+        {"name": "Hướng dẫn thực hành 5", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=259", "type": "page"},
+        {"name": "Bài tập thực hành Word tổng hợp", "url": "https://elearning.utt.edu.vn/mod/assign/view.php?id=291", "type": "assignment", "skip": true}
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Nộp Bài tập",
+      "skip": true,
+      "activities": []
+    },
+    {
+      "id": 9,
+      "name": "Chương 5: Sử dụng bảng tính (Excel)",
+      "activities": [
+        {"name": "Tổng quan Excel", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=526", "type": "page"},
+        {"name": "Nhập dữ liệu và định dạng", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=527", "type": "page"},
+        {"name": "Công thức và hàm cơ bản", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=528", "type": "page"},
+        {"name": "Các hàm thống kê", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=529", "type": "page"},
+        {"name": "Hàm điều kiện IF", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=530", "type": "page"},
+        {"name": "Hàm tìm kiếm VLOOKUP HLOOKUP", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=531", "type": "page"},
+        {"name": "Cơ sở dữ liệu trong Excel", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=532", "type": "page"},
+        {"name": "Biểu đồ trong Excel", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=533", "type": "page"},
+        {"name": "In ấn trong Excel", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=534", "type": "page"},
+        {"name": "Bài tập Excel 1", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=554", "type": "page"},
+        {"name": "Câu hỏi trắc nghiệm_ Sử dụng bảng tính cơ bản", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=578", "type": "page"}
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Chương 6: Sử dụng trình chiếu (PowerPoint)",
+      "activities": [
+        {"name": "Giới thiệu PowerPoint", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=544", "type": "page"},
+        {"name": "Tổng quan giao diện", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=545", "type": "page"},
+        {"name": "Thiết lập hiệu ứng", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=546", "type": "page"},
+        {"name": "Bài tập PowerPoint 1", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=547", "type": "page"},
+        {"name": "Bài tập PowerPoint 2", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=562", "type": "page"},
+        {"name": "Câu hỏi trắc nghiệm_ Sử dụng trình chiếu cơ bản", "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=579", "type": "page"}
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Ôn tập trắc nghiệm",
+      "activities": [
+        {"name": "Ôn thi kết thúc học phần", "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=594", "type": "quiz", "skip": true}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+
+        <html>
+        <head><title>Một số hàm thông dụng trong Excel
+Trang</title><meta charset='utf-8'><link rel="stylesheet" href="../page_theme.css">
+</head>
+        <body>
+            <h1>Một số hàm thông dụng trong Excel
+Trang</h1>
+            <h3>Section: Chương 5: Sử dụng bảng tính</h3>
+            <hr>
+            <div class="box py-3 generalbox center clearfix"><div class="no-overflow"><p dir="ltr" style="text-align: left;"><strong>3.1&nbsp; Quy tắc sử dụng hàm</strong></p><p dir="ltr" style="text-align: left;">&nbsp; &nbsp; &nbsp;Cú pháp chung:</p><p dir="ltr" style="text-align: left;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image.png" alt="" role="presentation" class="img-fluid"><br></p><p dir="ltr" style="text-align: left;"><!--[if !vml]-->
+ </p><p>&nbsp; &nbsp; &nbsp;Đa số các hàm của Excel đều có đối số, nhưng cũng có những hàm không có đối số. Nếu
+hàm có nhiều đối số thì giữa các đối số phải được phân cách nhau bằng ký hiệu
+phân cách. Các ký hiệu phân cách được quy định trong
+Control Panel. Trong Excel mặc định ký hiệu phân cách là dấu phẩy (,).</p><br><p></p><p><strong>3.2&nbsp; Cách nhập hàm</strong></p><p></p><p>&nbsp; &nbsp; &nbsp;Nếu công thức bắt đầu là một hàm thì phải có dấu bằng
+(=), hoặc dấu @, hoặc dấu cộng (+) ở
+phía trước. Nếu hàm là đối số của một hàm khác thì không cần nhập các dấu trên. Có 2 cách nhập hàm</p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]--><strong>Cách 1</strong>: Nhập trực tiếp từ bàn phím</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp;&nbsp;&nbsp;&nbsp;</span>Đặt con trỏ chuột tại ô muốn nhập hàm</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp;&nbsp;&nbsp;&nbsp;</span>Nhập dấu bằng (=) hoặc dấu @ hoặc dấu cộng (+)</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Nhập tên hàm cùng các đối số
+theo đúng cú pháp</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Nhấn Enter để kết thúc.</p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]--><strong>Cách 2</strong>: Thông qua hộp thoại Insert Function</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Đặt con trỏ chuột tại ô muốn nhập hàm</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn ribbon Formulas, chọn Insert Function
+<img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(1).png" alt="" role="presentation" class="img-fluid">&nbsp;hoặc Shift+F3</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn Group hàm trong danh sách Function category</p>
+
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp;&nbsp;&nbsp;&nbsp;</span>Chọn hàm ần sử dụng trong
+mục Select a function</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Click OK để chọn hàm</p>
+
+<p><!--[if !supportLists]--><span lang="vi">•&nbsp;&nbsp;&nbsp;&nbsp;</span>Tùy theo hàm được chọn. Excel sẽ mở hộp thoại kế tiếp
+cho phép nhập các đối số (nhập hoặc
+quét chọn). Tiến hành nhập các đối số. Ví dụ danh sách các đối số cần nhập của IF.</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(2).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p style="text-align: center;">Hình <span lang="VI">6</span>.9 Hộp thoại Insert Function</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(3).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"></span></p><p style="text-align: center;">Hình 2.10 Hộp thoại Function Arguments</p><p style="text-align: left;"><strong>&nbsp; &nbsp; &nbsp;Các loại địa chỉ và <a class="autolink" title="Các thông báo" href="https://elearning.utt.edu.vn/mod/forum/view.php?id=248">các thông báo</a> lỗi thường gặp</strong></p><p style="text-align: left;"><strong><em>&nbsp; &nbsp; &nbsp;Địa chỉ tương đối</em></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Là địa chỉ tự động cập nhật theo sự thay đổi của địa chỉ ô nguồn khi thực
+hiện thao tác Copy công thức để
+bảo toàn mối quan hệ
+tương đối giữa các ô trong công thức.</p>
+<em>&nbsp; &nbsp; &nbsp;Quy ước</em>: Địa chỉ tương đối của ô có dạng<p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(4).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><p><em>&nbsp; &nbsp; &nbsp;Ví dụ: </em>Địa chỉ ô C3 được tự động cập nhật theo địa chỉ của ô nguồn C2.</p><p style="text-align: center;">&nbsp;<img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(5).png" alt="" role="presentation" class="img-fluid">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(7).png" alt="" role="presentation" class="img-fluid"><br></p><strong><em>&nbsp; &nbsp; &nbsp;Địa chỉ tuyệt đối</em></strong><p></p><p></p><p></p><p></p><p><strong><em></em></strong></p><p><span><span style="">&nbsp; &nbsp; &nbsp;Là địa chỉ không tự động
+thay đổi theo địa chỉ
+của ô nguồn khi copy công thức.</span></span></p><span><span style="">
+
+<p style=""><!--[if !vml]-->
+ </p><span style="">&nbsp; &nbsp; &nbsp;Quy ước: </span>Địa chỉ tuyệt đối của ô có dạng<p style=""></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(8).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><p><em>&nbsp; &nbsp; &nbsp;Ví dụ: </em>Địa
+chỉ ô C1 không bị thay đổi khi copy công
+thức</p><p style="text-align: center;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(9).png" alt="" role="presentation" class="img-fluid">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(10).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: left;"><span style="font-size: 14.8016px;"><strong><em>&nbsp; &nbsp; &nbsp;Địa chỉ hỗn hợp</em></strong></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><p>&nbsp; &nbsp; &nbsp;Mà địa chỉ mà nó chỉ thay đổi một trong hai thành phần (hàng hoặc cột) khi copy công thức.</p>
+
+<p><em>&nbsp; &nbsp; &nbsp;Quy ước: </em>Địa chỉ hỗn hợp có dạng:</p><p style="text-align: center;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(11).png" alt="" role="presentation" class="img-fluid"><br></p><p><em>&nbsp; &nbsp; &nbsp;Ví dụ: </em>Khi copy công thức từ ô D3 sang ô F3 thì cột B vẫn không thay đổi (do cột B đã được
+cố định bởi dấu tương
+đối $.</p><p style="text-align: center;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(12).png" alt="" role="presentation" class="img-fluid">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(13).png" alt="" role="presentation" class="img-fluid"><br></p><p><strong>&nbsp; &nbsp; &nbsp;Cách chuyển đổi giữa các địa chỉ</strong></p><p></p><div>
+
+<p>&nbsp; &nbsp; &nbsp;Sử
+dụng phím chức năng F4 để thực hiện chuyển đổi nhanh giữa các loại địa chỉ</p>
+
+<p><em>Ví dụ:&nbsp;&nbsp;<img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(14).png" alt="" role="presentation" class="img-fluid"></em></p><p><em><strong>&nbsp; &nbsp; &nbsp;<a class="autolink" title="Các thông báo" href="https://elearning.utt.edu.vn/mod/forum/view.php?id=248">Các thông báo</a> lỗi thường gặp trong Excel</strong></em></p></div>
+
+<p>&nbsp; &nbsp; &nbsp;Khi không tính được công thức thì Excel sẽ thông
+báo lỗi. Lỗi được ký hiệu bắt đầu bằng dấu #. Một số thông báo lỗi thường
+gặp:</p><p style="text-align: center;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(16).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;">Bảng <span lang="VI">6</span>-2 Các lỗi thường
+gặp trong Excel</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><br></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"><strong>3.3&nbsp; Nhóm hàm xử lý ngày tháng</strong></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(25).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(26).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p style="text-align: center;">Bảng <span lang="VI">6</span>-3 Các hàm ngày và giờ</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><strong><br></strong></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"><strong>3.4&nbsp; Nhóm hàm xử lý ký tự</strong></span></p></span><p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(23).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(24).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"></span></p><p style="text-align: center;">Bảng <span lang="VI">6</span>-4 Các hàm xử lý chuỗi</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><br></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"><strong>3.5&nbsp; Nhóm hàm thống kê</strong></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(22).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(27).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"></span></p><p style="text-align: center;">Bảng <span lang="VI">6</span>-5 Các hàm thống kê đơn giản</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><br></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"><strong>3.6&nbsp; Nhóm hàm logic</strong></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><strong><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(28).png" alt="" role="presentation" class="img-fluid"><br></strong></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><strong><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(29).png" alt="" role="presentation" class="img-fluid"><br></strong></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><p style="text-align: center;">&nbsp;Bảng 2-6 Các hàm Logic</p><p style="text-align: center;"><br></p><p style="text-align: left;"><strong>3.7&nbsp; Nhóm hàm xử lý tham chiếu</strong></p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><div>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Hàm VLOOKUP: Hàm tham chiếu
+theo cột</p><p>&nbsp; &nbsp; <strong>&nbsp;Cú pháp:</strong></p><p><strong><em>&nbsp; &nbsp; &nbsp;VLOOKUP (lookup_value, Table_array, col_index_num, range_lookup)</em></strong></p><p><span style="font-size: calc(0.90375rem + 0.045vw);">&nbsp; &nbsp; &nbsp;Trong đó:</span></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lookup_value:
+Giá trị tra cứu.&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Table_array: Vùng
+tham chiếu.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Col_index_num: Số cột muốn hiển thị.</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Range_lookup]: 0_tìm chính xác, 1_tìm tương
+đối</p><p><strong>&nbsp; &nbsp; &nbsp;Chức năng</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Tìm giá trị lookup_value trong cột trái nhất bảng table_array theo chuẩn dò tìm range_lookup, trả về vị trí tương ứng trong cột thứ col_index_num (nếu tìm thấy)</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]--><strong>Range_lookup=1</strong>: Tìm tương
+đối. Danh sách các giá trị dò tìm của bảng Table_array phải sắp xếp theo thứ tự tăng dần. Nếu tìm không thấy sẽ trả về giá trị lớn nhất nhưng
+nhỏ hơn lookup_value.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]--><strong>Range_lookup=0</strong>: Tìm chính
+xác. Danh sách các giá trị dò tìm của bảng Table_array không cần sắp xếp
+thứ tự. Nếu tìm không thấy sẽ trả về lỗi #N/A.</p>
+
+<p><strong>Ví dụ: </strong>Hiển
+thị tiền phải thanh toán của khách hàng có mã
+hóa đơn DH003.</p>
+
+</div>
+
+<p style="text-align: center;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(30).png" alt="" role="presentation" class="img-fluid"><br></p><p><span style="font-size: calc(0.90375rem + 0.045vw);"></span></p><p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Hàm HLOOKUP: Hàm tham chiếu theo hàng</p><p>&nbsp; &nbsp; &nbsp;<strong>Cú pháp</strong></p><p>&nbsp; &nbsp; &nbsp;<strong><em>H</em></strong><strong><em>OOKUP (Lookup_value, Table_array, row_index_num, range_lookup)</em></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Trong đó:</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lookup_value:
+Giá trị tra cứu.&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Table_array: Vùng
+tham chiếu.&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; row_index_num: Số hàng muốn hiển thị.</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Range_lookup]: 0_tìm chính xác, 1_tìm tương
+đối&nbsp;</p><p><strong>&nbsp; &nbsp; &nbsp;Chức năng</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Ý nghĩa của các đối
+số của hàm Hlookup tương tự như hàm
+Vlookup.</p>
+
+<p>&nbsp; &nbsp; &nbsp;Tìm giá trị lookup_value trong dòng trên cùng của bảng table_array theo chuẩn dò tìm range_lookup, trả về giá trị tương ứng trong dòng thứ row_index_num (nếu tìm thấy).</p>
+
+<p><!--[if !vml]-->
+ </p><strong>&nbsp; &nbsp; &nbsp;Ví dụ: </strong>Điền tên hàng theo mã hàng.</span><p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(31).png" alt="" role="presentation" class="img-fluid"><br></span></p><span><p></p><div>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Hàm MATCH</p><p>&nbsp; &nbsp; &nbsp;<strong>Cú pháp</strong></p><p><strong><em>&nbsp; &nbsp; &nbsp;MATCH (lookup_value, lookup_array, match_type)</em></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Trong đó:</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lookup_value:
+Giá trị tra cứu.&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lookup_array: Vùng tham chiếu.</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Match_type: 0_tìm chính xác, 1_tìm tương đối&nbsp; &nbsp; &nbsp;</p><p><strong>&nbsp; &nbsp; &nbsp;Chức năng</strong></p></div>
+
+
+<p>&nbsp; &nbsp; &nbsp;Hàm trả về vị trí của lookup_value trong mảng lookup_array theo cách tìm match_type</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>Match_type = 1</strong>: Tìm tương đối, danh sách các giá trị dò tìm của bảng Table_array phải sắp xếp theo thứ tự tăng
+dần. Nếu tìm không thấy sẽ trả về vị trí của giá
+trị lớn nhất nhưng nhỏ hơn
+lookup_value.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>Match_type = 0</strong>: Tìm chính xác, danh sách các giá trị dò tìm của bảng Table_array không cần sắp xếp thứ tự.
+Nếu tìm không thấy sẽ trả về lỗi #N/A</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>Match_type
+= -1</strong>: Tìm tương đối, danh sách phải sắp xếp các giá trị dò tìm
+của bảng Table_array theo thứ tự
+giảm dần. Nếu tìm không thấy sẽ trả về vị trí của giá trị nhỏ nhất nhưng lớn hơn lookup_value.</p><p><strong>&nbsp; &nbsp; &nbsp;Ví dụ:</strong></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(33).png" alt="" role="presentation" class="img-fluid"><br></span></p></span><p></p>
+
+<p></p><p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Hàm INDEX</p><p><strong>&nbsp; &nbsp; &nbsp;Cú pháp</strong></p>
+
+<p><strong><i>&nbsp; &nbsp; &nbsp;INDEX (Array, Row_num, Column_num)</i></strong></p><p><strong><i>&nbsp; &nbsp; &nbsp;Chức năng</i></strong></p>&nbsp; &nbsp; &nbsp;Trả về giá trị trong
+ô ở hàng thứ row_num, cột thứ
+column_num trong mảng array.<br><p></p><strong>&nbsp; &nbsp; &nbsp;Ví dụ:</strong><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p style="text-align: center;"><strong><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(34).png" alt="" role="presentation" class="img-fluid"><br></strong></p><p style="text-align: center;"><strong><br></strong></p><p style="text-align: left;"><strong>3.8&nbsp; Các hàm toán học</strong></p><p style="text-align: center;"><strong><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(35).png" alt="" role="presentation" class="img-fluid"><br></strong></p><p style="text-align: center;"><strong><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(36).png" alt="" role="presentation" class="img-fluid"><br></strong></p><p style="text-align: center;"><strong><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(37).png" alt="" role="presentation" class="img-fluid"><br></strong></p><p style="text-align: center;"><strong></strong></p><p style="text-align: center;">Bảng 6-7 Các hàm toán học</p><p style="text-align: center;"><br></p><p style="text-align: left;"><strong>3.9&nbsp; Các hàm kiểm tra (IS-function)</strong></p><p style="text-align: left;"></p><div>
+
+<p>&nbsp; &nbsp; &nbsp;Các hàm kiểm tra dùng để kiểm tra xem kiểu của một
+giá trị hay của một ô có thỏa mãn một điều kiện nào đó không.</p>
+
+<p>&nbsp; &nbsp; &nbsp;Các hàm kiểm tra luôn trả về một trong hai giá trị
+TRUE hoặc FALSE. Như vậy, các hàm này có thể đáp ứng được trong các trường hợp mà có một số dữ liệu ngoại lệ trong một bảng dữ liệu
+cần tính toán.</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Hàm ISERROR</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Cú pháp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>ISERROR (value)</i></strong></p><p><strong><i>&nbsp; &nbsp; &nbsp;Ý nghĩa</i></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Trả về giá trị TRUE nếu value là một lỗi bất kỳ, ngược lại trả về giá trị FALSE</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Hàm ISNA</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Cú pháp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>ISNA (value)</i></strong></p><p><strong><i>&nbsp; &nbsp; &nbsp;Ý nghĩa</i></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Trả về giá trị TRUE
+nếu value là lỗi #N/A, ngược
+lại trả về giá trị FALSE</p>
+
+</div>
+
+<br clear="all">
+
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Hàm ISNUMBER</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Cú pháp&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<i>ISNUMBER (value)</i></strong></p><p><strong><i>&nbsp; &nbsp; &nbsp;Ý nghĩa</i></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Trả về giá trị TRUE
+nếu value là giá trị số, ngược lại trả về giá trị FALSE</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Hàm ISTEXT</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Cú pháp&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<i>ISTEXT (value)</i></strong></p><p><strong><i>&nbsp; &nbsp; &nbsp;Ý nghĩa&nbsp;</i></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Trả về giá trị TRUE
+nếu value là một chuỗi, ngược lại trả về giá trị FALSE</p><p><br></p><span><strong>3.10&nbsp; Công thức mảng<br></strong></span><p></p><p style="text-align: left;"></p><p>&nbsp; &nbsp; &nbsp;Hỗ trợ thống kê, tính toán dựa trên nhiều điều kiện
+khách nhau và được thực hiện trên mảng dữ
+liệu.</p>&nbsp; &nbsp; &nbsp;Khi thực hiện tính
+toán bằng công thức mảng thì công thức được bao bọc bởi hai dấu {}. Hai dấu ngoặc này người dùng không gõ mà được tự phát sinh khi người
+dùng thực hiện tính toán bằng cách nhấn tổ hợp phím
+Ctrl+Shift+Enter. Nếu khi thực hiện tính toán
+hoặc sửa chữa công thức mà quên nhấn tổ hợp phím trên thì công thức sẽ
+trả về giá trị không đúng hay thông báo lỗi #VALUE! Error.<p>&nbsp; &nbsp; &nbsp;<strong>Ví dụ</strong>: Tính tổng số
+lượng điện thoại do
+Minh bán<br></p><p style="text-align: center;"><img src="assets/Mot_so_ham_thong_dung_trong_Excel_Trang/image_(38).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: left;"><strong>&nbsp; &nbsp; &nbsp;Thực hiện</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Nhập công thức:</p>
+
+<p>&nbsp; &nbsp; =SUM ((M27:M32="Điện thoại") * (N27:N32="Minh") * (O27:O32)</p>
+
+<p>&nbsp; &nbsp; &nbsp;Ấn tổ hợp phím Ctrl+Shift+Enter để thực hiện tính toán bằng công thức mảng.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Nếu phần tử Mi
+là “Điện thoại” tức là 1(True) được trả về, ngược lại trả về 0 (False)</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Nếu phần tử Ni
+là “Điện thoại” tức là 1(True)
+được trả về, ngược lại trả về 0 (False)</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Cuối cùng, phần tử Oi được trả về.</p>
+
+<p>&nbsp; &nbsp; &nbsp;Ba giá trị này được nhân lại với nhau. Sau đó, hàm Sum ở ngoài cùng sẽ tính tổng cho tất cả các dòng</p><p></p><p></p></div></div><div class="modified">Sửa lần cuối: Thứ Tư, 10 tháng 12 2025, 5:13 PM</div>
+        </body>
+        </html>
+        

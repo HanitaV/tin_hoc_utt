@@ -1,0 +1,837 @@
+
+        <html>
+        <head><title>Làm việc với máy tính
+Trang</title><meta charset='utf-8'><link rel="stylesheet" href="../page_theme.css">
+</head>
+        <body>
+            <h1>Làm việc với máy tính
+Trang</h1>
+            <h3>Section: Bài giảng: Sử dụng máy tính và Internet</h3>
+            <hr>
+            <div class="box py-3 generalbox center clearfix"><div class="no-overflow"><p dir="ltr" style="text-align: left;"><strong>1.1&nbsp; Tổng quan về hệ điều hành</strong></p><p dir="ltr" style="text-align: left;"><strong>1.1.1&nbsp; Khái niệm HĐH</strong></p><p dir="ltr" style="text-align: left;"><strong></strong></p><p><span>&nbsp; &nbsp; &nbsp;Hệ điều hành (Operating
+System) là một tập hợp các phần mềm dùng để quản lý tài nguyên phần
+cứng và cung cấp các dịch vụ cho các chương trình máy tính. Hệ điều hành là một thành
+phần quan trọng nhất trong hệ thống các phần mềm trên máy tính, tạo sự liên hệ
+giữa người sử dụng và máy tính thông qua các
+lệnh điều khiển. Nếu không có hệ điều hành máy tính
+sẽ không thể hoạt động được.</span></p><p><strong><span style="font-size: calc(0.90375rem + 0.045vw);"><span lang="VI">1.1.2.
+</span></span><span style="font-size: calc(0.90375rem + 0.045vw);">&nbsp;Chức năng chính
+của Hệ điều hành</span></strong></p><span>
+
+<p style=""><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Hệ điều hành có những
+chức năng chính sau:</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Thực
+hiện các lệnh theo yêu cầu của người sử dụng máy tính</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Quản
+lý, phân phối và thu hồi bộ nhớ</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Điều
+khiển các thiết bị ngoại vi như ổ đĩa, máy in, bàn phím, màn hình,...</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Quản
+lý tập tin,...</p>
+
+<p style=""><strong><span><span lang="VI">1.1.3.
+</span></span><span>Các đối tượng do Hệ điều hành quản lý</span></strong></p>
+
+<p style=""><span lang="VI">a. </span>Tập
+tin (File)</p>
+
+<p style=""><span lang="VI">&nbsp; &nbsp;&nbsp;</span>Trên máy tính, dữ liệu
+được lưu trữ dưới dạng các tập tin theo một cấu trúc nào đó. Nội dung
+của tập tin có thể là chương trình, dữ liệu, văn bản,... Mỗi tập tin được lưu
+lên đĩa với một tên riêng phân biệt. Mỗi hệ điều hành
+có qui ước đặt tên khác nhau, hệ điều hành Windows
+có thể hỗ trợ đặt tên tập tin có chiều dài tối đa lên tới 255 ký tự. Tên tập
+tin thường có 2 phần: phần tên (name) và phần mở rộng
+(extension). Phần tên là phần bắt buộc phải có
+của một tập tin, còn phần mở rộng thì có thể có hoặc không.</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Phần
+tên: Bao gồm các ký tự chữ từ A đến Z, các chữ số từ 0 đến 9, các ký tự khác
+như #, $, %, ~, ^, @, (, ), !, _, khoảng
+trắng. Phần tên do người tạo ra tập tin đặt.</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Phần
+mở rộng: thường dùng 3 ký tự trong các ký tự nêu trên. Thông thường phần mở rộng
+do chương trình ứng dụng tạo ra tập tin tự đặt.</p>
+
+<p style=""><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Giữa
+phần tên và phần mở rộng có một dấu chấm (.) ngăn cách.</p><p style="text-align: center; "><img src="assets/Lam_viec_voi_may_tinh_Trang/image.png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p style=""><span><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span><strong>Phân loại tập tin</strong></span></p>
+
+<p style=""><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Ta có thể căn cứ vào phần
+mở rộng để xác định kiểu của file:</p>
+
+<p style=""><!--[if !supportLists]-->-&nbsp;&nbsp;&nbsp;&nbsp;COM, EXE : Các file khả thi chạy trực tiếp
+được trên hệ điều hành.</p>
+
+<p style=""><!--[if !supportLists]-->-&nbsp; &nbsp;&nbsp;<!--[endif]-->TXT, DOC, ... : Các file văn bản.</p>
+
+<p style=""><!--[if !supportLists]--><span lang="VI">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->MP3, DAT, WMA, …, BMP, GIF, JPG, ...: Các
+file âm thanh, video và các file hình ảnh<span lang="VI">.</span></p>
+
+<p style=""><span><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;</strong></span></span><span><strong>Ký tự đại diện
+(Wildcard)</strong></span></p>
+
+<p style=""><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Để chỉ ra một nhóm
+các tập tin muốn truy xuất, ta có thể sử dụng hai ký tự đại diện:</p>
+
+<p style="">-&nbsp; &nbsp; Dấu ? dùng để đại diện
+cho một ký tự bất kỳ trong tên tập tin tại vị trí nó xuất hiện.</p>
+
+<p style="">-&nbsp; &nbsp; Dấu * dùng để đại diện
+cho một chuỗi ký tự bất kỳ trong tên tập tin từ vị trí nó xuất hiện.</p>
+
+<p style=""><span><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span><strong>Ví dụ</strong></span>:
+- Bai?.doc đại diện cho Bai1.doc, Bai6.doc, Baiq.doc, …</p>
+
+<p style=""><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>- Bai*.doc đại diện cho
+Bai.doc, Bai6.doc, Bai12.doc, Bai Tap.doc, …</p>
+
+<p style=""><span lang="VI">b. </span>Thư
+mục (Folder/ Directory)</p>
+
+<p style=""><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Các tập tin được lưu trữ
+trên máy tính tại một nơi được gọi là thư mục. Thư mục là nơi lưu giữ
+các tập tin theo một chủ đề nào đó theo ý người sử dụng. Đây là biện pháp giúp
+ta quản lý được tập tin, dễ dàng tìm kiếm chúng
+khi cần truy xuất.</p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Trên mỗi đĩa có một thư
+mục chung gọi là thư mục gốc. Thư mục gốc không có tên riêng và
+được ký hiệu là <span>\ </span>(dấu xổ phải: backslash). Dưới mỗi thư mục gốc có các
+tập tin trực thuộc và các thư mục con. Trong các thư
+mục con cũng có các tập tin trực thuộc và thư mục
+con của nó. Thư mục chứa thư mục con gọi là thư mục cha. Thư mục đang làm việc gọi
+là thư mục hiện hành. Tên của thư mục tuân thủ theo cách đặt tên của tập tin.</p>
+
+<p style=""><span lang="VI">c. </span>Ổ
+đĩa (Drive)</p>
+
+<p style=""><span lang="VI">&nbsp; &nbsp; &nbsp;</span>Ổ đĩa là thiết bị dùng để
+đọc và ghi thông tin vào đĩa, các ổ đĩa thông dụng là: Ổ đĩa di động
+(còn gọi là ổ đĩa USB), Ổ đĩa cứng, Ổ đĩa CD/DVD.</p>
+
+<p style=""><span lang="VI">d. </span>Đường
+dẫn (Path)</p>
+
+<p style=""><span lang="VI">&nbsp; &nbsp; &nbsp;</span>Mỗi thư mục có thể chứa
+nhiều tập tin và thư mục con, mỗi thư mục con lại có thể chứa nhiều
+tập tin và thư mục con bên trong. Với kiểu lưu trữ như vậy tạo nên một cấu trúc
+cây gọi là cây thư mục (Folder tree). Để đi
+đến thư mục được chỉ định cần phải đi qua các thư mục
+trung gian. Đường đi từ một thư mục đến một thư mục chỉ định được gọi là đường dẫn.
+Đường dẫn là một danh sách có thứ tự của các thư mục liên tiếp nhau và được
+phân cách bởi ký hiệu <span>\ </span>(dấu xổ phải:
+backslash).<span lang="VI"></span></p><p style=""><br></p><p style=""><strong>1.2&nbsp; Một số hệ điều hành phổ biến và ứng dụng:</strong></p><p style=""><strong>1.2.1&nbsp; Các dòng Hệ điều hành</strong></p><p style=""><span></span></p><p>&nbsp; &nbsp; &nbsp;Hiện nay có 2 dòng hệ
+điều hành tồn tại cho phép người dùng có thể chọn lựa:</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]--><em>Hệ
+điều hành mã nguồn đóng</em>: Là các hệ điều hành thương mại,
+người dùng phải mua giấy phép bản quyền. Hiện
+nay hệ điều hành Windows của hãng công nghệ Microsoft là
+hệ điều hành mã nguồn đóng được sử dụng phổ biến. Các phiên bản của Windows: Windows
+95, Windows 98, Windows 2000, Windows XP, Windows Vista, Windows 7,
+Windows 8, ….</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]--><em>Hệ
+điều hành mã nguồn mở</em>: Là những hệ điều hành miễn phí, người
+dùng có thể tải về và cài đặt vào máy tính
+mà không cần phải trả bất kỳ khoản chi phí nào để sử dụng. Các hệ
+điều hành mã nguồn mở phổ biến nhất hiện nay là hệ điều hành Unix/Linux với các bản
+phân phối: Ubuntu, Mandriva, Fedora, MintLinux, CentOS, Debian, …</p>
+
+<p>&nbsp; &nbsp; &nbsp;Một<span lang="VI"> số
+HĐH máy tính phổ biến hiện nay:</span></p>
+
+<p><!--[if !supportLists]-->1.&nbsp;&nbsp;&nbsp; <!--[endif]--><strong>Windows</strong></p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]-->Là hệ điều hành phổ biến nhất, phát
+triển bởi Microsoft. Được sử dụng trong cả môi trường cá nhân và doanh nghiệp.</p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]--><strong>Ứng dụng</strong>: Các phần mềm như Microsoft Office,
+Adobe Photoshop, trình duyệt web Chrome đều có thể chạy trên Windows.</p>
+
+<p><!--[if !supportLists]-->2.&nbsp;&nbsp;&nbsp; <!--[endif]--><strong>macOS</strong></p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]-->Hệ điều hành của Apple, được sử dụng
+trên các thiết bị như MacBook, iMac. macOS nổi tiếng với độ ổn định và bảo mật
+cao.</p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]--><strong>Ứng dụng</strong>: Phù hợp với dân thiết kế, phát
+triển ứng dụng, với các phần mềm như Final Cut Pro, Logic Pro.</p>
+
+<p><!--[if !supportLists]-->3.&nbsp;&nbsp;&nbsp; <!--[endif]--><strong>Linux</strong></p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]-->Hệ điều hành mã nguồn mở, thường được
+dùng cho các máy chủ, môi trường phát triển, và cả cá nhân. Linux phổ biến với
+các nhà phát triển phần mềm.</p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]--><strong>Ứng dụng</strong>: Lập trình, quản trị hệ thống, và
+bảo mật máy chủ.</p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(1).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p style="text-align: center;"><em>Logo của các hệ điều hành phổ biến
+(Windows, macOS</em><em><span lang="VI">, Android</span></em><em>, Linux)</em><em><span lang="VI"></span></em></p><br></span><p></p><p></p><p><span><strong>1.3&nbsp; Sử dụng Microsoft Windows 10:</strong></span></p><p><span><strong>1.3.1&nbsp; Sơ lược về sự phát triển của HĐH Windows:</strong></span></p><p><span></span></p><p>&nbsp; &nbsp; &nbsp;Windows là một hệ điều
+hành do hãng Microsoft phát triển. Từ version 3.0 ra đời vào tháng 5
+năm 1990, đến nay hãng Microsoft đã không ngừng cải tiến làm cho hệ điều hành
+này ngày càng được hoàn thiện. Microsft
+Windows gồm các phiên bản sau: Windows 95,Windows 98, Windows Me, Windows NT
+4.0, Windows 2000, Windows XP, Windows Vista,
+Windows 7, Windows 8, Windows 10. Trong giáo trình này trình bày Windows <span lang="VI">10.</span></p>
+
+<p>&nbsp; &nbsp; &nbsp;Windows 10 là hệ điều hành hiện đại với giao diện trực
+quan, dễ sử dụng và cung cấp nhiều tính năng hữu ích. Dưới đây là các thao tác
+cơ bản khi sử dụng Windows 10:</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;&nbsp;&nbsp;<strong>Giao diện chính và Start Menu</strong></p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]--><strong>Start Menu</strong>: Cung cấp quyền truy cập nhanh vào
+các ứng dụng, cài đặt và tài liệu.</p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(2).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]--><strong>Taskbar</strong>: Thanh công cụ ở phía dưới cùng màn
+hình chứa các biểu tượng chương trình đang chạy hoặc thường dùng.</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;&nbsp;&nbsp;<strong>Quản lý cửa sổ</strong></p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]-->Khi bạn mở nhiều ứng dụng cùng lúc,
+bạn có thể dễ dàng quản lý chúng qua tính năng <strong>Task View</strong> (phím tắt <strong>Windows
++ Tab</strong>) hoặc kéo các cửa sổ để chia màn hình.</p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(3).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;"><em>Giao diện Windows 10 với các cửa sổ
+ứng dụng và Task View</em></p><p style="text-align: left;"><em><strong>1.3.2&nbsp; Khởi động và tắt máy tính trên Windows 10</strong></em></p><p><span lang="VI">a.</span>
+Khởi động Windows <span lang="VI">10:</span></p>
+
+<p><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Windows <span lang="VI">10</span> được tự động khởi động sau khi bật nguồn máy tính. Sẽ
+có thông báo yêu cầu nhập vào tài khoản (User
+name) và mật khẩu (Password) của người dùng. Thao tác
+này gọi là đăng nhập (login).</p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(4).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p style="text-align: center;"><em><span lang="VI">Màn hình
+đăng nhập trong Windows 10</span></em></p>
+
+<p><span lang="VI">&nbsp; &nbsp; &nbsp;Sau khi đăng
+nhập, màn hình Desktop sẽ xuất hiện để người dùng có thể chọn ứng dụng bắt đầu
+sử dụng.</span></p>
+
+<p>&nbsp; &nbsp; &nbsp;Mỗi người sử dụng sẽ có
+một tập hợp thông tin về các lựa chọn tự thiết lập cho mình (như hình
+nền, các chương trình tự động chạy khi khởi động máy, tài nguyên/ chương trình
+được phép sử dụng, v.v...) gọi là user profile
+và được Windows lưu giữ lại để sử dụng cho những lần
+đăng nhập sau.</p>
+
+<p><span lang="VI">b. </span>Tắt<span lang="VI"> máy tính trong </span>Windows <span lang="VI">10:</span></p>
+
+<p><span lang="VI">&nbsp; &nbsp; &nbsp;</span>Trước khi thoát khỏi hệ
+điều hành, cần phải đóng các chương trình đang mở.<span lang="VI"></span></p>
+
+<p>&nbsp; &nbsp; &nbsp;Để tắt máy tính hoặc
+khởi động lại hệ thống, người dùng phải nhấp vào nút Start ở góc dưới cùng bên
+trái của màn hình. Sau đó sẽ thấy ba tùy chọn - Khởi động lại, Tắt và chế độ
+ngủ Ngủ, chọn tùy chọn bạn muốn theo yêu cầu của bạn.</p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(5).png" alt="" role="presentation" class="img-fluid"><br></p><p>&nbsp; &nbsp; &nbsp;Nhấn tổ hợp phím Alt + F4
+trên máy tính sử dụng hệ điều hành Windows của bạn để mở menu tắt máy.</p>
+
+<p>&nbsp; &nbsp; &nbsp;Tại menu này, người
+dùng cũng có thể lựa chọn các hành động khác như: thay đổi người dùng, khởi
+động lại máy tính, đưa máy tính vào chế độ ngủ. Bạn chỉ cần chọn chế độ mình
+muốn và nhấp vào "Ok"</p><p style="text-align: center;"><span style="font-size: 14.8236px;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(6).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8236px;"></span></p><p style="text-align: center;"><em><span lang="VI">Tắt máy
+tính sử dụng tổ hợp phím Alt + F4</span></em></p><p style="text-align: left;"><span><span lang="VI" style=""><strong style="">1.3.3&nbsp; Màn hình Desktop của Windows 10</strong></span></span></p><p style="text-align: left;"><span><span lang="VI"></span></span></p><p><span><span lang="VI">&nbsp; &nbsp; &nbsp;Desktop là màn hình của một máy
+tính có thể sử dụng, thao tác những công việc hoặc mục đích theo cá nhân của
+mình trên màn hình này. Ngoài ra, Desktop chính là nơi sẽ hiển thị những ứng dụng
+mà người dùng đã cài đặt trên máy tính. Desktop giúp bạn thấy được máy tính của
+mình đang hoạt động như thế nào sau khi hệ điều hành khởi động.</span></span></p><p style="text-align: center;"><span><span lang="VI"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(7).png" alt="" role="presentation" class="img-fluid"><br></span></span></p><p style="text-align: center;"><em><span lang="VI"></span></em></p><p style="text-align: center;"><em><em><span lang="VI">Màn hình
+Desktop của Windows 10</span></em></em></p><span><p style="">&nbsp; &nbsp; &nbsp;Nằm cuối màn hình là thanh tác vụ
+(Taskbar). Trên thanh tác vụ có biểu tượng&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">Internet Explorer, File Explorer, ...</span></p>
+
+<p style=""><span lang="VI">a. </span>Những biểu tượng trên màn hình
+nền</p>
+
+<p style=""><strong>&nbsp; &nbsp; &nbsp;Các biểu tượng (icon)</strong></p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Biểu tượng là các hình vẽ nhỏ đặc trưng
+cho một đối tượng nào&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">đó của Windows hoặc của các ứng dụng chạy
+trong Windows.&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">Phía dưới biểu tượng là tên biểu tượng,
+thông thường tên biểu&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">tượng diễn giải cho chức năng nào đó được
+gán cho biểu tượng (ví dụ nó mang tên của 1 trình ứng dụng).</span></p>
+
+<p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(8).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p style="text-align: center;"><span>Biểu tượng</span><span> </span><span>trên
+màn hình desktop</span><span><span lang="VI"></span></span></p>
+
+<p style=""><strong>&nbsp; &nbsp; &nbsp;Computer</strong></p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Biểu tượng này cho phép duyệt nhanh tài
+nguyên trên máy tính. Khi mở Computer (bằng&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">thao tác Double Click hoặc Right Click/
+Open trên biểu tượng của nó), cửa sổ Computer&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">sẽ xuất hiện.</span></p>
+
+<p style=""><strong>&nbsp; &nbsp; &nbsp;Recycle Bin</strong><strong><span lang="VI"></span></strong></p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Recycle Bin (hình 4.7) là nơi lưu trữ tạm
+thời các tập tin và các đối tượng đã bị xóa. Những&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">đối tượng </span><strong style="font-size: calc(0.90375rem + 0.045vw);">này</strong><span style="font-size: calc(0.90375rem + 0.045vw);"> chỉ thật sự mất khi bạn
+xóa chúng trong cửa sổ Recycle Bin hoặc&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">Right_Click vào biểu tượng Recycle Bin rồi
+chọn Empty Recycle Bin. Nếu muốn phục hồi&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">các tập tin hoặc các đối tượng đã bị xóa
+trong cửa sổ Recycle Bin, bạn chọn đối tượng cần&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">phục hồi, sau đó Right_Click/ Restore.</span></p>
+
+<p style="">&nbsp; &nbsp; &nbsp;<strong><em><u>Chú ý</u></em></strong>: Muốn xóa các tập tin, các đối tượng
+trực tiếp không lưu trong Recycle Bin, ta thực&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">hiện các cách sau:</span></p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->R-
+Click lên đối tượng Recycle Bin trên màn hình nền và chọn Don't move files to
+the</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Recycle
+Bin. Remove files immediately when deleted</p>
+
+<p style=""><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Nhấn tổ
+hợp phím Shift + Delete lên đối tượng muốn xóa<span lang="VI">.</span></p>
+
+<p style=""><strong>&nbsp; &nbsp; &nbsp;Các lối tắt (biểu tượng chương trình -
+Shortcuts)</strong></p><p style="text-align: center; "><strong><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(9).png" alt="" role="presentation" class="img-fluid"><br></strong></p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Các lối
+tắt giúp bạn truy nhập nhanh một đối tượng hoặc&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">một thư mục nào đó, ví dụ mở một chương
+trình, một đĩa&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">cứng, một thư mục, .v.v.. Để mở một đối tượng,
+bạn&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">Double_Click trên Shortcut của nó hoặc
+Right_Click/ Open.&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">Biểu tượng của các lối tắt sẽ có hình mũi
+tên màu xanh chỉ về hướng đông bắc</span><span lang="VI" style="font-size: calc(0.90375rem + 0.045vw);">.</span></p>
+
+<p style=""><strong>&nbsp; &nbsp; &nbsp;Menu ngữ cảnh (Context menu)</strong></p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Trong Windows khi Right_Click lên một đối
+tượng (tập tin, thư mục…), một menu ngữ cảnh sẽ hiển thị chứa các lệnh <strong>cho</strong>
+phép tương tác với đối tượng đó. Tùy vào đối tượng và&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">quyền của người dùng mà các lệnh xuất hiện
+trong menu ngữ cảnh sẽ khác nhau.</span></p><strong>1.3.4&nbsp;&nbsp;</strong><strong><span lang="VI">Cửa sổ của một chương trình trong</span>
+Windows <span lang="VI">10</span></strong><br></span><p></p><p><span lang="VI">a. </span>Cửa sổ và các thành phần của cửa
+sổ</p>
+
+<p>&nbsp; &nbsp; &nbsp;Một cửa sổ trên hệ điều hành Windows bao gồm
+rất nhiều thành phần như hộp điều khiển (Control box), thanh menu lệnh (Menu bar),
+tiêu đề cửa sổ (Title bar), nút thu nhỏ cửa sổ (Minimize), nút phóng to/thu
+nhỏ (Maximize/Restore), nút đóng cửa sổ (Close), …</p><p style="text-align: center;"><em style="font-size: calc(0.90375rem + 0.045vw);"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(10).png" alt="" role="presentation" class="img-fluid"><br></em></p><p style="text-align: center;"><em style="font-size: calc(0.90375rem + 0.045vw);">Cửa sổ phần mềm Microsoft Word và các
+thành phần</em><em style="font-size: calc(0.90375rem + 0.045vw);"><span lang="VI">.</span></em></p>
+
+<p style="text-align: left;"><em><span lang="VI">b. </span></em><em>Các
+thao tác trên một cửa sổ</em><em><span lang="VI">:</span></em></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Di chuyển
+cửa sổ: Drag thanh tiêu đề cửa sổ (Title bar) đến vị trí mới.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Thay đổi
+kích thước của cửa sổ: Di chuyển con trỏ chuột đến nút cạnh hoặc nút góc của cửa sổ,
+khi con trỏ chuột biến thành hình mũi tên hai chiều thì Drag chuột để thay đổi kích
+thước.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Phóng
+to cửa sổ ra toàn màn hình: Click lên nút Maximize .</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Phục hồi
+kích thước trước của cửa sổ: Click lên nút Restore .</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Thu nhỏ
+cửa sổ thành biểu tượng trên Taskbar: Click lên nút Minimize .</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chuyển
+đổi giữa các cửa sổ của các ứng dụng đang mở: Để chuyển đổi giữa các ứng dụng nhấn
+tổ hợp phím Alt + Tab hoặc click chọn biểu tượng ứng dụng trên thanh Taskbar.</p>
+
+<p><!--[if !supportLists]--><span lang="VI">·&nbsp;
+</span><!--[endif]-->Đóng cửa sổ: Click lên nút Close của cửa sổ hoặc nhấn
+tổ hợp phím Alt + F4<span lang="VI">.<strong></strong></span></p>
+
+<p><strong><span lang="VI">1.3.5. Hộp hội
+thoại trong</span></strong><strong> Windows </strong><strong><span lang="VI">10:</span></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Các hộp thoại thường xuất hiện khi chạy
+chương tình ứng dụng Windows để giúp bạn chọn thêm thêm những thông số trước
+khi chương trình thực hiện lệnh của bạn.</p>
+
+<p><!--[if !supportLists]-->a. <!--[endif]-->Các
+thành phần của hộp hội thoại:</p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(11).png" alt="" role="presentation" class="img-fluid" style="font-size: calc(0.90375rem + 0.045vw);"></p><p></p><p style="text-align: center;"><em><span lang="VI">Hộp hội
+thoại trong Windows</span></em></p><p>&nbsp; &nbsp; &nbsp;Thông thường, trên một hộp hội thoại sẽ có
+các thành phần sau<span lang="VI">:</span></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Hộp văn
+bản (Text box): dùng để nhập thông tin.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Hộp liệt
+kê (List box): liệt kê sẵn một danh sách có các mục có thể lựa chọn, nếu số mục trong
+danh sách nhiều không thể liệt kê hết thì sẽ xuất hiện thanh trượt để cuộn danh
+sách.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Hộp liệt
+kê thả (Drop down list box/ Combo box): khi Click chuột vào nút thả thì sẽ liệt kê một
+danh sách các mục và cho phép chọn một mục.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Hộp lựa
+chọn (Check box): cho phép chọn một hoặc nhiều mục.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nút tùy
+chọn (Option button): bắt buộc phải chọn một trong số các mục.</p>&nbsp; &nbsp; &nbsp;Nút
+lệnh (Command button): yêu cầu thực hiện lệnh<br><p></p><p></p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(12).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;"></p><p><strong><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><span lang="VI">Hộp hội thoại</span></p><p><span lang="VI"></span></p><p><strong>&nbsp; &nbsp; &nbsp;Các nút lệnh thông dụng:</strong></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->OK: thực
+hiện lệnh theo thông số đã chọn và đóng hộp thoại.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Close:
+giữ lại các thông số đã chọn và đóng hộp thoại.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Cancel
+(hay nhấn phím Esc): không thực hiện lệnh và đóng hộp thoại.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Apply:
+áp dụng các thông số đã chọn nhưng không đóng hộp thoại.</p>
+
+<p><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Default:
+đặt mặc định theo các thông số đã chọn<span lang="VI">.</span></p>
+
+<p><strong><span lang="VI">1.3.6. Sao
+chép dữ liệu trong</span></strong><strong> Windows </strong><strong><span lang="VI">10:</span></strong></p>
+
+<p><span lang="VI">&nbsp; &nbsp; &nbsp;</span>Việc
+sao chép dữ liệu trong một ứng dụng hoặc giữa các ứng dụng được thực hiện thông qua bộ
+nhớ đệm (Clipboard). Tại một thời điểm, bộ nhớ đệm chỉ chứa thông tin mới nhất. Khi sao
+chép dữ liệu từ một vị trí để dán vào một vị trí khác, cần thực hiện bốn thao
+tác theo thứ
+tự sau:</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chọn đối
+tượng cần sao chép.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Thực hiện
+lệnh Edit/ Copy hoặc nhấn tổ hợp phím Ctrl + C hoặc Right_Click/ Copy để sao
+chép đối tượng vào bộ nhớ đệm (Clipboard).</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Xác định
+vị trí cần dán.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Thực hiện
+lệnh Edit/ Paste hoặc nhấn tổ hợp phím Ctrl + V hoặc Right_Click/ Paste để dán
+đối tượng từ bộ nhớ đệm vào vị trí cần dán.</p>
+
+<p><strong><span lang="VI">1.3.7. </span></strong><strong>Cách khởi
+động và thoát khỏi các chương trình</strong><strong><span lang="VI"> trong</span></strong><strong>
+Windows </strong><strong><span lang="VI">10:</span></strong></p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Khởi động chương trình ứng dụng</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Có nhiều cách để khởi động một chương trình
+ứng dụng trong Windows:</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Khởi động từ Start Screen</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Nhấn vào vị trí góc bên trái của thanh
+taskbar hoặc nhấn phím Windows ) trên bàn&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">phím, click vào chương trình muốn khởi động.</span></p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Khởi động bằng lệnh Run</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Right_click vào vị trí bên góc trái trên
+thanh Taskbar và chọn lệnh Run (hoặc nhấn tổ hợp&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">phím Windows + R) sẽ xuất hiện hộp thoại
+Run.</span></p><p style="text-align: center;"><span style="font-size: 14.8236px;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(13).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p style="text-align: center;"><em><span lang="VI">Hộp
+thoại run</span></em></p><p style="text-align: center;"><em><span lang="VI"></span></em></p><p><span><strong><em>&nbsp; </em>&nbsp; &nbsp;Dùng Shortcut để khởi động các chương
+trình</strong><strong><span lang="VI">:</span></strong></span></p><span>
+
+<p style="">&nbsp; &nbsp; &nbsp;Double_Click hoặc Right_Click/ Open vào
+Shortcut của các ứng dụng mà bạn muốn khởi động. Các Shortcut thường được đặt trên
+màn hình nền Desktop.</p>
+
+<p style=""><strong>&nbsp; &nbsp; &nbsp;Khởi động từ các Folder</strong></p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Khi tên của một chương trình ứng dụng
+không hiện ra trên menu Start thì cách tiện lợi nhất để bạn
+khởi động nó là mở từ các Folder, Double_Click hoặc Right_Click/ Open trên biểu tượng của
+chương trình ứng dụng cần mở.</p>
+
+<p style=""><strong>&nbsp; &nbsp; &nbsp;Thoát khỏi chương trình ứng dụng</strong></p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Để thoát khỏi một ứng dụng ta có thể dùng
+1 trong các cách sau đây:</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nhấn tổ
+hợp phím Alt + F4</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Click
+vào nút Close (ở góc trên bên phải của thanh tiêu đề).</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chọn
+menu File/ Exit.</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Double_Click
+lên nút Control Box (ở góc trên bên trái của thanh tiêu đề).</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Click
+lên nút Control Box. Click chọn Close.</p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Khi đóng 1 ứng dụng, nếu dữ liệu của ứng dụng
+đang làm việc chưa được lưu lại thì nó sẽ hiển thị hộp thoại nhắc nhở việc xác nhận
+lưu dữ liệu (hình 4.12). Thông thường có 3 chọn lựa:</p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(14).png" alt="" role="presentation" class="img-fluid"><br></p><p style="">&nbsp; &nbsp; &nbsp;Hộp thoại nhắc nhở lưu dữ liệu của
+Microsoft Word<span lang="VI"></span></p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--[endif]-->Save: lưu dữ liệu và thoát khỏi chương trình ứng dụng.</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--[endif]-->Don’t Save: thoát khỏi chương trình ứng dụng mà không
+lưu dữ liệu.</p>
+
+<p style=""><!--[if !supportLists]--><span lang="VI">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]-->Cancel: hủy bỏ lệnh, trở về chương trình ứng dụng.<span lang="VI"></span></p>
+
+<p style=""><strong><span lang="VI">1.3.7. </span></strong><strong>Thay đổi
+cấu hình Windows</strong><strong><span lang="VI">:</span></strong></p>
+
+<p style=""><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Windows
+cho phép thay đổi cấu hình cho phù hợp với công việc hoặc sở thích của người sử
+dụng thông qua nhóm các công cụ trong Control Panel. Trên Windows <span lang="VI">10</span> để vào
+control panel thực hiện các cách sau:</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->D-Click
+vào biểu tượng Control Panel trên màn hình nền nếu có.</p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nhấp
+chuột phải ở góc dưới bên trái của màn hình (hoặc tổ hợp phím Windows + X),
+khi đó menu xuất hiện và chọn Control panel. Cửa sổ Control Panel sẽ xuất hiện<span lang="VI">.</span></p>
+
+<p style=""><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Trước
+tiên phải mở charm bar bằng cách rê chuột vào biên bên phải màn hình, chọn Settings
+/ Control Panel.</p><p style="text-align: center; "><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(15).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;"><i>Cửa sổ Control Panel</i><i><span lang="VI"></span></i></p><p style="text-align: left;"></p><p>&nbsp; &nbsp; &nbsp;Từ cửa sổ Control Panel ta có thể sử dụng
+các công cụ để thiết lập cấu hình cho hệ thống, thay đổi ngày giờ, cài đặt thêm
+Font chữ, thiết bị phần cứng, phần mềm mới hoặc loại bỏ chúng đi khi không còn
+sử dụng nữa.</p>
+
+<p><strong><span lang="VI">1.3.8. </span></strong><strong>Thay đổi
+hình</strong><strong><span lang="VI"> nền trong</span></strong><strong> Windows</strong><strong><span lang="VI"> 10</span></strong><strong><span lang="VI">:</span></strong></p>
+
+<p><span lang="VI">&nbsp; &nbsp; &nbsp;</span>Màn
+hình Desktop là nơi mà người sử dụng sẽ khởi động các chương trình cũng như quản lý các ứng
+dụng đang mở. Windows cho phép thay đổi hình nền của desktop theo ý thích của người
+sử dụng bằng cách:</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Right_click
+vào vị trí trống trên màn hình desktop và chọn Personalize.</p>
+
+<p><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Chọn
+Desktop Background, khi đó cửa sổ mới hiện ra<span lang="VI">.</span></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chọn
+các ảnh trong danh sách.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nếu người
+dùng muốn thêm ảnh mới thì nhấn vào nút Browse để chọn thư mục chứa ảnh mới.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Ngoài
+ra, ta có thể chọn hơn một ảnh để làm ảnh nền bằng cách chọn nhiều ảnh trong danh
+sách, các ảnh sẽ tự đổng thay đổi theo khoảng thời gian mà người dùng thiết lập tại mục
+“Change picture every:” với thời lượng từ 10s cho đến 1 ngày.</p>
+
+<p><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Nếu muốn
+các ảnh thay đổi không theo thứ tự ta check vào mục Shuffle.<span lang="VI"></span></p><p style="text-align: center;"><span style="font-size: 14.8236px;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(16).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p style="text-align: center;"><i>Cửa sổ thay đổi ảnh nền Desktop</i><i><span lang="VI"></span></i></p><p><strong><span lang="VI">1.3.9. </span></strong><strong>Bật chế
+độ bảo vệ màn hình</strong><strong><span lang="VI">:</span></strong></p>
+
+<p><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Chế độ
+bảo vệ màn hình trong Windows được kích hoạt khi không có hoạt động sử dụng đã được
+cảm nhận trong một thời gian nhất định. Để bật chế độ bảo vệ màn hình (Screen saver)
+ta thực hiện:</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Right_click
+vào vị trí trống trên màn hình desktop và chọn Personalize.</p>
+
+<p><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Trong cửa
+sổ Personalize nhấn biểu tượng Screen saver . Hộp thoại xuất hiện<span lang="VI"></span></p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(17).png" alt="" role="presentation" class="img-fluid"><br></p><p></p><p style="text-align: center;"><i>Hộp thoại Screen saver</i><i><span lang="VI"></span></i></p><p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nhấn
+vào mũi tên của hộp liệt kê thả dưới Screen Saver (hình 4.15) và chọn một đối</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->tượng từ
+danh sách.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nhấn
+vào nút Settings… để đặt thêm tùy chọn.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Đặt thời
+gian chờ cho Srceen saver, nhấn nút Preview để xem kế quả.</p>
+
+<p><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Nhấn
+nút OK.<span lang="VI"></span></p>
+
+<p><strong><span lang="VI">1.3.10. Thay
+đổi độ phân giải của màn hình:</span></strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Độ phân giải màn hình là thông số qui định
+trên màn hình có bao nhiêu điểm ảnh (pixel) được bố trí theo chiều ngang và bao nhiêu
+điểm ảnh được bố trí theo chiều dọc. Mỗi điểm ảnh sẽ hiển thị một chi tiết
+hình ảnh trên máy tính. Khi màn hình được thiết lập độ phân giải
+càng lớn thì hình ảnh càng sắc nét và trung thực hơn. Độ phân giải càng lớn thì
+hình ảnh hiển
+thị sẽ càng nhỏ lại và càng rõ hơn, không bị mờ hay bị “bể hạt”. Độ phân giải
+màn hình được
+ghi theo quy tắt (dài x cao). Ví dụ độ phân giải màn hình là (1440x900) có
+nghĩa là chiều
+dài hiển thị 1440 pixel và chiều cao là 900 pixel. Thay đổi độ phân giải như
+sau:</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nhấn
+chuột phải vào vị trí trống trên màn hình desktop<span lang="VI">.</span></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chọn
+Screen Resolution<span lang="VI">.</span></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chọn độ
+phân giải mong muốn trong danh sách Resolution<span lang="VI">.</span></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chọn
+Apply để áp dụng</p>
+
+<p><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Chọn
+Keep changes để xác nhận thay đổi<span lang="VI">.</span></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chọn
+Revert hoặc nhấn phím Esc trên bàn phím để huỷ bỏ lệnh<span lang="VI">.</span></p>
+
+<p><strong>Chú ý: </strong>Trước khi thay đổi độ phân giải
+màn hình cần phải xem kỹ danh sách độ phân giải màn hình có thể hiển thị. Nếu
+chọn sai thì màn hình đen sẽ hiện ra, điều đó có nghĩa màn hình đã
+không thể hiển thị được hình ảnh ở độ phân giải vừa chọn.</p>
+
+<p><strong><span lang="VI">1.3.11. Thay
+đổi mật khẩu:</span></strong></p>
+
+<p><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Để đăng
+nhập vào máy tính, ta có thể dùng 2 loại tài khoản: tài khoản quản trị
+(administrator account)
+và tài khoản bình thường (user account). Nếu người dùng đăng nhập với tài khoản quản trị
+sẽ có quyền thay đổi mật khẩu của tất cả các tài khoản hiện có trên máy tính. Đối với tài
+khoản bình thường thì người dùng có thể thay đổi mật khẩu của chính tài khoản đang đăng nhập.
+Để thay đổi mật khẩu:</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Mở
+thanh Charm, chọn Settings, chọn Change PC Settings ở dưới nút Power.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Cửa sổ
+mới hiện ra, chọn Users trong danh sách cửa sổ bên trái màn hình.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Chọn
+Change your password bên cửa sổ bên phải.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Một cửa
+sổ mới hiện ra, nhập vào mật khẩu hiện tại đang đăng nhập vào ô Current password
+sau đó nhấn Next.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Cửa sổ
+mới hiện ra, nhập và mật khẩu mới tại ô New password.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nhập mật
+khẩu mới lần nữa tại ô Reenter password.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Tại ô
+Password hint nhập vào một thông tin gợi ý liên quan đến mật khẩu mới, thông tin này
+được dùng để gợi nhớ mật khẩu cho người dùng trong trường hợp người dùng
+quên mật khẩu.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Nhấn
+Next để tiếp tục.</p>
+
+<p><!--[if !supportLists]--><span lang="VI">·&nbsp; </span><!--[endif]-->Nhấn
+Finish để hoàn tất.<span lang="VI"></span></p>
+
+<p><strong><span lang="VI">1.3.12. </span></strong><strong>Thay đổi
+ngày giờ hệ thống</strong><strong><span lang="VI">:</span></strong></p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Để thay
+đổi ngày tháng và thời gian cho máy tính người dùng có thể vào Control</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Panel
+chọn Date and Time hoặc nhấn chuột lên biểu tượng đồng hồ ở thanh Taskbar,</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->chọn
+Change date and time settings, chọn tiếp Change Date and Time để thay đổi ngày giờ.</p>
+
+<p><!--[if !supportLists]-->·&nbsp; <!--[endif]-->Để thay
+đổi múi giờ cho hệ thống nhấn chọn Change time zone và chọn múi giờ thích hợp (ví
+dụ: Việt Nam sử dụng múi giờ (UTC+07:00) Bangkok, Hanoi, Jakarta).</p><p style="text-align: center;"><span style="font-size: 14.8236px;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(18).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p><strong><span lang="VI">1.3.13. </span></strong><strong>Thay đổi
+định dạng ngày giờ và tiền tệ</strong></p>
+
+<p><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Thông
+thường, hệ điều hành sử dụng định dạng tiền tệ và ngày tháng của Mỹ (ví dụ ngày tháng
+có định dạng mm/dd/yyyy, do đó 07/26/2017 là ngày 26 tháng 07 năm 2017). Ứng dụng có
+tên Region trong Control Panel cho phép thay đổi định dạng này</p>
+
+<p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(19).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p style="text-align: center;"><i>Cửa sổ thay đổi định dạng ngày và giờ và lớp
+Number</i><i><span lang="VI"></span></i></p>
+
+<p>&nbsp; &nbsp; &nbsp;Để thay đổi định dạng ngày và giờ, trong
+danh sách Format chọn lại định dạng muốn thay đổi (ví dụ chọn Vietnamese
+(Vietnam)). Kết quả sẽ hiển thị ở các ô: Date and time formats. Trong
+khung Examples hiển thị các kết quả của định dạng được thiết lập tương ứng với
+các mục ở
+trên. Sau khi lựa chọn xong nhấn Apply để thay đổi. Để thay đổi các định dạng
+tiền tệ, định
+dạng số ta click chuột vào nút Additional settings để thay đổi. Chọn các lớp
+tương ứng để
+thay đổi:</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Number: </strong>Thay đổi định dạng số, cho
+phép định dạng việc hiển thị giá trị số </p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->Decimal symbol: Thay đổi ký hiệu phân cách hàng thập
+phân.</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->No. of digits after decimal: Thay đổi số các số lẻ ở
+phần thập phân.</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->Digit grouping symbol: Thay đổi ký hiệu phân nhóm hàng
+ngàn.</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->Digit grouping: Thay đổi số ký số trong một nhóm (mặc
+nhiên là 3).</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->Negative sign symbol: Thay đổi ký hiệu chỉ số âm.</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->Negative number format: Thay đổi dạng thể hiện của số
+âm.</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->Display leading zeroes: Hiển thị hay không hiển thị số
+0 trong các số chỉ có phần thập phân: 0.7 hay .7.</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->Measurement system: Chọn hệ thống đo lường như cm, inch,
+…</p>
+
+<p><!--[if !supportLists]-->-&nbsp;&nbsp;
+<!--[endif]-->List separator: Chọn dấu phân cách giữa các mục trong
+một danh sách.</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Currency: </strong>Thay đổi
+định dạng tiền tệ ($,VND,...)</p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Time: </strong>Thay đổi định dạng thời gian,
+cho phép bạn định dạng thể hiện giờ trong ngày&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">theo chế độ 12 giờ hay 24 giờ</span><span lang="VI" style="font-size: calc(0.90375rem + 0.045vw);">.</span></p>
+
+<p><span lang="VI">&nbsp; &nbsp; &nbsp;D</span><strong>ate: </strong>Thay đổi
+định dạng ngày tháng (Date), cho phép bạn chọn cách thể hiện dữ liệu ngày
+theo 1 tiêu chuẩn nào đó. Trong đó Short date format: cho phép chọn quy ước nhập dữ
+liệu ngày tháng</p>
+
+<p>&nbsp; &nbsp; &nbsp;Ví dụ: ngày/tháng/năm (d/m/yy) hoặc
+tháng/ngày/năm (m/d/yy)<span lang="VI"></span></p>
+
+<p><strong><span lang="VI">1.3.14. </span></strong><strong>Cài đặt
+và gỡ bỏ chương trình</strong><strong><span lang="VI">:</span></strong></p>
+
+<p><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Sau khi
+cài đặt hệ điều hành Windows, chỉ có một số ứng dụng cơ bản được cài đặt kèm theo
+như chương trình vẽ (paint), máy tính điện tử (calculator), … và một vài chương
+trình khác. Nếu
+muốn sử dụng các chương trình không được cài đặt sẵn, người sử dụng có thể cài đặt
+(install) thêm vào hoặc có thể gỡ bỏ (uninstall) các chương trình đã cài đặt
+nhưng không
+còn sử dụng.</p>
+
+<p><!--[if !supportLists]-->a. <!--[endif]-->Cài đặt
+chương trình</p>
+
+<p><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Để cài
+đặt chương trình vào máy tính trước tiên người dùng cần phải có tập tin cài đặt (thường
+có tên là setup.exe/install.exe). Ta double_click vào tập tin cần cài đặt và
+làm theo các hướng
+dẫn. Thông thường ở các bước cài đặt chương trình sẽ hỏi nơi để cài đặt (mặc định sẽ
+cài vào thư mục C:\Program Files\), các lựa chọn cài đặt (cài đặt toàn bộ các
+tính năng
+hay chỉ chọn một vài tính năng), nhập vào thông tin bản quyền phần mềm (thường
+là product
+key hoặc serial, email…) để chương trình kiểm tra. Khi hoàn thành các bước chương
+trình sẽ bắt đầu quá trình cài đặt và hiển thị trạng thái cài đặt. Khi kết thúc
+quá trình
+cài đặt, một thông báo sẽ hiển thị để cho người dùng biết quá trình cài đặt
+thành công hoặc thất
+bại.</p>
+
+<p><!--[if !supportLists]-->b.&nbsp;Gỡ bỏ chương trình đã cài đặt</p>
+
+<p><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Để gỡ bỏ
+các chương trình không còn sử dụng ta double_click chuột vào biểu tượng</p>
+
+<p>&nbsp; &nbsp; &nbsp;Programs and Features trong cửa sổ Control
+Panel. Một cửa sổ mới hiện ra chứa danh sách các chương trình đã được cài đặt trong máy
+tính (hình 4.19).</p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(20).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;"><i>Gỡ bỏ các chương trình đã cài đặt</i><i><span lang="VI"></span></i></p><p>&nbsp; &nbsp; &nbsp;Để gỡ bỏ chương trình nào ta chỉ cần chọn
+chương trình trong danh sách đã liệt kê, nhấn chuột phải và chọn Uninstall.
+Một hộp thoại sẽ hiện ra thông báo rằng chương trình sẽ bắt đầu gỡ
+bỏ, nhấn Yes để xác nhận. Nếu chương trình có hiển thị các lựa chọn, đọc kỹ các lựa chọn
+và chọn Next để tiếp tục. Sau khi gỡ bỏ chương trình sẽ thông báo đã gỡ bỏ
+thành công
+hay thất bại.</p>
+
+<p><strong>&nbsp; Chú ý: </strong>Một số chương trình có thể thực
+thi trực tiếp mà không cần phải qua tiến trình cài đặt ở
+trên, do đó khi liệt kê các chương trình đã được cài đặt ta sẽ không thấy
+chương trình đó
+trong danh sách này.</p>
+
+<p><strong><span lang="VI">1.3.15. </span></strong><strong>Tắt các
+chương trình bị treo</strong><strong><span lang="VI">:</span></strong></p>
+
+<p><span lang="VI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Trong
+quá trình sử dụng, khi một chương trình không thể xử lý được các yêu cầu chương trình
+đó sẽ không thực hiện các lệnh điều khiển của người dùng. Trạng thái này được gọi là
+treo. Khi chương trình bị treo người dùng sẽ không thể đóng chương trình đó
+theo cách bình
+thường. Muốn tắt các chương trình bị treo ta sử dụng tiện ích Task manager của Windows
+bằng cách nhấn chuột phải lên vị trống trên thanh taskbar chọn Task manager hoặc nhấn
+tổ hợp phím Ctrl-Alt-Delete và chọn Task manager<span lang="VI">.</span></p>
+
+<p>&nbsp; &nbsp; &nbsp;Để tắt chương trình bị treo, chọn tên
+chương trình trong danh sách sau đó click chuột vào nút lệnh
+End task.</p>
+
+<p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(21).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p style="text-align: center;"><i>Hộp thoại Task manager</i><i><span lang="VI"></span></i></p><p><span><br></span></p><strong>1.4</strong>&nbsp;&nbsp;<strong style="font-size: calc(0.90375rem + 0.045vw);">Sử dụng Tiếng Việt trên máy tính</strong><p><strong>1.4.1.&nbsp;&nbsp;</strong><strong>Cài đặt bộ gõ Tiếng Việt</strong>:</p>
+
+<p>&nbsp; &nbsp; &nbsp;Để nhập liệu Tiếng Việt, người dùng thường sử dụng các
+bộ gõ phổ biến như <strong>Unikey</strong><strong><span lang="VI">,</span></strong><span lang="VI"> </span><strong><span lang="VI">EVKey</span></strong><span lang="VI"> hoặc</span><span lang="VI"> </span><strong>Vietkey</strong>.</p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp;
+<!--[endif]--><strong><span lang="VI">Bộ gõ Unikey</span></strong><strong></strong></p>
+
+<p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(22).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p style="text-align: center;"><i><span lang="VI">Bộ gõ Unikey</span></i></p>
+
+<p>&nbsp; &nbsp; &nbsp;Unikey là chương trình
+bàn phím tiếng Việt phổ biến nhất trên Windows. Phần lõi xử lý tiếng Việt
+UniKey Input Engine cũng được sử dụng trong các chương trình bàn phím mặc định
+của các hệ điều hành Linux, Mac OS X và đặc biệt là tất cả các thiết bị dùng
+iOS (iPhone, iPad). UniKey Input Engine có mã nguồn mở theo giấy phép GNU
+General Public License.</p>
+
+<p>&nbsp; &nbsp; &nbsp;Unikey.org là website chính thức duy nhất của
+phần mềm UniKey.<span lang="VI"></span></p>
+
+<p>&nbsp; &nbsp; &nbsp;Sau khi cài đặt Unikey, bạn có thể
+bật chế độ gõ Tiếng Việt bằng tổ hợp phím <strong>Alt + Z</strong>.<span lang="VI"></span></p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Chuyển đổi giữa Tiếng Việt và Tiếng
+Anh:</strong></p>
+
+<p><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--[endif]-->Để
+chuyển đổi ngôn ngữ nhập liệu, nhấn tổ hợp phím <strong>Alt + Shift</strong>.</p>
+
+<p><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--[endif]-->Unikey
+cũng cung cấp tùy chọn gõ kiểu <strong>Telex</strong> hoặc <strong>VNI</strong>, hai phương pháp
+nhập liệu Tiếng Việt phổ biến.</p><p style="text-align: center;"><span style="font-size: 14.8236px;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(23).png" alt="" role="presentation" class="img-fluid"><br></span></p></span><p></p><p style="text-align: center;"><i><span lang="VI">Phím tắt để
+chuyển đổi Tiếng Việt sang Tiếng Anh và ngược lại</span></i></p><p><!--[if !supportLists]--><span lang="VI">o&nbsp;&nbsp; </span><!--[endif]--><b><span lang="VI">Bộ gõ EV Key:</span></b></p><p style="text-align: center;"><img src="assets/Lam_viec_voi_may_tinh_Trang/image_(25).png" alt="" role="presentation" class="img-fluid" style="font-size: calc(0.90375rem + 0.045vw);"></p><p style="text-align: center;"></p><p align="center"><i><span lang="VI">Bộ
+gõ EV Key</span></i></p><span lang="VI">&nbsp; &nbsp; &nbsp;Tải bộ gõ EV Key tại: </span><a href="https://evkeyvn.com"><span lang="VI">https://evkeyvn.com</span></a><br><p></p><p></p></div></div><div class="modified">Sửa lần cuối: Thứ Tư, 10 tháng 12 2025, 7:28 PM</div>
+        </body>
+        </html>
+        

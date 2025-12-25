@@ -1,0 +1,189 @@
+
+        <html>
+        <head><title>Cơ sở dữ liệu
+Trang</title><meta charset='utf-8'><link rel="stylesheet" href="../page_theme.css">
+</head>
+        <body>
+            <h1>Cơ sở dữ liệu
+Trang</h1>
+            <h3>Section: Chương 5: Sử dụng bảng tính</h3>
+            <hr>
+            <div class="box py-3 generalbox center clearfix"><div class="no-overflow"><p dir="ltr" style="text-align: left;"><strong>4.1&nbsp; Khái niệm</strong></p><p dir="ltr" style="text-align: left;"></p><p>&nbsp; &nbsp; &nbsp;Khi quản lý thông tin về một đối tượng,
+ta phải quản lý các thuộc tính liên quan đến đối tượng đó. Ví dụ, quản lý nhân viên
+thì cần quản lý tông tin của nhân viên như: họ tên, mã nhân viên,
+phái, năm sinh, nơi sinh,
+địa chỉ, mã ngạch, bậc, hệ số, lương, phụ cấp, chức
+vụ, … Đó là các thuộc tính phản ánh nội dung của một đối tượng quản lý.
+Các thuộc tính đó thường được biểu diễn dưới dạng
+các kiểu dữ liệu khác nhau (là chuỗi, số, ngày tháng,<span style="font-size: calc(0.90375rem + 0.045vw);">...) và được hợp nhất thành một đơn vị thông tin duy nhất gọi là bản ghi
+(record). C<strong>ác bản ghi hợp thành một </strong></span><strong><span style="font-size: calc(0.90375rem + 0.045vw);">cơ sở
+dữ liệu</span><span style="font-size: calc(0.90375rem + 0.045vw);">.</span></strong></p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;Trong Excel, cơ sở dữ liệu có dạng như một danh sách. Ví dụ: danh sách nhân viên, danh sách hàng hóa, … Mỗi danh sách có thể gồm có một hay nhiều cột, mỗi cột được gọi là một
+<span>trường </span>(field) của cơ sở
+dữ liệu. Tên của cột sẽ được gọi là <span>tên trường</span>.</strong></p>
+
+<!--[if !vml]--><strong>&nbsp; &nbsp; &nbsp;Hàng đầu tiên trong danh sách (cơ sở dữ liệu) chứa các tên trường được gọi là <span>hàng tiêu
+đề </span>(Header row), các hàng tiếp theo mỗi hàng là một <span>bản ghi </span>(record) cho biết thông
+tin về đối tượng mà ta quản lý.<br></strong><p></p><p><strong><br></strong></p><p><strong>4.2&nbsp; Sắp xếp dự liệu</strong></p><p><strong></strong></p><p><span>&nbsp; &nbsp; &nbsp;Lệnh Data -&gt; Sort dùng để sắp xếp các hàng hoặc các cột trong vùng được chọn theo thứ tự tùy chọn tương ứng khóa sắp xếp được chỉ định, vùng sắp xếp phải chọn <i style="">tất cả các ô có liên hệ với nhau.</i></span></p><p><span lang="vi" style="font-size: calc(0.90375rem + 0.045vw);">-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: calc(0.90375rem + 0.045vw);">Chọn vùng dữ liệu cần sắp xếp</span></p><span>&nbsp; &nbsp; &nbsp;Vào Data -&gt; (Group Sort
+&amp; Filter) -&gt; Sort, xuất hiện hộp thoại<br></span><p></p><p style="text-align: center;"><span><img src="assets/Co_so_du_lieu_Trang/image.png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span></span></p><p style="text-align: center;">Hình <span lang="VI">6</span>.11. Hộp thoại Sort</p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><div>
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp; </span><!--[endif]-->Sort by: Chọn khóa sắp xếp</p>
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp; </span><!--[endif]-->Sort On: Giá trị sắp xếp (giá trị, mầu
+nền, màu chữ, biểu tượng).</p>
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp; </span><!--[endif]-->Order: Thứ tự tăng dần
+hoặc giảm dần.</p></div>
+
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp;
+</span><!--[endif]-->Add Level: Thêm khóa sắp xếp, nếu dữ liệu trong cột khóa phía trên bị trùng.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp; </span><!--[endif]-->Copy Level: Copy điều kiện.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp; </span><!--[endif]-->Delete Level:
+Xóa điều kiện</p>
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp;
+</span><!--[endif]-->Nếu muốn sắp xếp theo hàng thì chọn nút lệnh Options
+của hộp thoại Sort, sau đó chọn mục Sort left
+to right.</p>
+
+<p>&nbsp; &nbsp; &nbsp;Muốn sắp xếp nhanh theo cột nào đó thì đặt con trỏ vào ô bất kỳ của cột đó, Click chọn nút Sort A -&gt; Z&nbsp;<img src="assets/Co_so_du_lieu_Trang/image_(1).png" alt="" role="presentation" class="img-fluid">&nbsp;hoặc Sort Z -&gt; A <img src="assets/Co_so_du_lieu_Trang/image_(2).png" alt="" role="presentation" class="img-fluid">&nbsp;trên thanh công cụ chuẩn.</p><p><br></p><p><strong>4.3&nbsp; Lọc dữ liệu Tự động- Nâng cao</strong></p><p><strong>4.3.1 Lọc dữ liệu tự động (AutoFilter)</strong></p><p></p><p><strong>&nbsp; &nbsp; &nbsp;Chức năng</strong>:
+Lệnh Data -&gt; (Group Sort &amp; Filter) -&gt; Filter dùng để lọc các bản ghi thỏa mãn những tiêu chuẩn nào đó từ cơ sở
+dữ liệu ban đầu. Kết quả chỉ hiển thị những bản ghi thỏa mãn điều kiện. Những bản ghi còn lại sẽ tạm thời bị ẩn đi.</p><p><strong>&nbsp; &nbsp; &nbsp;Thực hiện</strong></p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]-->Chọn vùng CSDL với tiêu đề</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--> Chọn Tab
+Data -&gt; (Group Sort &amp; Filter) -&gt; Filter. Excel sẽ tự động xuất hiện các nút thả cạnh tên field cho phép chọn điều kiện lọc tương ứng
+với các field đó.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]-->Chọn điều kiện lọc trong hộp liệt kê của từng field tương ứng.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[endif]--> Chọn Text Fillter/Number Fillter
+để thực hiện chức năng lọc nâng cao theo yêu
+cầu của người dùng.</p>
+
+<p><strong><a name="2.4.3.2_Lọc_dữ_liệu_nâng_cao_(Advanced_F"></a><span lang="vi">4.3.2&nbsp;
+</span><!--[endif]-->Lọc dữ liệu nâng cao (Advanced
+Filter)</strong></p><p><strong>&nbsp; &nbsp; &nbsp;Chức năng</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp;Lệnh Data -&gt; (Group Sort &amp;
+Filter) -&gt; Advanced dùng để trích ra
+các mẫu tin theo các điều kiện chỉ định trong vùng điều kiện được tạo trước.</p><p><strong>&nbsp; &nbsp; &nbsp;Thực hiện</strong></p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Tạo vùng điều kiện lọc. Sử dụng một trong hai cách sau.</p>
+
+<p><i>&nbsp; &nbsp; &nbsp;Cách 1</i>: <i>Sử dụng tên trường để tạo vùng điều kiện.</i></p>
+
+<p>&nbsp; &nbsp; &nbsp;Vùng điều kiện sẽ có ít nhất hai hàng, hàng đầu chứa các tên trường (field) điều kiện, các hàng khác dùng để mô tả điều kiện.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Chọn các ô trống trong bảng tính để làm vùng điều kiện</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Sao chép tên field
+điều kiện làm tiêu đề của vùng điều kiện.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Nhập trực tiếp các điều kiện vào ô dưới tên trường
+tương ứng. Các điều kiện ghi trên cùng một hàng là các điều kiện thỏa
+nãm đồng thời (AND). Các điều kiện ghi trên các dòng khác nhau là những
+điều kiện thỏa mãn không
+đồng thời (OR)</p>
+
+<p>&nbsp; &nbsp; &nbsp;Ví dụ:</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Co_so_du_lieu_Trang/image_(3).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p></p><p><i>&nbsp; &nbsp; &nbsp;Cách 2</i>: <i>Sử dụng công thức để tạo vùng điều kiện.</i></p>
+
+<p>&nbsp; &nbsp; &nbsp;Vùng điều kiện sẽ có 2 ô. Ô trên chứa tiêu đề hoặc bỏ trống nhưng phải khác với tên trường,
+ô dưới là công thức mô tả điều kiện.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Chọn 2 ô trống trong
+bảng tính để làm vùng
+tiêu chuẩn.</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Nhập tiêu đề ở ô trên của vùng
+tiêu chuẩn</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]-->Nhập công thức vào ô bên dưới mô tả điều kiện. Dùng bản ghi đầu tiêu trong
+cơ sở dữ liệu để đặt điều
+kiện so sánh. Hàm AND dùng để lập các điều kiện thỏa mãn đồng thời, hàm OR dùng để lập các điều
+kiện thỏa mãn không đồng thời.</p>
+
+<p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Vào Data à (Group Sort &amp; Filter)
+à Advancel, xuất hiện hộp thoại có các tùy chọn sau</p><p style="text-align: center;"><img src="assets/Co_so_du_lieu_Trang/image_(4).png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span>Action:</p>
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp;
+</span><!--[endif]--><i>Filter the list, in-place</i>: kết quả hiển thị trực tiếp trên vùng CSDL</p>
+
+<p><!--[if !supportLists]--><span lang="vi">o&nbsp;&nbsp;
+</span><i>Copy to another location</i>: kết quả được đặt tại một vị trí khác</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span><i>List range</i>: Chọn địa chỉ vùng CSDL</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp;&nbsp;</span><!--[endif]--><i>Criteria
+range</i>: Chọn địa chỉ vùng tiêu chuẩn</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span><i>Copy to</i>: Chọn địa
+chỉ của ô đầu tiên trong vùng kết quả (phải chọn mục Copy to
+another location).</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;</span><i>Unique records only</i>: Nếu có nhiều bản ghi giống nhau thì chỉ lấy duy nhất một bản ghi đại diện. Ngược lại, lấy hết các&nbsp;<span style="font-size: calc(0.90375rem + 0.045vw);">mẫu tin thỏa mãn điều kiện của vùng tiêu chuẩn (dù giống nhau).</span></p><p><span style="font-size: calc(0.90375rem + 0.045vw);"><br></span></p><p><span style="font-size: calc(0.90375rem + 0.045vw);"><strong>4.4&nbsp; Các hàm Cơ sở dữ liệu</strong></span></p><p>&nbsp; &nbsp; &nbsp;Các hàm cơ sở dữ
+liệu mang tính chất thống kê những bản ghi trong CSDL có trường thỏa mãn điều kiện của vùng tiêu chuẩn đã được thiết
+lập trước.</p><p><strong>&nbsp; &nbsp; &nbsp;Cú pháp chung</strong></p><p style="text-align: center;"><strong><img src="assets/Co_so_du_lieu_Trang/image_(5).png" alt="" role="presentation" class="img-fluid"><br></strong></p><div>
+
+<p><strong>-&nbsp; &nbsp; &nbsp;Database</strong>: Địa chỉ vùng CSDL (Chọn địa chỉ tuyệt đối để sao chép).</p>
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>Field</strong>: Cột cần tính toán, field có thể là tên trường, địa chỉ của ô tên trường (field)
+hoặc số thứ tự của trường đó (cột thứ nhất của vùng CSDL đã chọn tính là
+1 và tăng dần sang trái).</p></div>
+
+
+<p><!--[if !supportLists]--><span lang="vi">-&nbsp; &nbsp; &nbsp;</span><!--[endif]--><strong>Criteria</strong>: Địa chỉ vùng điều kiện</p>
+<strong>&nbsp; &nbsp; &nbsp;Ví dụ</strong>: Ta có một cơ sở dữ liệu như sau:<p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Co_so_du_lieu_Trang/image_(6).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Co_so_du_lieu_Trang/image_(7).png" alt="" role="presentation" class="img-fluid"><br></span></p><p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"></span></p><p style="text-align: center;">Hình <span lang="VI">6</span>.12 Các hàm về Cơ sở dữ liệu<span lang="VI"></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"></span></p><p><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Một số hàm thông dụng về CSDL:</p><p style="text-align: center;"><img src="assets/Co_so_du_lieu_Trang/image_(8).png" alt="" role="presentation" class="img-fluid"><br></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Co_so_du_lieu_Trang/image_(9).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: center;"><span style="font-size: 14.8016px;"></span></p><p style="text-align: center;">Bảng 2-8 Các hàm về cơ sở dữ liệu</p><p style="text-align: left;"><span style="font-size: 14.8016px;"><br></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"><strong>4.5&nbsp; Subtotals</strong></span></p><p style="text-align: left;"><span style="font-size: 14.8016px;"><strong></strong></span></p><p><span><span lang="vi" style="">*&nbsp;&nbsp;</span><!--[endif]-->Chức năng</span></p><span>
+
+<p style="">&nbsp; &nbsp; &nbsp;Thống kê dữ
+liệu theo từng nhóm trong CSDL.</p>
+
+<p style=""><span lang="vi">*&nbsp;&nbsp;</span><!--[endif]-->Thực hiện</p>
+
+<p style="">&nbsp; &nbsp; &nbsp;Xét cơ sở dữ liệu BẢNG LƯƠNG dưới đây. Vấn đề đặt ra là cần tình tổng tiền lương theo từng nhóm Đơnvị.</p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Co_so_du_lieu_Trang/image_(11).png" alt="" role="presentation" class="img-fluid"><br></span></p></span><p></p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]-->Dùng lệnh Data à (Group Sort &amp; Filter) à Sort để sắp xếp dữ liệu theo Đơn vị. Mục
+đích để các bản ghi có cùng
+đơn vị nằm liền kề nhau.</p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp;
+<!--[endif]-->Chọn bảng CSDL cần tổng hợp với tiêu
+đề là một hàng</p>
+
+<p><!--[if !supportLists]-->o&nbsp;&nbsp; <!--[endif]-->Vào Data à (Group Outline) àSubtotals, xuất hiện hộp thoại Subtotal với các tùy chọn sau:</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="assets/Co_so_du_lieu_Trang/image_(12).png" alt="" role="presentation" class="img-fluid"><br></p><p><!--[if !supportLists]-->§&nbsp; At
+each change in: Chọn tên trường cần tổng hợp</p>
+
+<p><!--[if !supportLists]-->§&nbsp; <!--[endif]-->Use
+function: Chọn hàm sử dụng tính toán hay thống kê</p>
+
+<p><!--[if !supportLists]-->§&nbsp; <!--[endif]-->Add
+subtotal to: Chọn tên trường chứa dữ liệu cần thực hiện tính toán hay thống kê</p>
+
+<p><!--[if !supportLists]-->§&nbsp; <!--[endif]-->Replace current
+subtotals: Thay thế các dòng tổng hợp cũ để ghi dòng tổng hợp mới.</p>
+
+<p><!--[if !supportLists]-->§&nbsp; <!--[endif]-->Page break between groups: Tạo ngắt trang giữa các nhóm</p>
+
+<p><!--[if !supportLists]-->§&nbsp; <!--[endif]-->Summary below
+data: Thêm dòng tổng hợp sau mỗi nhóm.</p><p><strong>&nbsp; &nbsp; &nbsp;Kết quả Subtotal</strong></p><p style="text-align: center;"><strong><img src="assets/Co_so_du_lieu_Trang/image_(13).png" alt="" role="presentation" class="img-fluid"><br></strong></p><p style="text-align: center;"><strong></strong></p><p style="text-align: center;"><span>Hình <span lang="VI" style="">6</span>.13. Kết quả Subtotal – Chế độ hiển thị
+All Recrord</span></p><p style="text-align: left;"><span></span></p><p><span lang="vi">*&nbsp;&nbsp;</span>Làm việc với màn hình kết
+quả sau khi tổng hợp</p>
+
+<p>Click vào nút&nbsp;<img src="assets/Co_so_du_lieu_Trang/image_(14).png" alt="" role="presentation" class="img-fluid">&nbsp;để chọn
+các mức dữ liệu bạn muốn xem</p>
+
+<p></p><ul><li>Chỉ hiển thị tổng chính (Grand Total Only)</li></ul><p></p><p style="text-align: center;"><span style="font-size: 14.8016px;"><img src="assets/Co_so_du_lieu_Trang/image_(15).png" alt="" role="presentation" class="img-fluid"><br></span></p><p style="text-align: left;"></p><ul><li><span style="font-size: 14.8016px;">Hiển thị tổng chính và tổng
+phụ (Grand Total And Subtotal)</span></li></ul><p style="text-align: center;"><img src="assets/Co_so_du_lieu_Trang/image_(16).png" alt="" role="presentation" class="img-fluid"><br></p><p></p><p style="text-align: left;"><span style="font-size: 14.8016px;"></span></p><p></p><ul><li>Hiển thị chi tiết tất cả các bản
+ghi cùng các tổng hợp (All Record)</li></ul><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div></div><div class="modified">Sửa lần cuối: Thứ Tư, 10 tháng 12 2025, 5:36 PM</div>
+        </body>
+        </html>
+        
