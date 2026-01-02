@@ -39,7 +39,8 @@ def generate_html(structure):
             </div>
             <div class="section-content" id="{section_id}">
         '''
-        
+
+        rendered_any = False
         for activity in section.get('activities', []):
             safe_name = slugify(activity['name'])
             
@@ -55,6 +56,7 @@ def generate_html(structure):
                     fname = f"page_{activity['id']}.html" # Fallback
                 link = f"pages/{fname}"
                 icon = "📝"
+                rendered_any = True
             elif activity['type'] == 'resource':
                 # Try to find the file in resources
                 # This is tricky without exact extension, so we might need a search or just guess
@@ -65,18 +67,27 @@ def generate_html(structure):
                 
                 # Try to find file starting with safe_name
                 found = False
-                for f in os.listdir(RESOURCES_DIR):
-                    if f.startswith(safe_name):
-                        link = f"resources/{f}"
-                        found = True
-                        break
+                if RESOURCES_DIR.exists():
+                    for f in os.listdir(RESOURCES_DIR):
+                        if f.startswith(safe_name):
+                            link = f"resources/{f}"
+                            found = True
+                            break
                 if not found:
                     link = f"resources/resource_{activity['id']}" # Fallback guess
                 
                 icon = "💾"
+                rendered_any = True
             elif activity['type'] == 'url':
                 link = activity['url']
                 icon = "🔗"
+                rendered_any = True
+            elif activity['type'] == 'quiz':
+                # Moodle quiz activities are skipped in offline scrape, but we provide
+                # an offline practice UI via trac_nghiem_index.html at repo root.
+                link = "../trac_nghiem_index.html"
+                icon = "❓"
+                rendered_any = True
             else:
                 continue # Skip others for now?
 
@@ -84,6 +95,16 @@ def generate_html(structure):
                 <a href="{link}" class="activity-link {type_class}" target="content-frame" onclick="setActive(this)">
                     <span class="activity-icon">{icon}</span>
                     <span class="activity-name">{activity['name']}</span>
+                </a>
+            '''
+
+        # If a section ends up empty (e.g. only skipped activity types), provide a
+        # shortcut to the offline quiz list when it's clearly a quiz section.
+        if not rendered_any and 'trắc nghiệm' in section.get('name', '').lower():
+            sidebar_html += '''
+                <a href="../trac_nghiem_index.html" class="activity-link quiz" target="content-frame" onclick="setActive(this)">
+                    <span class="activity-icon">❓</span>
+                    <span class="activity-name">Danh sách trắc nghiệm (offline)</span>
                 </a>
             '''
             

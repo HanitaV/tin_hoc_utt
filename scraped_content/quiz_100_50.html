@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ôn thi trắc nghiệm: 100 câu / 50 phút</title>
+  <link rel="stylesheet" href="page_theme.css" />
+  <style>
+    .quiz-shell { max-width: 1100px; margin: 0 auto; }
+
+    .quiz-layout {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .quiz-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(6px);
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      margin: 12px 0 16px;
+    }
+    .quiz-topbar .meta { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
+    .pill {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 6px 10px;
+      border: 1px solid #334155;
+      border-radius: 999px;
+      background: rgba(30, 41, 59, 0.45);
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+    .pill strong { color: #f8fafc; }
+    .quiz-topbar .actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+    button {
+      border: 1px solid #334155;
+      background: rgba(30, 41, 59, 0.65);
+      color: #e2e8f0;
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    button:hover { background: rgba(30, 41, 59, 0.9); }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .quiz-card {
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 14px;
+      background: rgba(30, 41, 59, 0.25);
+    }
+
+    .question-card {
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 14px;
+      background: rgba(30, 41, 59, 0.25);
+      margin-bottom: 12px;
+    }
+    .question-card.active { outline: 2px solid rgba(56, 189, 248, 0.35); }
+    .question-head {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .question-head .left { display: flex; gap: 10px; align-items: baseline; }
+    .question-no { font-weight: 800; }
+    .flag-btn {
+      border: 1px solid #334155;
+      background: rgba(15, 23, 42, 0.25);
+      color: #e2e8f0;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+    .flag-btn.on { background: rgba(30, 41, 59, 0.75); }
+
+    .sidebar {
+      position: sticky;
+      top: 12px;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 12px;
+      background: rgba(30, 41, 59, 0.25);
+    }
+    .sidebar .title { margin: 0 0 8px; font-weight: 700; }
+    .sidebar .current { color: #e2e8f0; margin: 0 0 10px; }
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+    .nav-btn {
+      border: 1px solid #334155;
+      background: rgba(15, 23, 42, 0.25);
+      color: #e2e8f0;
+      border-radius: 10px;
+      padding: 8px 0;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-align: center;
+      user-select: none;
+    }
+    .nav-btn:hover { background: rgba(15, 23, 42, 0.4); }
+    .nav-btn.current { outline: 2px solid rgba(56, 189, 248, 0.45); }
+    .nav-btn.answered { border-color: rgba(56, 189, 248, 0.6); }
+    .nav-btn.flagged::after {
+      content: "C";
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 0.8rem;
+      opacity: 0.9;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      padding: 0 5px;
+      background: rgba(30, 41, 59, 0.55);
+    }
+
+    .question-title { margin: 0 0 10px; font-size: 1.05rem; }
+    .question-prompt { margin: 0 0 12px; }
+
+    .options { display: grid; gap: 10px; margin: 10px 0 2px; }
+    .option {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 10px;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      background: rgba(15, 23, 42, 0.25);
+    }
+    .option:hover { background: rgba(15, 23, 42, 0.4); }
+    .option input { margin-top: 3px; }
+    .option .label {
+      min-width: 22px;
+      font-weight: 700;
+      color: #f8fafc;
+    }
+
+    .hint { color: #94a3b8; font-size: 0.95rem; }
+    .error {
+      border: 1px solid #7f1d1d;
+      background: rgba(127, 29, 29, 0.15);
+      padding: 12px;
+      border-radius: 10px;
+      color: #fecaca;
+    }
+
+    details {
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: rgba(30, 41, 59, 0.25);
+      margin-top: 12px;
+    }
+    summary { cursor: pointer; color: #e2e8f0; }
+
+    .result {
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 14px;
+      background: rgba(30, 41, 59, 0.25);
+    }
+    .result h2 { margin: 0 0 8px; }
+    .result .big { font-size: 1.3rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main class="quiz-shell">
+    <h1>Ôn thi trắc nghiệm: 100 câu / 50 phút</h1>
+    <p class="hint">
+      Trang này lấy dữ liệu từ <code>db/trac_nghiem_questions.json</code> và chia đều câu hỏi theo <em>chương</em> (dựa trên <code>sectionName</code> trong <code>db/trac_nghiem.json</code>).
+    </p>
+
+    <div id="loading" class="quiz-card">Đang tải ngân hàng câu hỏi…</div>
+    <div id="error" class="error" style="display:none"></div>
+
+    <div id="app" style="display:none">
+      <div class="quiz-topbar">
+        <div class="meta">
+          <div class="pill">Câu <strong id="qPos">-</strong>/100</div>
+          <div class="pill">Trang <strong id="pagePos">-</strong>/5</div>
+          <div class="pill">Đã chọn: <strong id="answeredCount">0</strong>/100</div>
+          <div class="pill">Thời gian: <strong id="timer">50:00</strong></div>
+        </div>
+        <div class="actions">
+          <button id="btnPrev" type="button">← Trang trước</button>
+          <button id="btnNext" type="button">Trang sau →</button>
+          <button id="btnSubmit" type="button">Nộp bài</button>
+        </div>
+      </div>
+
+      <div class="quiz-layout">
+        <div>
+          <div id="questionList"></div>
+
+          <details>
+            <summary>Phân bổ câu hỏi theo chương</summary>
+            <div id="distribution" class="hint" style="margin-top:10px"></div>
+          </details>
+        </div>
+
+        <aside class="sidebar">
+          <p class="title">Chọn câu (1–100)</p>
+          <p id="currentInfo" class="current">Đang xem: -</p>
+          <div id="navGrid" class="nav-grid"></div>
+          <p class="hint" style="margin-top:10px">
+            Gợi ý: nhấn “C” để gắn cờ.
+          </p>
+        </aside>
+      </div>
+    </div>
+
+    <div id="result" style="display:none" class="result"></div>
+  </main>
+
+  <script>
+    const QUIZ_SIZE = 100;
+    const DURATION_SECONDS = 50 * 60;
+
+    function shuffleInPlace(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function formatMMSS(totalSeconds) {
+      const m = Math.floor(totalSeconds / 60);
+      const s = totalSeconds % 60;
+      return String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+    }
+
+    function safeText(text) {
+      return (text ?? '').toString();
+    }
+
+    function escapeHtml(text) {
+      return safeText(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function setError(message, details) {
+      document.getElementById('loading').style.display = 'none';
+      const el = document.getElementById('error');
+      el.style.display = 'block';
+      el.innerHTML = '<strong>Lỗi:</strong> ' + escapeHtml(message) + (details ? ('<div class="hint" style="margin-top:8px">' + escapeHtml(details) + '</div>') : '');
+    }
+
+    function buildChapterMap(tracNghiemDb) {
+      const map = new Map();
+      const activities = Array.isArray(tracNghiemDb.activities) ? tracNghiemDb.activities : [];
+      for (const a of activities) {
+        if (!a || !a.id) continue;
+        map.set(String(a.id), String(a.sectionName || 'Không rõ chương'));
+      }
+      return map;
+    }
+
+    function pickBalancedQuestions(questionsDb, tracNghiemDb) {
+      const chapterByActivityId = buildChapterMap(tracNghiemDb);
+
+      const questions = Array.isArray(questionsDb.questions) ? questionsDb.questions : [];
+      if (questions.length === 0) {
+        throw new Error('Không có câu hỏi trong DB.');
+      }
+
+      // Group by chapter (sectionName)
+      const byChapter = new Map();
+      for (const q of questions) {
+        if (!q || !q.id || !q.activityId) continue;
+        const chapter = chapterByActivityId.get(String(q.activityId)) || 'Không rõ chương';
+        if (!byChapter.has(chapter)) byChapter.set(chapter, []);
+        byChapter.get(chapter).push(q);
+      }
+
+      const chapters = Array.from(byChapter.keys());
+      if (chapters.length === 0) {
+        throw new Error('Không phân nhóm được theo chương (sectionName).');
+      }
+
+      if (chapters.length > QUIZ_SIZE) {
+        throw new Error('Số chương lớn hơn số câu cần lấy (100).');
+      }
+
+      // Randomize chapter order so the remainder distribution is fair
+      const chaptersShuffled = shuffleInPlace(chapters.slice());
+
+      const base = Math.floor(QUIZ_SIZE / chaptersShuffled.length);
+      const remainder = QUIZ_SIZE % chaptersShuffled.length;
+
+      const quotaByChapter = new Map();
+      for (let i = 0; i < chaptersShuffled.length; i++) {
+        quotaByChapter.set(chaptersShuffled[i], base + (i < remainder ? 1 : 0));
+      }
+
+      // Pick from each chapter
+      const selected = [];
+      const pickedIds = new Set();
+      const shortages = [];
+
+      for (const chapter of chaptersShuffled) {
+        const pool = byChapter.get(chapter) || [];
+        const want = quotaByChapter.get(chapter) || 0;
+
+        const poolShuffled = shuffleInPlace(pool.slice());
+        const take = Math.min(want, poolShuffled.length);
+
+        for (let i = 0; i < take; i++) {
+          selected.push(poolShuffled[i]);
+          pickedIds.add(String(poolShuffled[i].id));
+        }
+
+        if (take < want) shortages.push({ chapter, missing: want - take });
+      }
+
+      // Fill shortages from remaining questions across all chapters
+      if (selected.length < QUIZ_SIZE) {
+        const remaining = [];
+        for (const [chapter, pool] of byChapter.entries()) {
+          for (const q of pool) {
+            if (!pickedIds.has(String(q.id))) remaining.push(q);
+          }
+        }
+        shuffleInPlace(remaining);
+
+        while (selected.length < QUIZ_SIZE && remaining.length > 0) {
+          const q = remaining.pop();
+          selected.push(q);
+          pickedIds.add(String(q.id));
+        }
+      }
+
+      if (selected.length !== QUIZ_SIZE) {
+        throw new Error('Không đủ câu để chọn đúng 100 câu. Hiện có: ' + selected.length);
+      }
+
+      // Shuffle final order for the test
+      shuffleInPlace(selected);
+
+      // Build distribution counts (actual)
+      const actualCounts = new Map();
+      for (const q of selected) {
+        const chapter = chapterByActivityId.get(String(q.activityId)) || 'Không rõ chương';
+        actualCounts.set(chapter, (actualCounts.get(chapter) || 0) + 1);
+      }
+
+      return { selected, actualCounts };
+    }
+
+    function computeAnsweredCount(answers) {
+      let c = 0;
+      for (const v of answers.values()) {
+        if (v) c++;
+      }
+      return c;
+    }
+
+    function updateTopbar(state) {
+      document.getElementById('qPos').textContent = String(state.activeIndex + 1);
+      document.getElementById('pagePos').textContent = String(state.pageIndex + 1);
+      document.getElementById('answeredCount').textContent = String(computeAnsweredCount(state.answers));
+      document.getElementById('currentInfo').textContent = 'Đang xem: Câu ' + String(state.activeIndex + 1);
+
+      document.getElementById('btnPrev').disabled = state.pageIndex === 0;
+      document.getElementById('btnNext').disabled = state.pageIndex === state.totalPages - 1;
+    }
+
+    function renderSidebar(state) {
+      const nav = document.getElementById('navGrid');
+      const parts = [];
+      for (let i = 0; i < state.questions.length; i++) {
+        const q = state.questions[i];
+        const answered = !!(state.answers.get(String(q.id)));
+        const flagged = state.flags.has(String(q.id));
+        const current = i === state.activeIndex;
+
+        const cls = [
+          'nav-btn',
+          answered ? 'answered' : '',
+          flagged ? 'flagged' : '',
+          current ? 'current' : ''
+        ].filter(Boolean).join(' ');
+
+        parts.push('<button type="button" class="' + cls + '" data-idx="' + i + '">' + (i + 1) + '</button>');
+      }
+      nav.innerHTML = parts.join('');
+
+      nav.querySelectorAll('button[data-idx]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = Number(btn.getAttribute('data-idx'));
+          goToQuestion(state, idx, true);
+        });
+      });
+    }
+
+    function renderPage(state) {
+      const start = state.pageIndex * state.pageSize;
+      const end = Math.min(start + state.pageSize, state.questions.length);
+
+      const html = [];
+      for (let i = start; i < end; i++) {
+        const q = state.questions[i];
+        const options = q.options || {};
+        const letters = ['A', 'B', 'C', 'D'].filter(l => options[l] != null);
+        const chosen = state.answers.get(String(q.id)) || '';
+        const flagged = state.flags.has(String(q.id));
+
+        html.push(
+          '<div class="question-card" id="q-' + i + '" data-idx="' + i + '">' +
+            '<div class="question-head">' +
+              '<div class="left">' +
+                '<div class="question-no">Câu ' + (i + 1) + '</div>' +
+              '</div>' +
+              '<button type="button" class="flag-btn ' + (flagged ? 'on' : '') + '" data-flag-idx="' + i + '">C</button>' +
+            '</div>' +
+            '<div class="question-prompt">' + escapeHtml(q.prompt || '') + '</div>' +
+            '<div class="options">' +
+              letters.map(letter => {
+                const inputId = 'opt-' + i + '-' + letter;
+                const name = 'answer-q' + i;
+                return (
+                  '<label class="option" for="' + inputId + '">' +
+                    '<input type="radio" name="' + name + '" id="' + inputId + '" value="' + letter + '" ' + (chosen === letter ? 'checked' : '') + ' />' +
+                    '<span class="label">' + letter + '.</span>' +
+                    '<span>' + escapeHtml(options[letter]) + '</span>' +
+                  '</label>'
+                );
+              }).join('') +
+            '</div>' +
+          '</div>'
+        );
+      }
+
+      const container = document.getElementById('questionList');
+      container.innerHTML = html.join('');
+
+      // click focus for current question
+      container.querySelectorAll('.question-card[data-idx]').forEach(card => {
+        card.addEventListener('click', () => {
+          const idx = Number(card.getAttribute('data-idx'));
+          setActiveIndex(state, idx);
+        });
+      });
+
+      // answer change
+      container.querySelectorAll('input[type=radio]').forEach(input => {
+        input.addEventListener('change', () => {
+          const card = input.closest('.question-card');
+          const idx = Number(card.getAttribute('data-idx'));
+          const q = state.questions[idx];
+          state.answers.set(String(q.id), input.value);
+          updateTopbar(state);
+          renderSidebar(state);
+        });
+      });
+
+      // flag toggle
+      container.querySelectorAll('button[data-flag-idx]').forEach(btn => {
+        btn.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const idx = Number(btn.getAttribute('data-flag-idx'));
+          const q = state.questions[idx];
+          const qid = String(q.id);
+          if (state.flags.has(qid)) state.flags.delete(qid);
+          else state.flags.add(qid);
+          goToQuestion(state, idx, false);
+          renderSidebar(state);
+        });
+      });
+
+      // highlight active
+      container.querySelectorAll('.question-card').forEach(card => card.classList.remove('active'));
+      const activeCard = document.getElementById('q-' + state.activeIndex);
+      if (activeCard) activeCard.classList.add('active');
+    }
+
+    function setActiveIndex(state, idx) {
+      if (idx < 0 || idx >= state.questions.length) return;
+      state.activeIndex = idx;
+      updateTopbar(state);
+      renderSidebar(state);
+
+      const activeCard = document.getElementById('q-' + idx);
+      if (activeCard) {
+        document.querySelectorAll('.question-card').forEach(card => card.classList.remove('active'));
+        activeCard.classList.add('active');
+      }
+    }
+
+    function goToQuestion(state, idx, shouldScroll) {
+      const targetPage = Math.floor(idx / state.pageSize);
+      if (targetPage !== state.pageIndex) {
+        state.pageIndex = targetPage;
+        renderPage(state);
+      }
+      setActiveIndex(state, idx);
+      if (shouldScroll) {
+        const el = document.getElementById('q-' + idx);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function showResult(state, remainingSeconds) {
+      const total = state.questions.length;
+      let correct = 0;
+      let answered = 0;
+
+      for (const q of state.questions) {
+        const chosen = state.answers.get(String(q.id)) || '';
+        if (chosen) answered++;
+        if (chosen && String(chosen).toUpperCase() === String(q.correct || '').toUpperCase()) correct++;
+      }
+
+      const percent = Math.round((correct / total) * 1000) / 10;
+      const usedSeconds = DURATION_SECONDS - remainingSeconds;
+
+      document.getElementById('app').style.display = 'none';
+      const el = document.getElementById('result');
+      el.style.display = 'block';
+
+      el.innerHTML = [
+        '<h2>Kết quả</h2>',
+        '<div class="big">' + correct + '/' + total + ' (' + percent + '%)</div>',
+        '<div class="hint" style="margin-top:8px">Đã trả lời: ' + answered + '/' + total + ' · Thời gian làm bài: ' + formatMMSS(usedSeconds) + '</div>',
+        '<div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap">',
+          '<button type="button" id="btnRestart">Làm lại (random đề mới)</button>',
+          '<a href="trac_nghiem_index.html" style="align-self:center">← Quay lại danh sách trắc nghiệm</a>',
+        '</div>'
+      ].join('');
+
+      document.getElementById('btnRestart').addEventListener('click', () => window.location.reload());
+    }
+
+    async function main() {
+      let questionsDb;
+      let tracNghiemDb;
+      try {
+        const [qRes, tRes] = await Promise.all([
+          fetch('db/trac_nghiem_questions.json', { cache: 'no-store' }),
+          fetch('db/trac_nghiem.json', { cache: 'no-store' })
+        ]);
+
+        if (!qRes.ok) throw new Error('Không tải được db/trac_nghiem_questions.json (' + qRes.status + ')');
+        if (!tRes.ok) throw new Error('Không tải được db/trac_nghiem.json (' + tRes.status + ')');
+
+        questionsDb = await qRes.json();
+        tracNghiemDb = await tRes.json();
+      } catch (e) {
+        const message = (e && e.message) ? e.message : String(e);
+        setError(message, 'Gợi ý: nếu bạn mở file trực tiếp (file://), trình duyệt có thể chặn fetch(). Hãy chạy server tĩnh: python -m http.server rồi mở qua http://localhost:8000/scraped_content/quiz_100_50.html');
+        return;
+      }
+
+      let picked;
+      try {
+        picked = pickBalancedQuestions(questionsDb, tracNghiemDb);
+      } catch (e) {
+        setError('Không tạo được đề 100 câu chia đều theo chương.', (e && e.message) ? e.message : String(e));
+        return;
+      }
+
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+
+      // Distribution view
+      const distLines = [];
+      const distEntries = Array.from(picked.actualCounts.entries()).sort((a, b) => a[0].localeCompare(b[0], 'vi'));
+      for (const [chapter, count] of distEntries) {
+        const pct = Math.round((count / QUIZ_SIZE) * 1000) / 10;
+        distLines.push('<div>' + escapeHtml(chapter) + ': <strong>' + count + '</strong> câu (' + pct + '%)</div>');
+      }
+      document.getElementById('distribution').innerHTML = distLines.join('');
+
+      const state = {
+        questions: picked.selected,
+        answers: new Map(),
+        flags: new Set(),
+        pageSize: 20,
+        totalPages: 5,
+        pageIndex: 0,
+        activeIndex: 0,
+        remainingSeconds: DURATION_SECONDS,
+        timerId: null,
+        submitted: false,
+      };
+
+      state.totalPages = Math.ceil(state.questions.length / state.pageSize);
+
+      document.getElementById('timer').textContent = formatMMSS(state.remainingSeconds);
+
+      function tick() {
+        state.remainingSeconds -= 1;
+        if (state.remainingSeconds < 0) state.remainingSeconds = 0;
+        document.getElementById('timer').textContent = formatMMSS(state.remainingSeconds);
+        if (state.remainingSeconds === 0) {
+          submit();
+        }
+      }
+
+      function submit() {
+        if (state.submitted) return;
+        state.submitted = true;
+        if (state.timerId) clearInterval(state.timerId);
+        showResult(state, state.remainingSeconds);
+      }
+
+      document.getElementById('btnPrev').addEventListener('click', () => {
+        if (state.pageIndex > 0) {
+          state.pageIndex -= 1;
+          const start = state.pageIndex * state.pageSize;
+          state.activeIndex = start;
+          renderPage(state);
+          updateTopbar(state);
+          renderSidebar(state);
+          const el = document.getElementById('q-' + state.activeIndex);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      document.getElementById('btnNext').addEventListener('click', () => {
+        if (state.pageIndex < state.totalPages - 1) {
+          state.pageIndex += 1;
+          const start = state.pageIndex * state.pageSize;
+          state.activeIndex = start;
+          renderPage(state);
+          updateTopbar(state);
+          renderSidebar(state);
+          const el = document.getElementById('q-' + state.activeIndex);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      document.getElementById('btnSubmit').addEventListener('click', () => {
+        const ok = confirm('Nộp bài ngay?');
+        if (ok) submit();
+      });
+
+      renderPage(state);
+      updateTopbar(state);
+      renderSidebar(state);
+      state.timerId = setInterval(tick, 1000);
+    }
+
+    main();
+  </script>
+</body>
+</html>

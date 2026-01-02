@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tổng hợp ôn tập trắc nghiệm</title>
+  <link rel="stylesheet" href="scraped_content/page_theme.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Tổng hợp ôn tập trắc nghiệm</h1>
+    <p>Danh sách các trang HTML có nội dung “Câu hỏi trắc nghiệm”.</p>
+
+    <p><a href="quiz.html">Làm thử: 100 câu / 50 phút (chia đều theo chương)</a></p>
+
+    <ul>
+      <li>
+        <a href="scraped_content/pages/Cau_hoi_trac_nghiem_Trang.html">Câu hỏi trắc nghiệm (tổng hợp)</a>
+        — <a href="quiz.html?activityId=module-587&mode=practice">Làm thử</a>
+        <span class="hint" data-done-for="module-587"></span>
+      </li>
+      <li>
+        <a href="scraped_content/pages/Cau_hoi_trac_nghiem__Su_dung_may_tinh_co_ban_Trang.html">Câu hỏi trắc nghiệm – Sử dụng máy tính cơ bản</a>
+        — <a href="quiz.html?activityId=module-580&mode=practice">Làm thử</a>
+        <span class="hint" data-done-for="module-580"></span>
+      </li>
+      <li>
+        <a href="scraped_content/pages/Cau_hoi_trac_nghiem__Su_dung_Internet_co_ban_Trang.html">Câu hỏi trắc nghiệm – Sử dụng Internet cơ bản</a>
+        — <a href="quiz.html?activityId=module-581&mode=practice">Làm thử</a>
+        <span class="hint" data-done-for="module-581"></span>
+      </li>
+      <li>
+        <a href="scraped_content/pages/Cau_hoi_trac_nghiem__Su_dung_trinh_chieu_co_ban_Trang.html">Câu hỏi trắc nghiệm – Sử dụng trình chiếu cơ bản</a>
+        — <a href="quiz.html?activityId=module-579&mode=practice">Làm thử</a>
+        <span class="hint" data-done-for="module-579"></span>
+      </li>
+      <li>
+        <a href="scraped_content/pages/Cau_hoi_trac_nghiem__Su_dung_bang_tinh_co_ban_Trang.html">Câu hỏi trắc nghiệm – Sử dụng bảng tính cơ bản</a>
+        — <a href="quiz.html?activityId=module-578&mode=practice">Làm thử</a>
+        <span class="hint" data-done-for="module-578"></span>
+      </li>
+      <li>
+        <a href="scraped_content/pages/Cau_hoi_trac_nghiem__Xu_ly_van_ban_co_ban_Trang.html">Câu hỏi trắc nghiệm – Xử lý văn bản cơ bản</a>
+        — <a href="quiz.html?activityId=module-577&mode=practice">Làm thử</a>
+        <span class="hint" data-done-for="module-577"></span>
+      </li>
+    </ul>
+
+    <p class="hint" style="margin-top:12px"><a href="index.html">← Về trang chủ</a></p>
+  </main>
+
+  <script>
+    (function () {
+      document.querySelectorAll('[data-done-for]').forEach((el) => {
+        const id = el.getAttribute('data-done-for');
+        if (!id) return;
+        try {
+          const raw = localStorage.getItem('practiceDone:' + id);
+          if (!raw) return;
+          el.textContent = ' ✓ đã làm';
+        } catch (e) {
+          // ignore
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

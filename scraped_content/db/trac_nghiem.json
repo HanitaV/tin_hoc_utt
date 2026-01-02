@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-01-01T05:35:18Z",
+  "activityIds": [
+    "module-265",
+    "module-266",
+    "module-277",
+    "module-278",
+    "module-577",
+    "module-578",
+    "module-579",
+    "module-580",
+    "module-581",
+    "module-587",
+    "module-588",
+    "module-589",
+    "module-590",
+    "module-591",
+    "module-592",
+    "module-593",
+    "module-594"
+  ],
+  "activities": [
+    {
+      "id": "module-265",
+      "name": "Ôn tập trắc nghiệm chương 1",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=265",
+      "sectionId": "section-1",
+      "sectionName": "Chương 1: Tin học căn bản",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-266",
+      "name": "Ôn tập Trắc nghiệm chương 2",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=266",
+      "sectionId": "section-3",
+      "sectionName": "Chương 2: CÔNG DÂN SỐ TRONG THỜI ĐẠI CÔNG NGHỆ 4.0",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-277",
+      "name": "Tổng hợp câu hỏi trắc nghiệm - Windows File",
+      "type": "resource",
+      "url": "https://elearning.utt.edu.vn/mod/resource/view.php?id=277",
+      "sectionId": "section-4",
+      "sectionName": "Chương 3. Hệ điều hành Windows",
+      "localPath": null,
+      "status": "error",
+      "availableLocal": false,
+      "tags": [
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-278",
+      "name": "Ôn tập trắc nghiệm Chương 3 - Sử dụng windows",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=278",
+      "sectionId": "section-4",
+      "sectionName": "Chương 3. Hệ điều hành Windows",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-577",
+      "name": "Câu hỏi trắc nghiệm_ Xử lý văn bản cơ bản Trang",
+      "type": "page",
+      "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=577",
+      "sectionId": "section-5",
+      "sectionName": "Chương 4: Xử lý văn bản cơ bản",
+      "localPath": "pages/Cau_hoi_trac_nghiem__Xu_ly_van_ban_co_ban_Trang.html",
+      "status": "success",
+      "availableLocal": true,
+      "tags": [
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-578",
+      "name": "Câu hỏi trắc nghiệm_ Sử dụng bảng tính cơ bản Trang",
+      "type": "page",
+      "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=578",
+      "sectionId": "section-8",
+      "sectionName": "Chương 5: Sử dụng bảng tính",
+      "localPath": "pages/Cau_hoi_trac_nghiem__Su_dung_bang_tinh_co_ban_Trang.html",
+      "status": "success",
+      "availableLocal": true,
+      "tags": [
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-579",
+      "name": "Câu hỏi trắc nghiệm_ Sử dụng trình chiếu cơ bản Trang",
+      "type": "page",
+      "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=579",
+      "sectionId": "section-9",
+      "sectionName": "Chương 6: Sử dụng trình chiếu",
+      "localPath": "pages/Cau_hoi_trac_nghiem__Su_dung_trinh_chieu_co_ban_Trang.html",
+      "status": "success",
+      "availableLocal": true,
+      "tags": [
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-580",
+      "name": "Câu hỏi trắc nghiệm_ Sử dụng máy tính cơ bản Trang",
+      "type": "page",
+      "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=580",
+      "sectionId": "section-2",
+      "sectionName": "Bài giảng: Sử dụng máy tính và Internet",
+      "localPath": "pages/Cau_hoi_trac_nghiem__Su_dung_may_tinh_co_ban_Trang.html",
+      "status": "success",
+      "availableLocal": true,
+      "tags": [
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-581",
+      "name": "Câu hỏi trắc nghiệm_ Sử dụng Internet cơ bản Trang",
+      "type": "page",
+      "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=581",
+      "sectionId": "section-2",
+      "sectionName": "Bài giảng: Sử dụng máy tính và Internet",
+      "localPath": "pages/Cau_hoi_trac_nghiem__Su_dung_Internet_co_ban_Trang.html",
+      "status": "success",
+      "availableLocal": true,
+      "tags": [
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-587",
+      "name": "Câu hỏi trắc nghiệm Trang",
+      "type": "page",
+      "url": "https://elearning.utt.edu.vn/mod/page/view.php?id=587",
+      "sectionId": "section-1",
+      "sectionName": "Chương 1: Tin học căn bản",
+      "localPath": "pages/Cau_hoi_trac_nghiem_Trang.html",
+      "status": "success",
+      "availableLocal": true,
+      "tags": [
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-588",
+      "name": "Ôn tập Trắc nghiệm Chương 1",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=588",
+      "sectionId": "section-2",
+      "sectionName": "Bài giảng: Sử dụng máy tính và Internet",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-589",
+      "name": "Ôn tập Trắc nghiệm Chương 2",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=589",
+      "sectionId": "section-3",
+      "sectionName": "Chương 2: CÔNG DÂN SỐ TRONG THỜI ĐẠI CÔNG NGHỆ 4.0",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-590",
+      "name": "Ôn tập Trắc nghiệm Chương 3",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=590",
+      "sectionId": "section-4",
+      "sectionName": "Chương 3. Hệ điều hành Windows",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-591",
+      "name": "Ôn tập Trắc nghiệm Chương 4",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=591",
+      "sectionId": "section-5",
+      "sectionName": "Chương 4: Xử lý văn bản cơ bản",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-592",
+      "name": "Ôn tập Trắc nghiệm Chương 5",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=592",
+      "sectionId": "section-8",
+      "sectionName": "Chương 5: Sử dụng bảng tính",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-593",
+      "name": "Ôn tập Trắc nghiệm Chương 6",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=593",
+      "sectionId": "section-9",
+      "sectionName": "Chương 6: Sử dụng trình chiếu",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    },
+    {
+      "id": "module-594",
+      "name": "Ôn thi kết thúc học phần Trắc nghiệm",
+      "type": "quiz",
+      "url": "https://elearning.utt.edu.vn/mod/quiz/view.php?id=594",
+      "sectionId": "section-10",
+      "sectionName": "Ôn tập trắc nghiệm",
+      "localPath": null,
+      "status": "skipped",
+      "availableLocal": false,
+      "tags": [
+        "quiz",
+        "trac_nghiem"
+      ]
+    }
+  ]
+}
