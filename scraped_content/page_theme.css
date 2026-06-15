@@ -1,27 +1,69 @@
+:root {
+    --bg: #f7f9fc;
+    --paper: #ffffff;
+    --ink: #172033;
+    --muted: #667085;
+    --line: #d9e2ec;
+    --teal: #0f766e;
+    --blue: #2563eb;
+    --soft: #eef6f4;
+    --code: #eef2f7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #0f172a;
-    color: #e2e8f0;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 900px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.68;
+    letter-spacing: 0;
+    padding: 24px;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
+body::before {
+    content: "";
+    display: block;
+    height: 8px;
+    max-width: 1040px;
+    margin: -24px auto 18px;
+    background: linear-gradient(90deg, #0f766e, #2563eb, #b45309);
+    border-radius: 0 0 8px 8px;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    color: #f8fafc;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    color: var(--ink);
+    line-height: 1.25;
+    margin-top: 1.35em;
+    margin-bottom: 0.55em;
 }
 
 h1 {
-    border-bottom: 1px solid #334155;
-    padding-bottom: 10px;
-    font-size: 2em;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+    font-size: clamp(1.7rem, 3vw, 2.45rem);
+}
+
+h2 {
+    font-size: 1.55rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
 }
 
 a {
-    color: #38bdf8;
+    color: var(--blue);
+    font-weight: 650;
     text-decoration: none;
 }
 
@@ -32,39 +74,48 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+    border: 1px solid var(--line);
     border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    margin: 10px 0;
+    box-shadow: 0 10px 28px rgba(23, 32, 51, 0.10);
+    margin: 12px 0;
+    background: #fff;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    margin: 15px 0;
-    color: #e2e8f0;
+    margin: 16px 0 22px;
+    color: var(--ink);
+    background: var(--paper);
 }
 
 th, td {
-    border: 1px solid #334155;
-    padding: 8px 12px;
+    border: 1px solid var(--line);
+    padding: 9px 11px;
     text-align: left;
+    vertical-align: top;
 }
 
 th {
-    background-color: #1e293b;
-    color: #f8fafc;
+    background: var(--soft);
+    color: #0b5f59;
+    font-weight: 800;
 }
 
-tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.02);
+tr:nth-child(even) td {
+    background: #fbfdff;
 }
 
 code, pre {
-    background-color: #1e293b;
-    padding: 0.2em 0.4em;
-    border-radius: 4px;
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
-    font-size: 0.9em;
+    background: var(--code);
+    border: 1px solid #dfe8ef;
+    border-radius: 6px;
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    font-size: 0.92em;
+}
+
+code {
+    padding: 0.12em 0.34em;
 }
 
 pre {
@@ -72,6 +123,44 @@ pre {
     overflow-x: auto;
 }
 
+ul, ol {
+    padding-left: 1.4rem;
+}
+
+li {
+    margin: 0.28rem 0;
+}
+
 .box.generalbox {
-    border: none !important; /* Override Moodle styles */
+    border: 1px solid var(--line) !important;
+    border-radius: 8px;
+    background: var(--paper);
+    padding: 18px !important;
+    box-shadow: 0 10px 30px rgba(23, 32, 51, 0.07);
+}
+
+.modified {
+    margin-top: 22px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.hint {
+    color: var(--muted);
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 14px;
+    }
+
+    body::before {
+        margin-top: -14px;
+    }
+
+    .box.generalbox {
+        padding: 12px !important;
+    }
 }

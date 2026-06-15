@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tài liệu ôn tập Tin học</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --paper: #ffffff;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d9e2ec;
+      --teal: #0f766e;
+      --blue: #2563eb;
+      --amber-soft: #fff7ed;
+      --code: #eff4f8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.65;
+      letter-spacing: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 18px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    main,
+    .toc {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    main {
+      min-width: 0;
+      padding: 28px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 20px;
+      align-self: start;
+      max-height: calc(100vh - 40px);
+      overflow: auto;
+      padding: 14px;
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 7px 8px;
+      border-radius: 7px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      line-height: 1.3;
+    }
+
+    .toc a:hover {
+      background: #eef6f4;
+      color: var(--teal);
+    }
+
+    h1, h2, h3, h4 {
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      max-width: 900px;
+    }
+
+    h2 {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 1.45rem;
+    }
+
+    h3 {
+      margin-top: 28px;
+      font-size: 1.12rem;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    a {
+      color: var(--blue);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul, ol {
+      margin: 0 0 16px 1.4rem;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 22px;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #eef6f4;
+      color: #0b5f59;
+      font-weight: 800;
+    }
+
+    tr:nth-child(even) td {
+      background: #fbfdff;
+    }
+
+    code {
+      background: var(--code);
+      border: 1px solid #dfe8ef;
+      border-radius: 6px;
+      padding: 0.12em 0.34em;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 0.92em;
+    }
+
+    pre {
+      overflow: auto;
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid #dfe8ef;
+      background: #172033;
+      color: #eef6f4;
+    }
+
+    pre code {
+      border: 0;
+      background: transparent;
+      color: inherit;
+      padding: 0;
+    }
+
+    blockquote {
+      margin: 18px 0;
+      padding: 12px 14px;
+      border-left: 4px solid var(--teal);
+      background: #eef6f4;
+    }
+
+    .loading,
+    .error {
+      padding: 20px;
+      border-radius: 8px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+    }
+
+    .error {
+      border-color: #fecdd3;
+      background: #fff1f2;
+      color: #9f1239;
+    }
+
+    .check-item {
+      list-style: none;
+      margin-left: -1.1rem;
+    }
+
+    .check-item::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      margin-right: 8px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: #fff;
+      vertical-align: -2px;
+    }
+
+    .note {
+      margin: 16px 0;
+      padding: 12px 14px;
+      border: 1px solid #fed7aa;
+      border-radius: 8px;
+      background: var(--amber-soft);
+      color: #7c2d12;
+    }
+
+    .question-link-panel {
+      display: grid;
+      gap: 10px;
+      margin: 12px 0 18px;
+      padding: 13px 14px;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      background: #eff6ff;
+    }
+
+    .question-link-panel strong {
+      color: #1d4ed8;
+    }
+
+    .question-link-panel p {
+      margin: 0;
+      color: #344054;
+    }
+
+    .question-meta-row,
+    .question-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .question-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: #1e3a8a;
+      font-size: 0.86rem;
+      font-weight: 750;
+    }
+
+    .quiz-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 10px;
+      border-radius: 8px;
+      background: var(--blue);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .quiz-link:hover {
+      text-decoration: none;
+      background: #1d4ed8;
+    }
+
+    @media (max-width: 960px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+        max-height: none;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .layout {
+        padding: 12px;
+      }
+
+      main {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <main id="content">
+      <div class="loading">Đang tải tài liệu...</div>
+    </main>
+    <nav class="toc" id="toc" aria-label="Mục lục">
+      <strong>Mục lục</strong>
+      <div id="tocLinks"></div>
+    </nav>
+  </div>
+
+  <script>
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function slugify(value) {
+      return String(value ?? "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    }
+
+    function renderInline(text) {
+      return escapeHtml(text)
+        .replace(/`([^`]+)`/g, "<code>$1</code>")
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\[([^\]]+)\]\(&lt;([^&]+)&gt;\)/g, '<a href="$2">$1</a>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+    }
+
+    function splitTableRow(line) {
+      return line
+        .trim()
+        .replace(/^\|/, "")
+        .replace(/\|$/, "")
+        .split("|")
+        .map((cell) => cell.trim());
+    }
+
+    function isTableSeparator(line) {
+      return /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line);
+    }
+
+    function closeList(state, html) {
+      if (state.listType) {
+        html.push("</" + state.listType + ">");
+        state.listType = "";
+      }
+    }
+
+    function openList(type, state, html) {
+      if (state.listType === type) return;
+      closeList(state, html);
+      html.push("<" + type + ">");
+      state.listType = type;
+    }
+
+    function renderMarkdown(markdown) {
+      const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+      const html = [];
+      const toc = [];
+      const state = { listType: "", inCode: false, code: [] };
+
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+
+        if (/^```/.test(line.trim())) {
+          if (state.inCode) {
+            html.push("<pre><code>" + escapeHtml(state.code.join("\n")) + "</code></pre>");
+            state.inCode = false;
+            state.code = [];
+          } else {
+            closeList(state, html);
+            state.inCode = true;
+          }
+          continue;
+        }
+
+        if (state.inCode) {
+          state.code.push(line);
+          continue;
+        }
+
+        if (!line.trim()) {
+          closeList(state, html);
+          continue;
+        }
+
+        if (/^\|/.test(line) && lines[i + 1] && isTableSeparator(lines[i + 1])) {
+          closeList(state, html);
+          const headers = splitTableRow(line);
+          i += 2;
+          const rows = [];
+          while (i < lines.length && /^\|/.test(lines[i])) {
+            rows.push(splitTableRow(lines[i]));
+            i += 1;
+          }
+          i -= 1;
+          html.push("<table><thead><tr>" + headers.map((cell) => "<th>" + renderInline(cell) + "</th>").join("") + "</tr></thead><tbody>");
+          for (const row of rows) {
+            html.push("<tr>" + row.map((cell) => "<td>" + renderInline(cell) + "</td>").join("") + "</tr>");
+          }
+          html.push("</tbody></table>");
+          continue;
+        }
+
+        const heading = /^(#{1,4})\s+(.+)$/.exec(line);
+        if (heading) {
+          closeList(state, html);
+          const level = heading[1].length;
+          const text = heading[2].trim();
+          const id = slugify(text);
+          if (level <= 3) toc.push({ id, level, text });
+          html.push("<h" + level + ' id="' + id + '">' + renderInline(text) + "</h" + level + ">");
+          continue;
+        }
+
+        const check = /^-\s+\[\s?\]\s+(.+)$/.exec(line);
+        if (check) {
+          openList("ul", state, html);
+          html.push('<li class="check-item">' + renderInline(check[1]) + "</li>");
+          continue;
+        }
+
+        const bullet = /^-\s+(.+)$/.exec(line);
+        if (bullet) {
+          openList("ul", state, html);
+          html.push("<li>" + renderInline(bullet[1]) + "</li>");
+          continue;
+        }
+
+        const ordered = /^\d+\.\s+(.+)$/.exec(line);
+        if (ordered) {
+          openList("ol", state, html);
+          html.push("<li>" + renderInline(ordered[1]) + "</li>");
+          continue;
+        }
+
+        closeList(state, html);
+        if (/^Lưu ý quan trọng:/.test(line)) {
+          html.push('<p class="note">' + renderInline(line) + "</p>");
+        } else {
+          html.push("<p>" + renderInline(line) + "</p>");
+        }
+      }
+
+      closeList(state, html);
+      return { html: html.join("\n"), toc };
+    }
+
+    function scrollToHash() {
+      const raw = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+      if (!raw) return;
+      const exact = document.getElementById(raw);
+      const target = exact || Array.from(document.querySelectorAll("[id]")).find((el) => el.id.startsWith(raw));
+      if (target) target.scrollIntoView({ block: "start" });
+    }
+
+    function getQuestionIdsForDay(day) {
+      if (!day || !Array.isArray(day.questionIds)) return [];
+      return day.questionIds.map((id) => String(id).trim()).filter(Boolean);
+    }
+
+    function buildQuestionSetUrl(questionIds, title) {
+      const params = new URLSearchParams();
+      params.set("questionIds", questionIds.join(","));
+      params.set("mode", "practice");
+      params.set("title", title);
+      return "../quiz.html?" + params.toString();
+    }
+
+    function buildQuestionPanel(day) {
+      const ids = getQuestionIdsForDay(day);
+      if (ids.length === 0) return "";
+
+      const title = "Ngày " + day.day + ": " + day.title;
+      const sourceRefs = Array.isArray(day.sourceRefs) ? day.sourceRefs : [];
+      const lessonLinks = Array.isArray(day.lessonLinks) ? day.lessonLinks : [];
+
+      return [
+        '<aside class="question-link-panel">',
+          '<strong>Liên kết lý thuyết - ngân hàng câu hỏi</strong>',
+          '<p>' + escapeHtml(day.summary || "Luyện các câu tiêu biểu đúng chủ đề vừa học.") + '</p>',
+          '<div class="question-meta-row">',
+            '<span class="question-chip">' + ids.length + ' câu liên quan</span>',
+            sourceRefs.map((source) => {
+              const sourceText = [source.activityId, source.label].filter(Boolean).join(" · ");
+              return '<span class="question-chip">' + escapeHtml(sourceText) + '</span>';
+            }).join(""),
+          '</div>',
+          '<div class="question-actions">',
+            '<a class="quiz-link" href="' + escapeHtml(buildQuestionSetUrl(ids, title)) + '">Luyện câu liên quan</a>',
+            lessonLinks.map((link) => '<a href="' + escapeHtml(link.href || "#") + '">' + escapeHtml(link.label || "Mở bài") + '</a>').join(""),
+          '</div>',
+        '</aside>'
+      ].join("");
+    }
+
+    function injectQuestionLinks(theoryMap) {
+      const days = (theoryMap && Array.isArray(theoryMap.days)) ? theoryMap.days : [];
+      if (days.length === 0) return;
+
+      const headings = Array.from(document.querySelectorAll("h3[id]"));
+      for (const day of days) {
+        const anchor = String(day.anchor || "ngay-ly-thuyet-" + day.day);
+        const heading = headings.find((item) => item.id === anchor || item.id.startsWith(anchor + "-"));
+        if (!heading) continue;
+        const panelHtml = buildQuestionPanel(day);
+        if (!panelHtml) continue;
+        heading.insertAdjacentHTML("afterend", panelHtml);
+      }
+    }
+
+    async function main() {
+      try {
+        const [response, theoryMap] = await Promise.all([
+          fetch("khoa_hoc_cap_toc_mat_goc_3_ngay.md", { cache: "no-store" }),
+          fetch("db/theory_question_map.json", { cache: "no-store" })
+            .then((mapResponse) => mapResponse.ok ? mapResponse.json() : null)
+            .catch(() => null)
+        ]);
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        const markdown = await response.text();
+        const rendered = renderMarkdown(markdown);
+        document.getElementById("content").innerHTML = rendered.html;
+        injectQuestionLinks(theoryMap);
+        document.getElementById("tocLinks").innerHTML = rendered.toc
+          .filter((item) => item.level <= 3)
+          .map((item) => '<a href="#' + item.id + '" style="padding-left:' + ((item.level - 1) * 10 + 8) + 'px">' + escapeHtml(item.text) + "</a>")
+          .join("");
+        requestAnimationFrame(scrollToHash);
+      } catch (error) {
+        document.getElementById("content").innerHTML = '<div class="error">Không tải được tài liệu Markdown: ' + escapeHtml(error.message || error) + '</div>';
+      }
+    }
+
+    window.addEventListener("hashchange", scrollToHash);
+    main();
+  </script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+{
+  "version": 1,
+  "description": "Liên kết từng ngày lý thuyết với các câu hỏi tiêu biểu trong ngân hàng đề. Dùng để luyện theo chủ đề, không dùng để đoán câu trùng đề thi.",
+  "days": [
+    {
+      "day": 1,
+      "anchor": "ngay-ly-thuyet-1",
+      "title": "Máy tính và thành phần cơ bản",
+      "summary": "Phần cứng, phần mềm, CPU, RAM, ROM, thiết bị vào/ra và đơn vị lưu trữ.",
+      "lessonLinks": [
+        { "label": "Chương 1 - Thông tin và biểu diễn thông tin", "href": "pages/Chuong_1_-_Thong_tin_va_bieu_dien_thong_tin_Trang.html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-587", "label": "Tin học căn bản" }
+      ],
+      "questionIds": [
+        "module-587-q1",
+        "module-587-q6",
+        "module-587-q7",
+        "module-587-q8",
+        "module-587-q9",
+        "module-587-q10",
+        "module-587-q11",
+        "module-587-q12",
+        "module-587-q16",
+        "module-587-q18",
+        "module-587-q19",
+        "module-587-q21",
+        "module-587-q23",
+        "module-587-q24",
+        "module-587-q25",
+        "module-587-q27",
+        "module-587-q31",
+        "module-587-q36",
+        "module-587-q39",
+        "module-587-q41"
+      ]
+    },
+    {
+      "day": 2,
+      "anchor": "ngay-ly-thuyet-2",
+      "title": "Hệ điều hành, phần mềm và mạng",
+      "summary": "Hệ điều hành, phần mềm ứng dụng, driver, LAN, WAN, Internet và tốc độ truyền dữ liệu.",
+      "lessonLinks": [
+        { "label": "Chương 1 - Thông tin và biểu diễn thông tin", "href": "pages/Chuong_1_-_Thong_tin_va_bieu_dien_thong_tin_Trang.html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-587", "label": "Tin học căn bản" }
+      ],
+      "questionIds": [
+        "module-587-q44",
+        "module-587-q47",
+        "module-587-q48",
+        "module-587-q49",
+        "module-587-q50",
+        "module-587-q52",
+        "module-587-q53",
+        "module-587-q56",
+        "module-587-q58",
+        "module-587-q59",
+        "module-587-q60",
+        "module-587-q67",
+        "module-587-q68",
+        "module-587-q69",
+        "module-587-q70",
+        "module-587-q71",
+        "module-587-q72",
+        "module-587-q73",
+        "module-587-q76",
+        "module-587-q80"
+      ]
+    },
+    {
+      "day": 3,
+      "anchor": "ngay-ly-thuyet-3",
+      "title": "Windows, tệp, thư mục và shortcut",
+      "summary": "Quản lý tệp/thư mục, shortcut, Recycle Bin, phần mở rộng tệp và phím tắt Windows.",
+      "lessonLinks": [
+        { "label": "Làm việc với máy tính", "href": "pages/Lam_viec_voi_may_tinh_Trang.html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-580", "label": "Sử dụng máy tính cơ bản" }
+      ],
+      "questionIds": [
+        "module-580-q1",
+        "module-580-q4",
+        "module-580-q5",
+        "module-580-q6",
+        "module-580-q13",
+        "module-580-q17",
+        "module-580-q21",
+        "module-580-q22",
+        "module-580-q31",
+        "module-580-q33",
+        "module-580-q41",
+        "module-580-q43",
+        "module-580-q44",
+        "module-580-q46",
+        "module-580-q49",
+        "module-580-q52",
+        "module-580-q61",
+        "module-580-q64",
+        "module-580-q68",
+        "module-580-q69",
+        "module-580-q75",
+        "module-580-q82",
+        "module-580-q84",
+        "module-580-q86",
+        "module-580-q87",
+        "module-580-q90"
+      ]
+    },
+    {
+      "day": 4,
+      "anchor": "ngay-ly-thuyet-4",
+      "title": "Internet, web, tìm kiếm, email và an toàn",
+      "summary": "WWW, URL, trình duyệt, công cụ tìm kiếm, email, bookmark, lịch sử và an toàn thông tin.",
+      "lessonLinks": [
+        { "label": "Sử dụng Internet", "href": "pages/Su_dung_Internet_Trang.html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-581", "label": "Sử dụng Internet cơ bản" }
+      ],
+      "questionIds": [
+        "module-581-q1",
+        "module-581-q4",
+        "module-581-q5",
+        "module-581-q7",
+        "module-581-q8",
+        "module-581-q11",
+        "module-581-q12",
+        "module-581-q15",
+        "module-581-q16",
+        "module-581-q18",
+        "module-581-q19",
+        "module-581-q24",
+        "module-581-q25",
+        "module-581-q32",
+        "module-581-q36",
+        "module-581-q38",
+        "module-581-q45",
+        "module-581-q48",
+        "module-581-q50",
+        "module-581-q55",
+        "module-581-q61",
+        "module-581-q67",
+        "module-581-q73",
+        "module-581-q74",
+        "module-581-q78",
+        "module-581-q80",
+        "module-581-q81",
+        "module-581-q84",
+        "module-581-q86",
+        "module-581-q90"
+      ]
+    },
+    {
+      "day": 5,
+      "anchor": "ngay-ly-thuyet-5",
+      "title": "Word - giao diện, tệp và thao tác soạn thảo",
+      "summary": "Định dạng tệp Word, thao tác mở/lưu, soạn thảo, chọn văn bản, tìm kiếm và thay thế.",
+      "lessonLinks": [
+        { "label": "Tổng quan về MS Word", "href": "pages/Tong_quan_ve_MS_Word_Trang.html" },
+        { "label": "Các thao tác soạn thảo cơ bản", "href": "pages/Cac_thao_tac_soan_thao_co_ban_Trang.html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-577", "label": "Xử lý văn bản cơ bản" }
+      ],
+      "questionIds": [
+        "module-577-q1",
+        "module-577-q3",
+        "module-577-q7",
+        "module-577-q8",
+        "module-577-q9",
+        "module-577-q10",
+        "module-577-q11",
+        "module-577-q12",
+        "module-577-q14",
+        "module-577-q15",
+        "module-577-q19",
+        "module-577-q21",
+        "module-577-q23",
+        "module-577-q24",
+        "module-577-q26",
+        "module-577-q27",
+        "module-577-q32",
+        "module-577-q33",
+        "module-577-q43",
+        "module-577-q44",
+        "module-577-q46",
+        "module-577-q48"
+      ]
+    },
+    {
+      "day": 6,
+      "anchor": "ngay-ly-thuyet-6",
+      "title": "Word - định dạng, bảng, trang in và đối tượng",
+      "summary": "Font, paragraph, bảng, header/footer, số trang, căn lề, in ấn và chèn đối tượng.",
+      "lessonLinks": [
+        { "label": "Định dạng văn bản", "href": "pages/inh_dang_van_ban_Trang.html" },
+        { "label": "Lập bảng biểu", "href": "pages/Lap_bang_bieu_Trang.html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-577", "label": "Xử lý văn bản cơ bản" }
+      ],
+      "questionIds": [
+        "module-577-q52",
+        "module-577-q53",
+        "module-577-q56",
+        "module-577-q60",
+        "module-577-q61",
+        "module-577-q62",
+        "module-577-q64",
+        "module-577-q65",
+        "module-577-q66",
+        "module-577-q67",
+        "module-577-q69",
+        "module-577-q70",
+        "module-577-q72",
+        "module-577-q74",
+        "module-577-q75",
+        "module-577-q76",
+        "module-577-q77",
+        "module-577-q78",
+        "module-577-q81",
+        "module-577-q84",
+        "module-577-q87",
+        "module-577-q92",
+        "module-577-q95",
+        "module-577-q101",
+        "module-577-q104",
+        "module-577-q105",
+        "module-577-q109",
+        "module-577-q111",
+        "module-577-q115",
+        "module-577-q120"
+      ]
+    },
+    {
+      "day": 7,
+      "anchor": "ngay-ly-thuyet-7",
+      "title": "PowerPoint",
+      "summary": "Slide, layout, theme, Slide Master, đối tượng trình chiếu, hiệu ứng và chế độ xem.",
+      "lessonLinks": [
+        { "label": "Tổng quan giao diện PowerPoint", "href": "pages/Tong_quan_giao_dien_PowerPoint_Trang.html" },
+        { "label": "Thiết lập hiệu ứng cho trang trình chiếu", "href": "pages/Thiet_lap_hieu_ung_cho_trang_trinh_chieu_(Presentation).html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-579", "label": "Sử dụng trình chiếu cơ bản" }
+      ],
+      "questionIds": [
+        "module-579-q1",
+        "module-579-q2",
+        "module-579-q3",
+        "module-579-q5",
+        "module-579-q6",
+        "module-579-q14",
+        "module-579-q17",
+        "module-579-q18",
+        "module-579-q19",
+        "module-579-q22",
+        "module-579-q24",
+        "module-579-q31",
+        "module-579-q33",
+        "module-579-q34",
+        "module-579-q35",
+        "module-579-q36",
+        "module-579-q43",
+        "module-579-q45",
+        "module-579-q48",
+        "module-579-q52",
+        "module-579-q54",
+        "module-579-q59",
+        "module-579-q67",
+        "module-579-q73",
+        "module-579-q74",
+        "module-579-q79",
+        "module-579-q84",
+        "module-579-q85",
+        "module-579-q90"
+      ]
+    },
+    {
+      "day": 8,
+      "anchor": "ngay-ly-thuyet-8",
+      "title": "Excel - cấu trúc bảng tính, địa chỉ và công thức",
+      "summary": "Workbook, worksheet, ô, vùng, địa chỉ tương đối/tuyệt đối, công thức và toán tử.",
+      "lessonLinks": [
+        { "label": "Tổng quan về Excel 2019", "href": "pages/Tong_quan_ve_Excel_2019_Trang.html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-578", "label": "Sử dụng bảng tính cơ bản" }
+      ],
+      "questionIds": [
+        "module-578-q1",
+        "module-578-q2",
+        "module-578-q3",
+        "module-578-q5",
+        "module-578-q6",
+        "module-578-q7",
+        "module-578-q9",
+        "module-578-q10",
+        "module-578-q11",
+        "module-578-q12",
+        "module-578-q13",
+        "module-578-q14",
+        "module-578-q15",
+        "module-578-q16",
+        "module-578-q17",
+        "module-578-q18",
+        "module-578-q19",
+        "module-578-q20",
+        "module-578-q21",
+        "module-578-q24",
+        "module-578-q27",
+        "module-578-q30",
+        "module-578-q35",
+        "module-578-q38",
+        "module-578-q40",
+        "module-578-q42"
+      ]
+    },
+    {
+      "day": 9,
+      "anchor": "ngay-ly-thuyet-9",
+      "title": "Excel - hàm, lỗi, sắp xếp và lọc dữ liệu",
+      "summary": "Hàm SUM/AVERAGE/COUNT/IF/COUNTIF/SUMIF, lỗi công thức, Sort, Filter và định dạng dữ liệu.",
+      "lessonLinks": [
+        { "label": "Một số hàm thông dụng trong Excel", "href": "pages/Mot_so_ham_thong_dung_trong_Excel_Trang.html" },
+        { "label": "Xử lý dữ liệu trong bảng tính", "href": "pages/Xu_ly_du_lieu_trong_bang_tinh_Trang.html" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-578", "label": "Sử dụng bảng tính cơ bản" }
+      ],
+      "questionIds": [
+        "module-578-q48",
+        "module-578-q49",
+        "module-578-q51",
+        "module-578-q52",
+        "module-578-q53",
+        "module-578-q54",
+        "module-578-q55",
+        "module-578-q56",
+        "module-578-q57",
+        "module-578-q59",
+        "module-578-q61",
+        "module-578-q62",
+        "module-578-q63",
+        "module-578-q64",
+        "module-578-q66",
+        "module-578-q67",
+        "module-578-q69",
+        "module-578-q70",
+        "module-578-q71",
+        "module-578-q72",
+        "module-578-q73",
+        "module-578-q74",
+        "module-578-q75",
+        "module-578-q77",
+        "module-578-q78",
+        "module-578-q79",
+        "module-578-q80",
+        "module-578-q83",
+        "module-578-q84",
+        "module-578-q88",
+        "module-578-q89",
+        "module-578-q90"
+      ]
+    },
+    {
+      "day": 10,
+      "anchor": "ngay-ly-thuyet-10",
+      "title": "Tổng hợp và mô phỏng thi 80 câu",
+      "summary": "Ôn hỗn hợp 6 chủ đề, phân loại câu sai và luyện tốc độ trước khi làm đề tổng hợp.",
+      "lessonLinks": [
+        { "label": "Tài liệu ôn tập 10 ngày", "href": "study_guide.html#lich-luyen-ly-thuyet-10-ngay" }
+      ],
+      "sourceRefs": [
+        { "activityId": "module-587", "label": "Tin học căn bản" },
+        { "activityId": "module-580", "label": "Sử dụng máy tính cơ bản" },
+        { "activityId": "module-581", "label": "Sử dụng Internet cơ bản" },
+        { "activityId": "module-577", "label": "Xử lý văn bản cơ bản" },
+        { "activityId": "module-579", "label": "Sử dụng trình chiếu cơ bản" },
+        { "activityId": "module-578", "label": "Sử dụng bảng tính cơ bản" }
+      ],
+      "questionIds": [
+        "module-587-q1",
+        "module-587-q12",
+        "module-587-q18",
+        "module-587-q44",
+        "module-587-q68",
+        "module-587-q80",
+        "module-580-q5",
+        "module-580-q13",
+        "module-580-q17",
+        "module-580-q64",
+        "module-580-q75",
+        "module-581-q5",
+        "module-581-q11",
+        "module-581-q18",
+        "module-581-q25",
+        "module-581-q73",
+        "module-581-q80",
+        "module-577-q3",
+        "module-577-q32",
+        "module-577-q43",
+        "module-577-q84",
+        "module-577-q101",
+        "module-579-q3",
+        "module-579-q17",
+        "module-579-q33",
+        "module-579-q36",
+        "module-579-q84",
+        "module-578-q12",
+        "module-578-q14",
+        "module-578-q42",
+        "module-578-q48",
+        "module-578-q52",
+        "module-578-q55",
+        "module-578-q78"
+      ]
+    }
+  ]
+}

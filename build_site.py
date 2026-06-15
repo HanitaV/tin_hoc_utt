@@ -26,6 +26,65 @@ def generate_html(structure):
     """
     Generates the main index.html with sidebar and iframe
     """
+    template = '''<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin học UTT - Ôn tập cấp tốc</title>
+  <link rel="stylesheet" href="course_app.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="side-panel">
+      <header class="brand">
+        <div class="brand-mark">UTT</div>
+        <h1>Tin học UTT</h1>
+        <p>Ôn lý thuyết, thực hành và luyện trắc nghiệm theo chủ đề.</p>
+      </header>
+
+      <div class="quick-actions">
+        <button class="action-button primary" id="homeButton" type="button">Tổng quan</button>
+        <button class="action-button" id="guideButton" type="button">Tài liệu 10 ngày</button>
+        <button class="action-button" id="quizButton" type="button">Luyện đề</button>
+      </div>
+
+      <div class="search-box">
+        <label for="searchInput">Tìm bài học</label>
+        <input id="searchInput" type="search" placeholder="Word, Excel, Internet...">
+      </div>
+
+      <nav class="nav-scroll" id="navContainer" aria-label="Danh sách bài học"></nav>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div class="crumb">
+          <strong id="viewTitle">Tổng quan ôn tập</strong>
+          <span id="viewSubtitle">Đang tải dữ liệu...</span>
+        </div>
+        <div class="topbar-actions">
+          <a class="action-button" id="openExternal" href="#" target="_blank" rel="noopener" style="display:none">Mở tab mới</a>
+        </div>
+      </header>
+
+      <section class="main-area">
+        <div class="dashboard" id="dashboard"></div>
+        <div class="viewer" id="viewer">
+          <iframe class="viewer-frame" id="contentFrame" title="Nội dung bài học"></iframe>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="course_app.js"></script>
+</body>
+</html>
+'''
+
+    OUTPUT_HTML.write_text(template, encoding='utf-8')
+    print(f"✓ Website generated at: {OUTPUT_HTML}")
+    return
     
     # Generate Sidebar Content
     sidebar_html = ""

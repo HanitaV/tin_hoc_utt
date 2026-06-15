@@ -427,6 +427,62 @@
       return { selected: pool, actualCounts };
     }
 
+    function parseQuestionIds(params) {
+      const rawValues = [];
+      const csv = params.get('questionIds');
+      if (csv) rawValues.push(...String(csv).split(','));
+      rawValues.push(...params.getAll('questionId'));
+
+      const seen = new Set();
+      const ids = [];
+      for (const value of rawValues) {
+        const id = String(value || '').trim();
+        if (!id || seen.has(id)) continue;
+        seen.add(id);
+        ids.push(id);
+      }
+      return ids;
+    }
+
+    function hashText(value) {
+      let hash = 0;
+      const text = String(value || '');
+      for (let i = 0; i < text.length; i++) {
+        hash = ((hash << 5) - hash) + text.charCodeAt(i);
+        hash |= 0;
+      }
+      return Math.abs(hash).toString(36);
+    }
+
+    function pickQuestionsByIds(questionsDb, tracNghiemDb, questionIds) {
+      const chapterByActivityId = buildChapterMap(tracNghiemDb);
+      const questions = Array.isArray(questionsDb.questions) ? questionsDb.questions : [];
+      const byId = new Map();
+      for (const q of questions) {
+        if (q && q.id) byId.set(String(q.id), q);
+      }
+
+      const selected = [];
+      const missing = [];
+      for (const id of questionIds) {
+        const question = byId.get(String(id));
+        if (question) selected.push(question);
+        else missing.push(String(id));
+      }
+
+      if (selected.length === 0) {
+        throw new Error('Không tìm thấy câu hỏi nào từ danh sách questionIds.');
+      }
+
+      const actualCounts = new Map();
+      for (const q of selected) {
+        const chapter = chapterByActivityId.get(String(q.activityId)) || 'Không rõ chương';
+        actualCounts.set(chapter, (actualCounts.get(chapter) || 0) + 1);
+      }
+
+      return { selected, actualCounts, missing };
+    }
+
     function computeAnsweredCount(answers) {
       let c = 0;
       for (const v of answers.values()) {
@@ -630,7 +686,7 @@
         '<div class="big">' + correct + '/' + total + ' (' + percent + '%)</div>',
         timeLine,
         '<div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap">',
-          '<button type="button" id="btnRestart">Làm lại (random đề mới)</button>',
+          '<button type="button" id="btnRestart">' + (state.isPractice ? 'Làm lại' : 'Làm lại (random đề mới)') + '</button>',
           '<a href="trac_nghiem_index.html" style="align-self:center">← Quay lại danh sách trắc nghiệm</a>',
         '</div>'
       ].join('');
@@ -642,7 +698,13 @@
       const params = new URLSearchParams(window.location.search);
       const activityId = params.get('activityId');
       const mode = (params.get('mode') || '').toLowerCase();
-      const isPractice = !!activityId && mode !== 'exam';
+      const questionIds = parseQuestionIds(params);
+      const hasQuestionSet = questionIds.length > 0;
+      const isPractice = hasQuestionSet || (!!activityId && mode !== 'exam');
+      const questionSetTitle = (params.get('title') || 'Câu hỏi liên kết lý thuyết').trim();
+      const practiceKey = hasQuestionSet
+        ? 'practiceSetDone:' + hashText(questionIds.join(','))
+        : (activityId ? 'practiceDone:' + String(activityId) : null);
 
       let questionsDb;
       let tracNghiemDb;
@@ -665,7 +727,19 @@
 
       const activityMap = buildActivityMap(tracNghiemDb);
 
-      if (activityId) {
+      if (hasQuestionSet) {
+        document.title = 'Luyện lý thuyết: ' + questionSetTitle;
+        document.getElementById('pageTitle').textContent = 'Luyện lý thuyết: ' + questionSetTitle;
+
+        const doneRaw = practiceKey ? localStorage.getItem(practiceKey) : null;
+        const doneText = doneRaw ? ' · <strong>Đã làm</strong>' : '';
+        document.getElementById('pageHint').innerHTML = 'Cụm câu hỏi được nối trực tiếp từ phần lý thuyết đang học (không giới hạn thời gian)' + doneText + '.';
+
+        document.getElementById('timer').textContent = '∞';
+        document.getElementById('btnPrev').textContent = '← Trước';
+        document.getElementById('btnNext').textContent = 'Tiếp →';
+        document.getElementById('btnSubmit').textContent = 'Hoàn thành';
+      } else if (activityId) {
         const activity = activityMap.get(String(activityId));
         const label = activity ? (activity.name || String(activityId)) : String(activityId);
         const sectionName = activity ? (activity.sectionName || '') : '';
@@ -674,8 +748,7 @@
           document.title = 'Luyện tập: ' + label;
           document.getElementById('pageTitle').textContent = 'Luyện tập: ' + label;
 
-          const doneKey = 'practiceDone:' + String(activityId);
-          const doneRaw = localStorage.getItem(doneKey);
+          const doneRaw = practiceKey ? localStorage.getItem(practiceKey) : null;
           const doneText = doneRaw ? ' · <strong>Đã làm</strong>' : '';
           document.getElementById('pageHint').innerHTML = 'Luyện tập theo chương (không giới hạn thời gian, làm hết câu) — nguồn: <code>' + escapeHtml(sectionName || 'Không rõ chương') + '</code>' + doneText + '.';
 
@@ -696,7 +769,9 @@
 
       let picked;
       try {
-        if (activityId) {
+        if (hasQuestionSet) {
+          picked = pickQuestionsByIds(questionsDb, tracNghiemDb, questionIds);
+        } else if (activityId) {
           if (isPractice) picked = pickQuestionsForActivityPractice(questionsDb, tracNghiemDb, activityId);
           else picked = pickQuestionsForActivityExam(questionsDb, tracNghiemDb, activityId, EXAM_QUIZ_SIZE);
         } else {
@@ -731,6 +806,7 @@
         submitted: false,
         isPractice,
         practiceActivityId: activityId ? String(activityId) : null,
+        practiceKey,
       };
       state.totalPages = Math.ceil(state.questions.length / state.pageSize);
 
@@ -766,10 +842,9 @@
         state.submitted = true;
         if (state.timerId) clearInterval(state.timerId);
 
-        if (state.isPractice && state.practiceActivityId) {
-          const key = 'practiceDone:' + state.practiceActivityId;
+        if (state.isPractice && state.practiceKey) {
           try {
-            localStorage.setItem(key, JSON.stringify({ doneAt: new Date().toISOString() }));
+            localStorage.setItem(state.practiceKey, JSON.stringify({ doneAt: new Date().toISOString() }));
           } catch (e) {
             // ignore
           }
