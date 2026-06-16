@@ -256,6 +256,7 @@ class UniversalScraper:
         <head>
             <title>{activity['name']}</title>
             <meta charset='utf-8'>
+            <script src="../theme.js"></script>
             <link rel="stylesheet" href="../page_theme.css">
         </head>
         <body>

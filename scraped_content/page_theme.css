@@ -36,6 +36,32 @@
     --box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
 }
 
+:root[data-theme="dark"] [style*="color: black" i],
+:root[data-theme="dark"] [style*="color: windowtext" i],
+:root[data-theme="dark"] [style*="color: #000" i],
+:root[data-theme="dark"] [style*="color: #212529" i] {
+    color: var(--ink) !important;
+}
+
+:root[data-theme="dark"] [style*="color: blue" i] {
+    color: var(--blue) !important;
+}
+
+:root[data-theme="dark"] [style*="background: white" i],
+:root[data-theme="dark"] [style*="background-color: white" i],
+:root[data-theme="dark"] [style*="background: #fff" i],
+:root[data-theme="dark"] [style*="background-color: #fff" i],
+:root[data-theme="dark"] [style*="background: #ffffff" i],
+:root[data-theme="dark"] [style*="background-color: #ffffff" i],
+:root[data-theme="dark"] [style*="background: rgb(255" i],
+:root[data-theme="dark"] [style*="background-color: rgb(255" i] {
+    background: var(--paper) !important;
+}
+
+:root[data-theme="dark"] [style*="border" i] {
+    border-color: var(--line) !important;
+}
+
 * {
     box-sizing: border-box;
 }

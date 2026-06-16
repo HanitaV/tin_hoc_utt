@@ -32,17 +32,7 @@ def generate_html(structure):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tin học UTT - Ôn tập cấp tốc</title>
-  <script>
-    try {
-      const savedTheme = localStorage.getItem("tinHocUttTheme");
-      const theme = savedTheme === "dark" || savedTheme === "light"
-        ? savedTheme
-        : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      document.documentElement.dataset.theme = theme;
-    } catch (error) {
-      // ignore
-    }
-  </script>
+  <script src="theme.js"></script>
   <link rel="stylesheet" href="course_app.css">
 </head>
 <body>

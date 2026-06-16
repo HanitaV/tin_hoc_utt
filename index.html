@@ -6,15 +6,30 @@
   <title>Tin học UTT - Ôn tập cấp tốc</title>
   <meta http-equiv="refresh" content="0; url=scraped_content/index.html" />
   <link rel="canonical" href="scraped_content/index.html" />
+  <script src="scraped_content/theme.js"></script>
   <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f9fc;
+      --ink: #172033;
+      --link: #0f766e;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #101714;
+      --ink: #eef4ef;
+      --link: #34d399;
+    }
+
     body {
       font-family: system-ui, -apple-system, Segoe UI, sans-serif;
       padding: 24px;
-      color: #172033;
-      background: #f7f9fc;
+      color: var(--ink);
+      background: var(--bg);
       line-height: 1.6;
     }
-    a { color: #0f766e; font-weight: 700; }
+    a { color: var(--link); font-weight: 700; }
   </style>
 </head>
 <body>
