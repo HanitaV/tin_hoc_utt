@@ -1,0 +1,1350 @@
+{
+  "schemaVersion": 2,
+  "title": "Lý thuyết Tin học theo chủ đề",
+  "description": "Bản đồ chủ đề dùng để nối lý thuyết với ngân hàng câu hỏi.",
+  "coverage": {
+    "questionTotal": 718,
+    "assignedTotal": 718,
+    "uniqueAssignedTotal": 718,
+    "assignmentPolicy": "one-primary-topic-per-question"
+  },
+  "topicGroups": [
+    {
+      "id": "tin-hoc-nen-tang",
+      "title": "Tin học nền tảng",
+      "shortTitle": "Tin học",
+      "summary": "Máy tính, phần cứng, bộ nhớ, phần mềm, hệ điều hành và cách đọc các khái niệm nền."
+    },
+    {
+      "id": "su-dung-windows",
+      "title": "Sử dụng Windows",
+      "shortTitle": "Windows",
+      "summary": "Tắt mở máy, cửa sổ, phím tắt, Control Panel, tệp, thư mục, shortcut, nén và in."
+    },
+    {
+      "id": "internet-cong-dan-so",
+      "title": "Internet và Công dân số",
+      "shortTitle": "Internet",
+      "summary": "Internet, web, trình duyệt, tìm kiếm, email, giao tiếp trực tuyến, dịch vụ công và an toàn số."
+    },
+    {
+      "id": "word",
+      "title": "Word",
+      "shortTitle": "Word",
+      "summary": "Cách học Word qua giao diện, thao tác tệp, soạn thảo, định dạng, bảng, đối tượng và trang in."
+    },
+    {
+      "id": "excel",
+      "title": "Excel",
+      "shortTitle": "Excel",
+      "summary": "Bảng tính, ô, vùng, công thức, hàm, lỗi, sắp xếp, lọc, biểu đồ và in."
+    },
+    {
+      "id": "powerpoint",
+      "title": "PowerPoint",
+      "shortTitle": "PowerPoint",
+      "summary": "Slide, layout, theme, master, văn bản, đối tượng, hiệu ứng, trình chiếu và in."
+    }
+  ],
+  "topics": [
+    {
+      "id": "tt01",
+      "groupId": "tin-hoc-nen-tang",
+      "title": "Thiết bị số, phần cứng và thiết bị vào ra",
+      "anchor": "tt01-thiet-bi-so-phan-cung-va-thiet-bi-vao-ra",
+      "summary": "Nhận diện phần cứng, máy tính cá nhân, thiết bị ngoại vi, thiết bị nhập và thiết bị xuất.",
+      "sourceActivityIds": [
+        "module-587"
+      ],
+      "questionIds": [
+        "module-587-q1",
+        "module-587-q2",
+        "module-587-q3",
+        "module-587-q4",
+        "module-587-q5",
+        "module-587-q6",
+        "module-587-q7",
+        "module-587-q8",
+        "module-587-q9",
+        "module-587-q22",
+        "module-587-q23",
+        "module-587-q24",
+        "module-587-q28",
+        "module-587-q29",
+        "module-587-q30",
+        "module-587-q31",
+        "module-587-q32",
+        "module-587-q33",
+        "module-587-q34",
+        "module-587-q35",
+        "module-587-q36",
+        "module-587-q37",
+        "module-587-q38",
+        "module-587-q39",
+        "module-587-q40",
+        "module-587-q41",
+        "module-587-q42"
+      ],
+      "tips": [
+        "Nhập là từ ngoài vào máy; xuất là từ máy ra người dùng.",
+        "Máy quét và máy in là cặp rất hay bị gài.",
+        "CPU không phải thiết bị ngoại vi."
+      ]
+    },
+    {
+      "id": "tt02",
+      "groupId": "tin-hoc-nen-tang",
+      "title": "CPU, RAM, ROM, lưu trữ và hiệu năng",
+      "anchor": "tt02-cpu-ram-rom-luu-tru-va-hieu-nang",
+      "summary": "Phân biệt bộ xử lý, bộ nhớ tạm, bộ nhớ chỉ đọc, thiết bị lưu trữ và thông số cấu hình máy.",
+      "sourceActivityIds": [
+        "module-587"
+      ],
+      "questionIds": [
+        "module-587-q10",
+        "module-587-q11",
+        "module-587-q12",
+        "module-587-q13",
+        "module-587-q14",
+        "module-587-q15",
+        "module-587-q16",
+        "module-587-q17",
+        "module-587-q18",
+        "module-587-q19",
+        "module-587-q20",
+        "module-587-q21",
+        "module-587-q25",
+        "module-587-q26",
+        "module-587-q27",
+        "module-587-q62",
+        "module-587-q63",
+        "module-587-q64",
+        "module-587-q65"
+      ],
+      "tips": [
+        "RAM = nhớ tạm.",
+        "ROM = chỉ đọc.",
+        "GHz thường gắn với tốc độ CPU."
+      ]
+    },
+    {
+      "id": "tt03",
+      "groupId": "tin-hoc-nen-tang",
+      "title": "Phần mềm, hệ điều hành, driver và mã nguồn mở",
+      "anchor": "tt03-phan-mem-he-dieu-hanh-driver-va-ma-nguon-mo",
+      "summary": "Phân biệt phần mềm hệ thống, phần mềm ứng dụng, driver, hệ điều hành và giấy phép phần mềm.",
+      "sourceActivityIds": [
+        "module-587"
+      ],
+      "questionIds": [
+        "module-587-q43",
+        "module-587-q44",
+        "module-587-q45",
+        "module-587-q46",
+        "module-587-q47",
+        "module-587-q48",
+        "module-587-q49",
+        "module-587-q50",
+        "module-587-q51",
+        "module-587-q52",
+        "module-587-q53",
+        "module-587-q54",
+        "module-587-q55",
+        "module-587-q56",
+        "module-587-q57",
+        "module-587-q58",
+        "module-587-q59",
+        "module-587-q60",
+        "module-587-q61"
+      ],
+      "tips": [
+        "Cài đầu tiên để máy hoạt động ổn định thường là hệ điều hành.",
+        "Điều khiển thiết bị thì nghĩ tới driver.",
+        "Miễn phí và mã nguồn mở không phải luôn giống nhau."
+      ]
+    },
+    {
+      "id": "wd01",
+      "groupId": "su-dung-windows",
+      "title": "Khởi động, tắt máy, khóa máy và phiên làm việc",
+      "anchor": "wd01-khoi-dong-tat-may-khoa-may-va-phien-lam-viec",
+      "summary": "Các thao tác bắt đầu/kết thúc phiên làm việc, Shutdown, Restart, Sleep, Lock và tháo USB an toàn.",
+      "sourceActivityIds": [
+        "module-580"
+      ],
+      "questionIds": [
+        "module-580-q1",
+        "module-580-q2",
+        "module-580-q3",
+        "module-580-q4",
+        "module-580-q5",
+        "module-580-q6",
+        "module-580-q8",
+        "module-580-q10",
+        "module-580-q11"
+      ],
+      "tips": [
+        "Rời máy ngắn: khóa máy.",
+        "Máy lỗi nhẹ: Restart.",
+        "Kết thúc buổi học: lưu dữ liệu rồi Shutdown."
+      ]
+    },
+    {
+      "id": "wd02",
+      "groupId": "su-dung-windows",
+      "title": "Phím tắt Windows và thao tác nhanh",
+      "anchor": "wd02-phim-tat-windows-va-thao-tac-nhanh",
+      "summary": "Các phím tắt đóng/chuyển cửa sổ, chụp màn hình, copy/cut/paste, di chuyển con trỏ và in.",
+      "sourceActivityIds": [
+        "module-580"
+      ],
+      "questionIds": [
+        "module-580-q12",
+        "module-580-q13",
+        "module-580-q14",
+        "module-580-q15",
+        "module-580-q16",
+        "module-580-q17",
+        "module-580-q18",
+        "module-580-q19",
+        "module-580-q20",
+        "module-580-q21",
+        "module-580-q22",
+        "module-580-q23",
+        "module-580-q120"
+      ],
+      "tips": [
+        "C là Copy, X là Cut, V là Paste.",
+        "Alt+Tab là chuyển cửa sổ.",
+        "Print Screen liên quan chụp màn hình."
+      ]
+    },
+    {
+      "id": "wd03",
+      "groupId": "su-dung-windows",
+      "title": "Control Panel, Settings, máy in, font và bộ gõ",
+      "anchor": "wd03-control-panel-settings-may-in-font-va-bo-go",
+      "summary": "Nơi chỉnh cấu hình Windows: tài khoản, chương trình, màn hình, máy in, ngày giờ, font và tiếng Việt.",
+      "sourceActivityIds": [
+        "module-580"
+      ],
+      "questionIds": [
+        "module-580-q7",
+        "module-580-q9",
+        "module-580-q24",
+        "module-580-q25",
+        "module-580-q26",
+        "module-580-q27",
+        "module-580-q28",
+        "module-580-q29",
+        "module-580-q30",
+        "module-580-q31",
+        "module-580-q32",
+        "module-580-q33",
+        "module-580-q34",
+        "module-580-q35",
+        "module-580-q36",
+        "module-580-q37",
+        "module-580-q38",
+        "module-580-q39",
+        "module-580-q40",
+        "module-580-q41",
+        "module-580-q42",
+        "module-580-q43",
+        "module-580-q111",
+        "module-580-q112",
+        "module-580-q113",
+        "module-580-q114",
+        "module-580-q115",
+        "module-580-q116",
+        "module-580-q117",
+        "module-580-q118",
+        "module-580-q119"
+      ],
+      "tips": [
+        "Gỡ phần mềm: Programs and Features.",
+        "Máy in: Devices and Printers.",
+        "Bộ gõ không phải font chữ."
+      ]
+    },
+    {
+      "id": "wd04",
+      "groupId": "su-dung-windows",
+      "title": "Desktop, biểu tượng, shortcut và Clipboard",
+      "anchor": "wd04-desktop-bieu-tuong-shortcut-va-clipboard",
+      "summary": "Màn hình nền, biểu tượng lối tắt, chọn đối tượng, sao chép, cắt, dán và đổi tên.",
+      "sourceActivityIds": [
+        "module-580"
+      ],
+      "questionIds": [
+        "module-580-q44",
+        "module-580-q45",
+        "module-580-q46",
+        "module-580-q47",
+        "module-580-q48",
+        "module-580-q49",
+        "module-580-q50",
+        "module-580-q51",
+        "module-580-q52",
+        "module-580-q53",
+        "module-580-q54",
+        "module-580-q55",
+        "module-580-q56",
+        "module-580-q57",
+        "module-580-q58",
+        "module-580-q59",
+        "module-580-q60",
+        "module-580-q61"
+      ],
+      "tips": [
+        "Shortcut là lối tắt, không phải bản gốc.",
+        "Shift = một dải liên tiếp.",
+        "Ctrl = chọn rời rạc."
+      ]
+    },
+    {
+      "id": "wd05",
+      "groupId": "su-dung-windows",
+      "title": "Tệp, thư mục, đường dẫn và phần mở rộng",
+      "anchor": "wd05-tep-thu-muc-duong-dan-va-phan-mo-rong",
+      "summary": "Cách Windows tổ chức dữ liệu bằng file, folder, cây thư mục, tên tệp, đuôi tệp và kiểu tệp.",
+      "sourceActivityIds": [
+        "module-580"
+      ],
+      "questionIds": [
+        "module-580-q62",
+        "module-580-q63",
+        "module-580-q64",
+        "module-580-q65",
+        "module-580-q66",
+        "module-580-q67",
+        "module-580-q68",
+        "module-580-q69",
+        "module-580-q70",
+        "module-580-q71",
+        "module-580-q72",
+        "module-580-q73",
+        "module-580-q74",
+        "module-580-q75",
+        "module-580-q76",
+        "module-580-q77",
+        "module-580-q78",
+        "module-580-q79",
+        "module-580-q80",
+        "module-580-q81",
+        "module-580-q82",
+        "module-580-q83",
+        "module-580-q84",
+        "module-580-q85",
+        "module-580-q86",
+        "module-580-q87",
+        "module-580-q88",
+        "module-580-q89"
+      ],
+      "tips": [
+        "Đuôi tệp cho biết kiểu tệp.",
+        "Thư mục chứa tệp; tệp không chứa thư mục con.",
+        "Dấu chấm ngăn tên và phần mở rộng."
+      ]
+    },
+    {
+      "id": "wd06",
+      "groupId": "su-dung-windows",
+      "title": "Recycle Bin, tìm kiếm, ký tự đại diện, nén tệp và in",
+      "anchor": "wd06-recycle-bin-tim-kiem-ky-tu-dai-dien-nen-tep-va-in",
+      "summary": "Khôi phục/xóa vĩnh viễn, tìm tệp bằng mẫu, dùng ZIP/RAR và thao tác in cơ bản.",
+      "sourceActivityIds": [
+        "module-580"
+      ],
+      "questionIds": [
+        "module-580-q90",
+        "module-580-q91",
+        "module-580-q92",
+        "module-580-q93",
+        "module-580-q94",
+        "module-580-q95",
+        "module-580-q96",
+        "module-580-q97",
+        "module-580-q98",
+        "module-580-q99",
+        "module-580-q100",
+        "module-580-q101",
+        "module-580-q102",
+        "module-580-q103",
+        "module-580-q104",
+        "module-580-q105",
+        "module-580-q106",
+        "module-580-q107",
+        "module-580-q108",
+        "module-580-q109",
+        "module-580-q110"
+      ],
+      "tips": [
+        "`*` là nhiều ký tự.",
+        "`?` là một ký tự.",
+        "Gửi nhiều tệp thì nên nén lại."
+      ]
+    },
+    {
+      "id": "in01",
+      "groupId": "internet-cong-dan-so",
+      "title": "Mạng máy tính, LAN, WAN, Internet và Intranet",
+      "anchor": "in01-mang-may-tinh-lan-wan-internet-va-intranet",
+      "summary": "Phân biệt mạng cục bộ, mạng diện rộng, Internet, Intranet, tốc độ truyền và phương tiện truyền dẫn.",
+      "sourceActivityIds": [
+        "module-587"
+      ],
+      "questionIds": [
+        "module-587-q66",
+        "module-587-q67",
+        "module-587-q68",
+        "module-587-q69",
+        "module-587-q70",
+        "module-587-q71",
+        "module-587-q72",
+        "module-587-q73",
+        "module-587-q74",
+        "module-587-q75",
+        "module-587-q76",
+        "module-587-q77",
+        "module-587-q78",
+        "module-587-q79",
+        "module-587-q80",
+        "module-587-q81",
+        "module-587-q82",
+        "module-587-q83",
+        "module-587-q84"
+      ],
+      "tips": [
+        "LAN = Local = gần.",
+        "WAN = Wide = rộng.",
+        "Internet lớn hơn WWW."
+      ]
+    },
+    {
+      "id": "in02",
+      "groupId": "internet-cong-dan-so",
+      "title": "Internet, WWW, HTTP, URL, IP và tên miền",
+      "anchor": "in02-internet-www-http-url-ip-va-ten-mien",
+      "summary": "Các khái niệm nền khi truy cập web: địa chỉ IP, tên miền, URL, HTTP, WWW và hyperlink.",
+      "sourceActivityIds": [
+        "module-581"
+      ],
+      "questionIds": [
+        "module-581-q1",
+        "module-581-q2",
+        "module-581-q3",
+        "module-581-q4",
+        "module-581-q5",
+        "module-581-q6",
+        "module-581-q7",
+        "module-581-q8",
+        "module-581-q9",
+        "module-581-q10",
+        "module-581-q11",
+        "module-581-q12",
+        "module-581-q13",
+        "module-581-q28",
+        "module-581-q29",
+        "module-581-q30",
+        "module-581-q31",
+        "module-581-q49"
+      ],
+      "tips": [
+        "Có dấu @ thì thường nghĩ tới email.",
+        "Web cần trình duyệt để xem.",
+        "Link là liên kết dẫn sang nội dung khác."
+      ]
+    },
+    {
+      "id": "in03",
+      "groupId": "internet-cong-dan-so",
+      "title": "Trình duyệt web, tab, lịch sử và đánh dấu trang",
+      "anchor": "in03-trinh-duyet-web-tab-lich-su-va-danh-dau-trang",
+      "summary": "Chrome, Firefox, Edge/Internet Explorer, tab, Back, Forward, Refresh, Stop, History và Favorites.",
+      "sourceActivityIds": [
+        "module-581"
+      ],
+      "questionIds": [
+        "module-581-q14",
+        "module-581-q15",
+        "module-581-q16",
+        "module-581-q17",
+        "module-581-q18",
+        "module-581-q19",
+        "module-581-q20",
+        "module-581-q21",
+        "module-581-q22",
+        "module-581-q23",
+        "module-581-q32",
+        "module-581-q33",
+        "module-581-q34",
+        "module-581-q35",
+        "module-581-q36",
+        "module-581-q37",
+        "module-581-q38",
+        "module-581-q39",
+        "module-581-q40",
+        "module-581-q41",
+        "module-581-q42",
+        "module-581-q43",
+        "module-581-q44",
+        "module-581-q45",
+        "module-581-q46",
+        "module-581-q47",
+        "module-581-q48",
+        "module-581-q50",
+        "module-581-q51",
+        "module-581-q52",
+        "module-581-q53",
+        "module-581-q54",
+        "module-581-q55",
+        "module-581-q56",
+        "module-581-q57",
+        "module-581-q58"
+      ],
+      "tips": [
+        "Ctrl+T thường mở tab mới.",
+        "Ctrl+W thường đóng tab hiện tại.",
+        "Ctrl+H thường mở lịch sử duyệt web."
+      ]
+    },
+    {
+      "id": "in04",
+      "groupId": "internet-cong-dan-so",
+      "title": "Biểu mẫu web, tìm kiếm, tải xuống, lưu và in trang web",
+      "anchor": "in04-bieu-mau-web-tim-kiem-tai-xuong-luu-va-in-trang-web",
+      "summary": "Form, gửi biểu mẫu, Google, từ khóa tìm kiếm, lưu ảnh/trang web, tải xuống và in nội dung web.",
+      "sourceActivityIds": [
+        "module-581"
+      ],
+      "questionIds": [
+        "module-581-q59",
+        "module-581-q60",
+        "module-581-q62",
+        "module-581-q63",
+        "module-581-q64",
+        "module-581-q65",
+        "module-581-q66",
+        "module-581-q67",
+        "module-581-q68",
+        "module-581-q69",
+        "module-581-q70",
+        "module-581-q71",
+        "module-581-q72"
+      ],
+      "tips": [
+        "Tìm kiếm tốt bắt đầu từ từ khóa ngắn, đúng trọng tâm.",
+        "Submit/Send thường dùng để gửi biểu mẫu.",
+        "Save image dùng để lưu ảnh."
+      ]
+    },
+    {
+      "id": "in05",
+      "groupId": "internet-cong-dan-so",
+      "title": "Email: địa chỉ, lợi ích, soạn thư và thư nháp",
+      "anchor": "in05-email-dia-chi-loi-ich-soan-thu-va-thu-nhap",
+      "summary": "Cấu trúc địa chỉ email, ưu điểm của thư điện tử, soạn thư, thư rác, tệp đính kèm và thư nháp.",
+      "sourceActivityIds": [
+        "module-581",
+        "module-587"
+      ],
+      "questionIds": [
+        "module-581-q73",
+        "module-581-q74",
+        "module-581-q75",
+        "module-581-q76",
+        "module-581-q77",
+        "module-581-q78",
+        "module-581-q79",
+        "module-581-q80",
+        "module-581-q81",
+        "module-581-q82",
+        "module-581-q83",
+        "module-581-q84",
+        "module-581-q85",
+        "module-581-q86",
+        "module-581-q87",
+        "module-581-q88",
+        "module-587-q85",
+        "module-587-q86",
+        "module-587-q87",
+        "module-587-q88"
+      ],
+      "tips": [
+        "Không có @ thì thường không phải email.",
+        "File gửi kèm = attachment.",
+        "Thư chưa gửi thường nằm ở Drafts."
+      ]
+    },
+    {
+      "id": "in06",
+      "groupId": "internet-cong-dan-so",
+      "title": "Email: trả lời, chuyển tiếp, quản lý và tìm thư",
+      "anchor": "in06-email-tra-loi-chuyen-tiep-quan-ly-va-tim-thu",
+      "summary": "Reply, Reply all, Forward, lọc thư, tìm thư, sổ địa chỉ và phân biệt thư đã đọc/chưa đọc.",
+      "sourceActivityIds": [
+        "module-581"
+      ],
+      "questionIds": [
+        "module-581-q89",
+        "module-581-q90",
+        "module-581-q91",
+        "module-581-q92",
+        "module-581-q93",
+        "module-581-q94",
+        "module-581-q95",
+        "module-581-q96",
+        "module-581-q97",
+        "module-581-q98",
+        "module-581-q99",
+        "module-581-q100",
+        "module-581-q101",
+        "module-581-q102",
+        "module-581-q103",
+        "module-581-q104",
+        "module-581-q105",
+        "module-581-q106",
+        "module-581-q107",
+        "module-581-q108"
+      ],
+      "tips": [
+        "RE: thường là thư trả lời.",
+        "Forward là chuyển tiếp.",
+        "BCC dùng khi muốn giấu danh sách người nhận."
+      ]
+    },
+    {
+      "id": "in07",
+      "groupId": "internet-cong-dan-so",
+      "title": "Chat, mạng xã hội, diễn đàn, blog và VoIP",
+      "anchor": "in07-chat-mang-xa-hoi-dien-dan-blog-va-voip",
+      "summary": "Tin nhắn tức thời, trao đổi thời gian thực, mạng xã hội, cộng đồng trực tuyến, blog, forum và gọi thoại qua Internet.",
+      "sourceActivityIds": [
+        "module-581",
+        "module-587"
+      ],
+      "questionIds": [
+        "module-581-q109",
+        "module-581-q110",
+        "module-581-q111",
+        "module-581-q112",
+        "module-581-q113",
+        "module-581-q114",
+        "module-581-q115",
+        "module-581-q116",
+        "module-581-q117",
+        "module-581-q118",
+        "module-587-q89",
+        "module-587-q90",
+        "module-587-q91",
+        "module-587-q92",
+        "module-587-q93",
+        "module-587-q94",
+        "module-587-q95",
+        "module-587-q96"
+      ],
+      "tips": [
+        "Thời gian thực thì nghĩ tới chat hoặc VoIP.",
+        "Cộng đồng thảo luận theo chủ đề thì nghĩ tới forum.",
+        "Trang cá nhân thường gắn với blog."
+      ]
+    },
+    {
+      "id": "in08",
+      "groupId": "internet-cong-dan-so",
+      "title": "Dịch vụ công, chuyển đổi số và giao dịch trực tuyến",
+      "anchor": "in08-dich-vu-cong-chuyen-doi-so-va-giao-dich-truc-tuyen",
+      "summary": "Dịch vụ công trực tuyến, biểu mẫu điện tử, mua hàng online, thanh toán và nguyên tắc giảm rủi ro.",
+      "sourceActivityIds": [
+        "module-581"
+      ],
+      "questionIds": [
+        "module-581-q61",
+        "module-581-q119",
+        "module-581-q120"
+      ],
+      "tips": [
+        "Có thủ tục nhà nước qua mạng thì nghĩ tới dịch vụ công trực tuyến.",
+        "Giao dịch online cần kiểm tra địa chỉ và độ tin cậy.",
+        "Không chia sẻ mã OTP."
+      ]
+    },
+    {
+      "id": "in09",
+      "groupId": "internet-cong-dan-so",
+      "title": "An toàn số, mật khẩu, virus, bản quyền và bảo vệ dữ liệu",
+      "anchor": "in09-an-toan-so-mat-khau-virus-ban-quyen-va-bao-ve-du-lieu",
+      "summary": "Mật khẩu mạnh, firewall, virus, mã độc, email lạ, cập nhật phần mềm, bản quyền và thói quen bảo vệ dữ liệu.",
+      "sourceActivityIds": [
+        "module-581",
+        "module-587"
+      ],
+      "questionIds": [
+        "module-587-q97",
+        "module-587-q98",
+        "module-587-q99",
+        "module-587-q100",
+        "module-587-q101",
+        "module-587-q102",
+        "module-587-q103",
+        "module-587-q104",
+        "module-587-q105",
+        "module-587-q106",
+        "module-587-q107",
+        "module-587-q108",
+        "module-587-q109",
+        "module-587-q110",
+        "module-587-q111",
+        "module-587-q112",
+        "module-587-q113",
+        "module-587-q114",
+        "module-587-q115",
+        "module-587-q116",
+        "module-587-q117",
+        "module-587-q118",
+        "module-587-q119",
+        "module-587-q120",
+        "module-581-q24",
+        "module-581-q25",
+        "module-581-q26",
+        "module-581-q27"
+      ],
+      "tips": [
+        "Email lạ + file đính kèm = cẩn thận.",
+        "Cập nhật hệ điều hành giúp vá lỗi bảo mật.",
+        "Mật khẩu tốt không dùng ngày sinh hoặc tên dễ đoán."
+      ]
+    },
+    {
+      "id": "wo01",
+      "groupId": "word",
+      "title": "Word: giao diện, tệp, lưu, mở, trợ giúp và chế độ xem",
+      "anchor": "wo01-word-giao-dien-tep-luu-mo-tro-giup-va-che-do-xem",
+      "summary": "Khởi động Word, phần mở rộng, thanh tiêu đề, Quick Access, Help, Zoom, Open, Save, Save As và cửa sổ tài liệu.",
+      "sourceActivityIds": [
+        "module-577"
+      ],
+      "questionIds": [
+        "module-577-q1",
+        "module-577-q2",
+        "module-577-q3",
+        "module-577-q4",
+        "module-577-q5",
+        "module-577-q6",
+        "module-577-q7",
+        "module-577-q8",
+        "module-577-q9",
+        "module-577-q10",
+        "module-577-q11",
+        "module-577-q12",
+        "module-577-q13",
+        "module-577-q14",
+        "module-577-q15",
+        "module-577-q16",
+        "module-577-q17",
+        "module-577-q18",
+        "module-577-q19",
+        "module-577-q20",
+        "module-577-q21",
+        "module-577-q22",
+        "module-577-q23",
+        "module-577-q24",
+        "module-577-q25",
+        "module-577-q26",
+        "module-577-q27",
+        "module-577-q32",
+        "module-577-q33",
+        "module-577-q34",
+        "module-577-q35",
+        "module-577-q36"
+      ],
+      "tips": [
+        "N = New, O = Open, S = Save.",
+        "Tên tài liệu thường nằm trên thanh tiêu đề.",
+        "AutoRecover giúp tự lưu thông tin khôi phục."
+      ]
+    },
+    {
+      "id": "wo02",
+      "groupId": "word",
+      "title": "Word: soạn thảo, chọn, tìm, thay thế và ký tự đặc biệt",
+      "anchor": "wo02-word-soan-thao-chon-tim-thay-the-va-ky-tu-dac-biet",
+      "summary": "Chèn ký hiệu, chọn văn bản, xóa, copy/cut, Find, Replace, Undo, AutoCorrect và kiểm tra lỗi.",
+      "sourceActivityIds": [
+        "module-577"
+      ],
+      "questionIds": [
+        "module-577-q28",
+        "module-577-q29",
+        "module-577-q30",
+        "module-577-q31",
+        "module-577-q37",
+        "module-577-q38",
+        "module-577-q39",
+        "module-577-q40",
+        "module-577-q41",
+        "module-577-q42",
+        "module-577-q43",
+        "module-577-q44",
+        "module-577-q45",
+        "module-577-q46",
+        "module-577-q47",
+        "module-577-q48",
+        "module-577-q49",
+        "module-577-q50",
+        "module-577-q51"
+      ],
+      "tips": [
+        "F = Find.",
+        "H = Replace trong Word.",
+        "Undo là quay lại bước trước."
+      ]
+    },
+    {
+      "id": "wo03",
+      "groupId": "word",
+      "title": "Word: định dạng chữ, đoạn, tab, style và danh sách",
+      "anchor": "wo03-word-dinh-dang-chu-doan-tab-style-va-danh-sach",
+      "summary": "Font, cỡ chữ, đậm/nghiêng/gạch chân, chữ hoa/thường, thụt dòng, khoảng cách, tab, bullet, numbering và style.",
+      "sourceActivityIds": [
+        "module-577"
+      ],
+      "questionIds": [
+        "module-577-q52",
+        "module-577-q53",
+        "module-577-q54",
+        "module-577-q55",
+        "module-577-q56",
+        "module-577-q57",
+        "module-577-q58",
+        "module-577-q59",
+        "module-577-q60",
+        "module-577-q61",
+        "module-577-q62",
+        "module-577-q63",
+        "module-577-q64",
+        "module-577-q65",
+        "module-577-q66",
+        "module-577-q67",
+        "module-577-q68",
+        "module-577-q69",
+        "module-577-q70",
+        "module-577-q71",
+        "module-577-q72",
+        "module-577-q73",
+        "module-577-q74",
+        "module-577-q75",
+        "module-577-q76",
+        "module-577-q77",
+        "module-577-q78",
+        "module-577-q79",
+        "module-577-q80",
+        "module-577-q81",
+        "module-577-q82"
+      ],
+      "tips": [
+        "B = Bold, I = Italic, U = Underline.",
+        "Bullet dùng cho liệt kê không thứ tự.",
+        "Numbering dùng khi thứ tự quan trọng."
+      ]
+    },
+    {
+      "id": "wo04",
+      "groupId": "word",
+      "title": "Word: bảng, hình ảnh, biểu đồ, Text Box và đối tượng",
+      "anchor": "wo04-word-bang-hinh-anh-bieu-do-text-box-va-doi-tuong",
+      "summary": "Chèn bảng, chỉnh ô, gộp ô, xóa bảng, chèn ảnh, biểu đồ, shape, Text Box và định dạng đối tượng.",
+      "sourceActivityIds": [
+        "module-577"
+      ],
+      "questionIds": [
+        "module-577-q83",
+        "module-577-q84",
+        "module-577-q85",
+        "module-577-q86",
+        "module-577-q87",
+        "module-577-q88",
+        "module-577-q89",
+        "module-577-q90",
+        "module-577-q91",
+        "module-577-q92",
+        "module-577-q93",
+        "module-577-q94",
+        "module-577-q95",
+        "module-577-q96",
+        "module-577-q97",
+        "module-577-q98",
+        "module-577-q99"
+      ],
+      "tips": [
+        "Insert là tab hay gặp khi chèn thêm đối tượng.",
+        "Merge Cells là gộp ô.",
+        "Picture liên quan ảnh."
+      ]
+    },
+    {
+      "id": "wo05",
+      "groupId": "word",
+      "title": "Word: trang in, header/footer, số trang, PDF, bảo vệ và thể thức",
+      "anchor": "wo05-word-trang-in-header-footer-so-trang-pdf-bao-ve-va-the-thuc",
+      "summary": "Footnote, số trang, ngắt trang, header/footer, hướng giấy, lề, in, PDF, mật khẩu, gửi email và thể thức văn bản.",
+      "sourceActivityIds": [
+        "module-577"
+      ],
+      "questionIds": [
+        "module-577-q100",
+        "module-577-q101",
+        "module-577-q102",
+        "module-577-q103",
+        "module-577-q104",
+        "module-577-q105",
+        "module-577-q106",
+        "module-577-q107",
+        "module-577-q108",
+        "module-577-q109",
+        "module-577-q110",
+        "module-577-q111",
+        "module-577-q112",
+        "module-577-q113",
+        "module-577-q114",
+        "module-577-q115",
+        "module-577-q116",
+        "module-577-q117",
+        "module-577-q118",
+        "module-577-q119",
+        "module-577-q120"
+      ],
+      "tips": [
+        "Portrait = dọc.",
+        "Landscape = ngang.",
+        "Print Preview giúp xem trước khi in."
+      ]
+    },
+    {
+      "id": "ex01",
+      "groupId": "excel",
+      "title": "Excel: giao diện, workbook, worksheet, ô, vùng và nhập dữ liệu",
+      "anchor": "ex01-excel-giao-dien-workbook-worksheet-o-vung-va-nhap-du-lieu",
+      "summary": "Tệp Excel, sheet, hàng, cột, ô, địa chỉ ô, vùng dữ liệu, kiểu dữ liệu, chọn vùng và sửa ô.",
+      "sourceActivityIds": [
+        "module-578"
+      ],
+      "questionIds": [
+        "module-578-q1",
+        "module-578-q2",
+        "module-578-q3",
+        "module-578-q4",
+        "module-578-q5",
+        "module-578-q6",
+        "module-578-q7",
+        "module-578-q8",
+        "module-578-q9",
+        "module-578-q10",
+        "module-578-q11",
+        "module-578-q12",
+        "module-578-q13",
+        "module-578-q14",
+        "module-578-q15",
+        "module-578-q16",
+        "module-578-q17",
+        "module-578-q18",
+        "module-578-q19",
+        "module-578-q20",
+        "module-578-q21",
+        "module-578-q22",
+        "module-578-q23",
+        "module-578-q24"
+      ],
+      "tips": [
+        "Cột dùng chữ, hàng dùng số.",
+        "F2 thường sửa nội dung ô.",
+        "F4 giúp đổi kiểu tham chiếu khi sửa công thức."
+      ]
+    },
+    {
+      "id": "ex02",
+      "groupId": "excel",
+      "title": "Excel: sắp xếp, lọc, hàng, cột, sheet và cố định vùng",
+      "anchor": "ex02-excel-sap-xep-loc-hang-cot-sheet-va-co-dinh-vung",
+      "summary": "Sort, Filter, xóa/chèn hàng cột, đổi độ rộng cột, Freeze Panes, đổi tên và di chuyển sheet.",
+      "sourceActivityIds": [
+        "module-578"
+      ],
+      "questionIds": [
+        "module-578-q25",
+        "module-578-q26",
+        "module-578-q27",
+        "module-578-q28",
+        "module-578-q29",
+        "module-578-q30",
+        "module-578-q31",
+        "module-578-q32",
+        "module-578-q33",
+        "module-578-q34",
+        "module-578-q35",
+        "module-578-q36",
+        "module-578-q37",
+        "module-578-q38",
+        "module-578-q39",
+        "module-578-q40",
+        "module-578-q41"
+      ],
+      "tips": [
+        "Sort đổi thứ tự dòng.",
+        "Filter ẩn bớt dòng không phù hợp.",
+        "Freeze giúp giữ tiêu đề."
+      ]
+    },
+    {
+      "id": "ex03",
+      "groupId": "excel",
+      "title": "Excel: công thức, nối chuỗi và lỗi thường gặp",
+      "anchor": "ex03-excel-cong-thuc-noi-chuoi-va-loi-thuong-gap",
+      "summary": "Dấu bằng, phép toán, sao chép công thức, nối chuỗi, lỗi tham chiếu, lỗi chia 0, sai tên hàm và ô quá hẹp.",
+      "sourceActivityIds": [
+        "module-578"
+      ],
+      "questionIds": [
+        "module-578-q42",
+        "module-578-q43",
+        "module-578-q44",
+        "module-578-q45",
+        "module-578-q46",
+        "module-578-q47",
+        "module-578-q48",
+        "module-578-q49",
+        "module-578-q50",
+        "module-578-q51"
+      ],
+      "tips": [
+        "Thấy dấu = thì nghĩ tới công thức.",
+        "Sai tên hàm thường ra lỗi tên hàm.",
+        "Ô hiện ##### thì thử kéo rộng cột."
+      ]
+    },
+    {
+      "id": "ex04",
+      "groupId": "excel",
+      "title": "Excel: hàm tính toán, đếm, làm tròn và xử lý văn bản",
+      "anchor": "ex04-excel-ham-tinh-toan-dem-lam-tron-va-xu-ly-van-ban",
+      "summary": "SUM, MIN, MAX, AVERAGE, COUNT, COUNTA, ROUND, PRODUCT, MOD, MID, VALUE và phép tính lồng nhau.",
+      "sourceActivityIds": [
+        "module-578"
+      ],
+      "questionIds": [
+        "module-578-q52",
+        "module-578-q53",
+        "module-578-q54",
+        "module-578-q55",
+        "module-578-q56",
+        "module-578-q57",
+        "module-578-q58",
+        "module-578-q59",
+        "module-578-q60",
+        "module-578-q61",
+        "module-578-q62",
+        "module-578-q63",
+        "module-578-q64",
+        "module-578-q65",
+        "module-578-q66",
+        "module-578-q67",
+        "module-578-q68",
+        "module-578-q69",
+        "module-578-q70",
+        "module-578-q71",
+        "module-578-q72",
+        "module-578-q73",
+        "module-578-q74",
+        "module-578-q75",
+        "module-578-q76",
+        "module-578-q77"
+      ],
+      "tips": [
+        "SUM = tổng.",
+        "COUNT chỉ đếm số.",
+        "MID lấy một phần chuỗi."
+      ]
+    },
+    {
+      "id": "ex05",
+      "groupId": "excel",
+      "title": "Excel: IF, điều kiện, ngày tháng và dò tìm",
+      "anchor": "ex05-excel-if-dieu-kien-ngay-thang-va-do-tim",
+      "summary": "IF, AND, OR, điều kiện so sánh, MONTH, TODAY, YEAR, NOW, HLOOKUP và VLOOKUP.",
+      "sourceActivityIds": [
+        "module-578"
+      ],
+      "questionIds": [
+        "module-578-q78",
+        "module-578-q79",
+        "module-578-q80",
+        "module-578-q81",
+        "module-578-q82",
+        "module-578-q83",
+        "module-578-q84",
+        "module-578-q85",
+        "module-578-q86",
+        "module-578-q87",
+        "module-578-q88",
+        "module-578-q89",
+        "module-578-q90",
+        "module-578-q91",
+        "module-578-q92",
+        "module-578-q93",
+        "module-578-q94",
+        "module-578-q95"
+      ],
+      "tips": [
+        "IF là nếu-thì-ngược lại.",
+        "AND = tất cả đúng.",
+        "OR = ít nhất một đúng."
+      ]
+    },
+    {
+      "id": "ex06",
+      "groupId": "excel",
+      "title": "Excel: định dạng, biểu đồ, in, bảo vệ và mật khẩu",
+      "anchor": "ex06-excel-dinh-dang-bieu-do-in-bao-ve-va-mat-khau",
+      "summary": "Định dạng số/ngày/phần trăm, Format Cells, Merge Cells, biểu đồ, in bảng tính, bảo vệ sheet và đặt mật khẩu.",
+      "sourceActivityIds": [
+        "module-578"
+      ],
+      "questionIds": [
+        "module-578-q96",
+        "module-578-q97",
+        "module-578-q98",
+        "module-578-q99",
+        "module-578-q100",
+        "module-578-q101",
+        "module-578-q102",
+        "module-578-q103",
+        "module-578-q104",
+        "module-578-q105",
+        "module-578-q106",
+        "module-578-q107",
+        "module-578-q108",
+        "module-578-q109",
+        "module-578-q110",
+        "module-578-q111",
+        "module-578-q112",
+        "module-578-q113",
+        "module-578-q114",
+        "module-578-q115",
+        "module-578-q116",
+        "module-578-q117",
+        "module-578-q118",
+        "module-578-q119",
+        "module-578-q120"
+      ],
+      "tips": [
+        "Format Cells là nơi chỉnh nhiều kiểu hiển thị.",
+        "Biểu đồ giúp nhìn xu hướng nhanh hơn bảng số.",
+        "Trước khi in nên xem Page Setup/Print Preview."
+      ]
+    },
+    {
+      "id": "pp01",
+      "groupId": "powerpoint",
+      "title": "PowerPoint: mục tiêu trình bày, giao diện, tệp và chế độ xem",
+      "anchor": "pp01-powerpoint-muc-tieu-trinh-bay-giao-dien-tep-va-che-do-xem",
+      "summary": "Cấu trúc bài thuyết trình, mở/tạo/lưu/đóng file, đuôi tệp, Quick Access, Help, Gridlines và các chế độ xem.",
+      "sourceActivityIds": [
+        "module-579"
+      ],
+      "questionIds": [
+        "module-579-q1",
+        "module-579-q2",
+        "module-579-q3",
+        "module-579-q4",
+        "module-579-q5",
+        "module-579-q6",
+        "module-579-q7",
+        "module-579-q8",
+        "module-579-q9",
+        "module-579-q10",
+        "module-579-q11",
+        "module-579-q12",
+        "module-579-q13",
+        "module-579-q14",
+        "module-579-q15",
+        "module-579-q16",
+        "module-579-q17",
+        "module-579-q18",
+        "module-579-q19",
+        "module-579-q20",
+        "module-579-q21",
+        "module-579-q22",
+        "module-579-q23",
+        "module-579-q24",
+        "module-579-q25",
+        "module-579-q26",
+        "module-579-q27",
+        "module-579-q28",
+        "module-579-q29",
+        "module-579-q30"
+      ],
+      "tips": [
+        "Trước khi làm slide phải rõ người nghe và mục tiêu.",
+        "Save lưu file hiện tại.",
+        "Close đóng file hiện hành."
+      ]
+    },
+    {
+      "id": "pp02",
+      "groupId": "powerpoint",
+      "title": "PowerPoint: slide, layout, theme, master và quản lý slide",
+      "anchor": "pp02-powerpoint-slide-layout-theme-master-va-quan-ly-slide",
+      "summary": "Slide, layout, placeholder, theme, background, Slide Master, thêm/xóa/nhân bản/sao chép/chọn nhiều slide.",
+      "sourceActivityIds": [
+        "module-579"
+      ],
+      "questionIds": [
+        "module-579-q31",
+        "module-579-q32",
+        "module-579-q33",
+        "module-579-q34",
+        "module-579-q35",
+        "module-579-q36",
+        "module-579-q37",
+        "module-579-q38",
+        "module-579-q39",
+        "module-579-q40",
+        "module-579-q41",
+        "module-579-q42",
+        "module-579-q43",
+        "module-579-q44",
+        "module-579-q45",
+        "module-579-q46",
+        "module-579-q47",
+        "module-579-q48",
+        "module-579-q49",
+        "module-579-q50",
+        "module-579-q51",
+        "module-579-q52",
+        "module-579-q53",
+        "module-579-q54",
+        "module-579-q55",
+        "module-579-q56"
+      ],
+      "tips": [
+        "Layout = bố cục.",
+        "Theme = phong cách.",
+        "Master = mẫu chung."
+      ]
+    },
+    {
+      "id": "pp03",
+      "groupId": "powerpoint",
+      "title": "PowerPoint: văn bản, placeholder, căn lề, bullet và numbering",
+      "anchor": "pp03-powerpoint-van-ban-placeholder-can-le-bullet-va-numbering",
+      "summary": "Outline, placeholder, khung văn bản, Line Spacing, Clear Formatting, Shadow, màu nền chữ, căn lề, bullet và numbering.",
+      "sourceActivityIds": [
+        "module-579"
+      ],
+      "questionIds": [
+        "module-579-q57",
+        "module-579-q58",
+        "module-579-q59",
+        "module-579-q60",
+        "module-579-q61",
+        "module-579-q62",
+        "module-579-q63",
+        "module-579-q64",
+        "module-579-q65",
+        "module-579-q66",
+        "module-579-q67",
+        "module-579-q68",
+        "module-579-q69",
+        "module-579-q70",
+        "module-579-q71"
+      ],
+      "tips": [
+        "Slide không nên quá nhiều chữ.",
+        "Căn giữa thường dùng cho tiêu đề.",
+        "Line spacing chỉnh khoảng cách dòng."
+      ]
+    },
+    {
+      "id": "pp04",
+      "groupId": "powerpoint",
+      "title": "PowerPoint: bảng, biểu đồ, hình ảnh, shape và đối tượng",
+      "anchor": "pp04-powerpoint-bang-bieu-do-hinh-anh-shape-va-doi-tuong",
+      "summary": "Chèn bảng, biểu đồ, SmartArt/sơ đồ, ảnh, shapes, screenshot, WordArt, equation, căn chỉnh và định dạng đối tượng.",
+      "sourceActivityIds": [
+        "module-579"
+      ],
+      "questionIds": [
+        "module-579-q72",
+        "module-579-q73",
+        "module-579-q74",
+        "module-579-q75",
+        "module-579-q76",
+        "module-579-q77",
+        "module-579-q78",
+        "module-579-q79",
+        "module-579-q80",
+        "module-579-q81",
+        "module-579-q82",
+        "module-579-q83",
+        "module-579-q84",
+        "module-579-q85",
+        "module-579-q86",
+        "module-579-q87",
+        "module-579-q88",
+        "module-579-q89",
+        "module-579-q90",
+        "module-579-q91",
+        "module-579-q92",
+        "module-579-q93",
+        "module-579-q94",
+        "module-579-q95",
+        "module-579-q96",
+        "module-579-q97",
+        "module-579-q98",
+        "module-579-q99"
+      ],
+      "tips": [
+        "Chart = biểu đồ.",
+        "Shapes = hình vẽ.",
+        "WordArt = chữ nghệ thuật."
+      ]
+    },
+    {
+      "id": "pp05",
+      "groupId": "powerpoint",
+      "title": "PowerPoint: hiệu ứng, trình chiếu, ghi chú, in và phím tắt",
+      "anchor": "pp05-powerpoint-hieu-ung-trinh-chieu-ghi-chu-in-va-phim-tat",
+      "summary": "Animation, Transition, Effect Options, trình chiếu từ đầu/slide hiện tại, ghi chú, ẩn slide, kiểm tra chính tả và in.",
+      "sourceActivityIds": [
+        "module-579"
+      ],
+      "questionIds": [
+        "module-579-q100",
+        "module-579-q101",
+        "module-579-q102",
+        "module-579-q103",
+        "module-579-q104",
+        "module-579-q105",
+        "module-579-q106",
+        "module-579-q107",
+        "module-579-q108",
+        "module-579-q109",
+        "module-579-q110",
+        "module-579-q111",
+        "module-579-q112",
+        "module-579-q113",
+        "module-579-q114",
+        "module-579-q115",
+        "module-579-q116",
+        "module-579-q117",
+        "module-579-q118"
+      ],
+      "tips": [
+        "F5 = từ đầu.",
+        "Shift+F5 = từ slide hiện tại.",
+        "Esc thoát trình chiếu."
+      ]
+    }
+  ]
+}
