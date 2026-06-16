@@ -3,9 +3,12 @@
     siteDb: null,
     questionDb: null,
     theoryMap: null,
+    theme: "light",
     activeActivityId: null,
     activeUrl: null,
   };
+
+  const THEME_KEY = "tinHocUttTheme";
 
   const studyDays = [
     { day: 1, title: "Máy tính và thành phần", brief: "Phần cứng, phần mềm, CPU, RAM, thiết bị vào/ra.", activities: ["module-587"] },
@@ -61,6 +64,63 @@
 
   function $(selector) {
     return document.querySelector(selector);
+  }
+
+  function getStoredTheme() {
+    try {
+      const saved = localStorage.getItem(THEME_KEY);
+      if (saved === "dark" || saved === "light") return saved;
+    } catch (error) {
+      // ignore localStorage errors
+    }
+
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  }
+
+  function applyThemeToFrame() {
+    const frame = $("#contentFrame");
+    if (!frame) return;
+
+    try {
+      const doc = frame.contentDocument || (frame.contentWindow && frame.contentWindow.document);
+      if (doc && doc.documentElement) {
+        doc.documentElement.dataset.theme = state.theme;
+      }
+    } catch (error) {
+      // Ignore cross-origin frames, though current offline pages are same-origin.
+    }
+  }
+
+  function updateThemeButton() {
+    const button = $("#themeButton");
+    if (!button) return;
+
+    const isDark = state.theme === "dark";
+    button.textContent = isDark ? "Giao diện sáng" : "Giao diện tối";
+    button.setAttribute("aria-pressed", isDark ? "true" : "false");
+    button.setAttribute("title", isDark ? "Chuyển sang giao diện sáng" : "Chuyển sang giao diện tối");
+  }
+
+  function applyTheme(theme, shouldPersist) {
+    state.theme = theme === "dark" ? "dark" : "light";
+    document.documentElement.dataset.theme = state.theme;
+    updateThemeButton();
+    applyThemeToFrame();
+
+    if (shouldPersist) {
+      try {
+        localStorage.setItem(THEME_KEY, state.theme);
+      } catch (error) {
+        // ignore localStorage errors
+      }
+    }
+  }
+
+  function toggleTheme() {
+    applyTheme(state.theme === "dark" ? "light" : "dark", true);
   }
 
   function escapeHtml(value) {
@@ -380,9 +440,12 @@
   }
 
   async function init() {
+    applyTheme(getStoredTheme(), false);
     $("#homeButton").addEventListener("click", showDashboard);
     $("#guideButton").addEventListener("click", () => openStudyGuide("lich-luyen-ly-thuyet-10-ngay"));
     $("#quizButton").addEventListener("click", () => openQuiz());
+    $("#themeButton").addEventListener("click", toggleTheme);
+    $("#contentFrame").addEventListener("load", applyThemeToFrame);
     $("#searchInput").addEventListener("input", (event) => renderNav(event.target.value));
 
     try {

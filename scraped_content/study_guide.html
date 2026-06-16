@@ -4,17 +4,86 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tài liệu ôn tập Tin học</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("tinHocUttTheme");
+      const theme = savedTheme === "dark" || savedTheme === "light"
+        ? savedTheme
+        : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+    } catch (error) {
+      // ignore
+    }
+  </script>
   <style>
     :root {
+      color-scheme: light;
       --bg: #f6f8fb;
       --paper: #ffffff;
       --ink: #172033;
       --muted: #667085;
       --line: #d9e2ec;
       --teal: #0f766e;
+      --teal-strong: #0b5f59;
       --blue: #2563eb;
       --amber-soft: #fff7ed;
+      --amber-border: #fed7aa;
+      --amber-text: #7c2d12;
       --code: #eff4f8;
+      --code-border: #dfe8ef;
+      --table-head: #eef6f4;
+      --row-alt: #fbfdff;
+      --pre-bg: #172033;
+      --pre-ink: #eef6f4;
+      --quote-bg: #eef6f4;
+      --check-bg: #ffffff;
+      --error-bg: #fff1f2;
+      --error-border: #fecdd3;
+      --error-text: #9f1239;
+      --question-bg: #eff6ff;
+      --question-border: #bfdbfe;
+      --question-title: #1d4ed8;
+      --question-text: #344054;
+      --chip-bg: #dbeafe;
+      --chip-text: #1e3a8a;
+      --quiz-bg: #2563eb;
+      --quiz-hover: #1d4ed8;
+      --quiz-text: #ffffff;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #101714;
+      --paper: #17211d;
+      --ink: #eef4ef;
+      --muted: #a7b7ad;
+      --line: #2b3e35;
+      --teal: #34d399;
+      --teal-strong: #86efac;
+      --blue: #93c5fd;
+      --amber-soft: #30251b;
+      --amber-border: #854d0e;
+      --amber-text: #fde68a;
+      --code: #111b17;
+      --code-border: #2b3e35;
+      --table-head: #1f332d;
+      --row-alt: #14201b;
+      --pre-bg: #0b1210;
+      --pre-ink: #d9f2e3;
+      --quote-bg: #1f332d;
+      --check-bg: #111b17;
+      --error-bg: #331a20;
+      --error-border: #7f1d1d;
+      --error-text: #fecdd3;
+      --question-bg: #13242b;
+      --question-border: #275266;
+      --question-title: #bfdbfe;
+      --question-text: #d7e2dc;
+      --chip-bg: #203947;
+      --chip-text: #dbeafe;
+      --quiz-bg: #34d399;
+      --quiz-hover: #6ee7b7;
+      --quiz-text: #08231b;
     }
 
     * { box-sizing: border-box; }
@@ -74,7 +143,7 @@
     }
 
     .toc a:hover {
-      background: #eef6f4;
+      background: var(--quote-bg);
       color: var(--teal);
     }
 
@@ -139,18 +208,18 @@
     }
 
     th {
-      background: #eef6f4;
-      color: #0b5f59;
+      background: var(--table-head);
+      color: var(--teal-strong);
       font-weight: 800;
     }
 
     tr:nth-child(even) td {
-      background: #fbfdff;
+      background: var(--row-alt);
     }
 
     code {
       background: var(--code);
-      border: 1px solid #dfe8ef;
+      border: 1px solid var(--code-border);
       border-radius: 6px;
       padding: 0.12em 0.34em;
       font-family: Consolas, Monaco, monospace;
@@ -161,9 +230,9 @@
       overflow: auto;
       padding: 14px;
       border-radius: 8px;
-      border: 1px solid #dfe8ef;
-      background: #172033;
-      color: #eef6f4;
+      border: 1px solid var(--code-border);
+      background: var(--pre-bg);
+      color: var(--pre-ink);
     }
 
     pre code {
@@ -177,7 +246,7 @@
       margin: 18px 0;
       padding: 12px 14px;
       border-left: 4px solid var(--teal);
-      background: #eef6f4;
+      background: var(--quote-bg);
     }
 
     .loading,
@@ -189,9 +258,9 @@
     }
 
     .error {
-      border-color: #fecdd3;
-      background: #fff1f2;
-      color: #9f1239;
+      border-color: var(--error-border);
+      background: var(--error-bg);
+      color: var(--error-text);
     }
 
     .check-item {
@@ -207,17 +276,17 @@
       margin-right: 8px;
       border: 1px solid var(--line);
       border-radius: 3px;
-      background: #fff;
+      background: var(--check-bg);
       vertical-align: -2px;
     }
 
     .note {
       margin: 16px 0;
       padding: 12px 14px;
-      border: 1px solid #fed7aa;
+      border: 1px solid var(--amber-border);
       border-radius: 8px;
       background: var(--amber-soft);
-      color: #7c2d12;
+      color: var(--amber-text);
     }
 
     .question-link-panel {
@@ -225,18 +294,18 @@
       gap: 10px;
       margin: 12px 0 18px;
       padding: 13px 14px;
-      border: 1px solid #bfdbfe;
+      border: 1px solid var(--question-border);
       border-radius: 8px;
-      background: #eff6ff;
+      background: var(--question-bg);
     }
 
     .question-link-panel strong {
-      color: #1d4ed8;
+      color: var(--question-title);
     }
 
     .question-link-panel p {
       margin: 0;
-      color: #344054;
+      color: var(--question-text);
     }
 
     .question-meta-row,
@@ -253,8 +322,8 @@
       min-height: 28px;
       padding: 4px 8px;
       border-radius: 999px;
-      background: #dbeafe;
-      color: #1e3a8a;
+      background: var(--chip-bg);
+      color: var(--chip-text);
       font-size: 0.86rem;
       font-weight: 750;
     }
@@ -265,14 +334,14 @@
       min-height: 36px;
       padding: 7px 10px;
       border-radius: 8px;
-      background: var(--blue);
-      color: #fff;
+      background: var(--quiz-bg);
+      color: var(--quiz-text);
       text-decoration: none;
     }
 
     .quiz-link:hover {
       text-decoration: none;
-      background: #1d4ed8;
+      background: var(--quiz-hover);
     }
 
     @media (max-width: 960px) {
